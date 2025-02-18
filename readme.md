@@ -6,9 +6,9 @@ LogNER is a log parser that generates a log template through Nested NER
 
 ### Running environment
 
-python 3.8
-regex 2024.9.11
-torch 2.1.0
+#### python 3.8
+#### regex 2024.9.11
+#### torch 2.1.0
 
 ### How to run
 #### Train
