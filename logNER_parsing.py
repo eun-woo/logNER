@@ -1041,54 +1041,31 @@ if __name__=="__main__":
         # 완전히 중복되는 로그들이 많음
         # 이러한 로그들의 중복 계산을 막기 위해 완전 중복되는 로그들의 개수를 카운팅
         log_count_dict = counting_logs(log_list)
-
+    
         # 현재 wildcard_match_length 는 템플릿에 매칭되는 로그들과 그 로그들의 wildcard 부분에 대한 정보
         # 템플릿 정보가 계속 중복 저장되므로 공간, 시간적 성능 개선을 위해 템플릿 정보를 압출
         # 뒤에 활용하기 쉽게 길이 오름차순으로 정렬(general한 순으로 정렬)
         template_list = [template for template in wildcard_match_length]
         template_list.sort(key=lambda temp: len(temp))
-
+    
         # 앞으로 템플릿을 직접 자료구조에 저장하기보다는 인덱스로 저장
         # 이 때, 어떤 템플릿이 어떤 인덱스인지 알 필요가 있으므로, 이를 저장한 자료구조가 필요
         # template_template_index_dict는 template을 키로 조회하면 template의 인덱스를 얻을 수 있음
         template_template_index_dict = template_list_to_dict(template_list)
-
+    
         # 로그가 키, 벨류는 딕셔너리
         # 벨류 딕셔너리는 키가 템플릿 인덱스, 벨류가 이 로그가 이 템플릿을 선택했을 때의 DRC
         log_matching_template_drc_dict = find_log_matching_template_info(wildcard_match_length, drc_each_variable, template_template_index_dict, log_count_dict)
-
+    
         # 함수 내에서 플래그 이용해서 그룹핑하지 않는 경우와 하는 경우 관리
-        first_grouping_result, first_grouping_log_counts, first_grouping_logs = first_grouping_result, first_grouping_log_counts = grouping_by_whole_candidate_template(log_matching_template_drc_dict, log_count_dict, using_grouping)
+        first_grouping_result, first_grouping_log_counts, first_grouping_logs = grouping_by_whole_candidate_template(log_matching_template_drc_dict, log_count_dict, using_grouping)
         second_grouping_result, second_grouping_log_counts = grouping_by_most_general_template(first_grouping_result, first_grouping_log_counts, using_grouping)
-
+    
         # best_template_set을 구하는 함수
-        min_mdl_cost, best_template_set = find_best_template_set(first_grouping_result, second_grouping_result, second_grouping_log_counts, template_list, GROUP_ELEMENT_THRESHOLD)
-
-        template_occurrences = get_template_occurence(first_grouping_log_counts, candidate_tuple_matching_templates, template_list)
+        min_mdl_cost, best_template_set, candidate_tuple_matching_templates = find_best_template_set(first_grouping_result, second_grouping_result, second_grouping_log_counts, template_list, GROUP_ELEMENT_THRESHOLD)
+    
+        template_occurrence = get_template_occurence(first_grouping_log_counts, candidate_tuple_matching_templates, template_list)
         log_template_dict = get_log_matching_best_template(first_grouping_logs, candidate_tuple_matching_templates, template_list)
-
-        for group in second_grouping_result:
-            cur_log_set_list = second_grouping_result[group]
-            best_template_list = second_grouping_result[group]
-            
-            for i in range(len(cur_log_set_list)):
-                # 이 로그 셋이
-                cur_log_set = cur_log_set_list[i]
-                # 이 템플릿 선택
-                best_template_idx = best_template_list[i]
-                best_template = template_list[best_template_idx]
-                
-                # template_occurrence
-                # 로그집합-카운트 딕셔너리 이용
-                if best_template not in template_occurrence:
-                    template_occurrence[best_template] = first_grouping_log_counts[cur_log_set]
-                else:
-                    template_occurrence[best_template] += first_grouping_log_counts[cur_log_set]
-                    
-                # log_template_dict
-                # 로그 집합- 로그 딕셔너리 이용, 로그 집합에 있는 로그 확인 가능
-                for log in index_log_dict[cur_log_set]:
-                    log_template_dict[log] = best_template
 
 
 
