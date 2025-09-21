@@ -49,6 +49,8 @@ def find_best_template_set(first_grouping, second_grouping, second_grouping_log_
     total_drc = 0
     cur_template_set = set()
 
+    candidate_tuple_template_match = dict()
+
     for group_idx in second_grouping:
         candidate_tuple_list = second_grouping[group_idx]
         temp_template_list = [-1] * len(candidate_tuple_list)
@@ -56,14 +58,22 @@ def find_best_template_set(first_grouping, second_grouping, second_grouping_log_
         # 그룹의 성분 개수가 많으면 브루트포스 하지 않는 함수 추가 필요
         cur_min_mdl, cur_best_templates = find_best_template_sub_set_by_bruteforce(0, temp_template_list, float("inf"), None, candidate_tuple_list, first_grouping, templates, second_grouping_log_count[group_idx])
 
-        cur_best_templates = set(cur_best_templates)
-        cur_src = (sum(src(temp) for temp in cur_best_templates)) / len(cur_best_templates)
+        cur_best_template_set = set(cur_best_templates)
+        cur_src = (sum(src(templates[idx]) for idx in cur_best_templates)) / len(cur_best_templates)
 
         # 지금은 로그 개수를 곱해서 모두 더하고, 나중에 한꺼번에 나눌 것
         total_drc += (cur_min_mdl - cur_src) * second_grouping_log_count[group_idx]
-        cur_template_set.union(cur_best_templates)
+        cur_template_set = cur_template_set.union(cur_best_template_set)
+
+        # 각 candidate tuple에 매칭되는 best_template을 구함
+        # 이를 이용해 template_occurence 나 각 로그에 매칭되는 템플릿을 알 수 있음
+        for i in range(len(candidate_tuple_list)):
+            cur_candidate_tuple = candidate_tuple_list[i]
+            cur_best_template = cur_best_templates[i]
+            candidate_tuple_template_match[cur_candidate_tuple] = cur_best_template
+            
     # 템플릿 개수 및 로그 개수로 평균
-    total_src = sum(src(temp) for temp in cur_template_set) / len(cur_template_set)
+    total_src = sum(src(templates[idx]) for idx in cur_template_set) / len(cur_template_set)
     total_drc /= sum(second_grouping_log_count[group_idx] for group_idx in second_grouping_log_count)
 
-    return (total_src + total_drc), cur_template_set
+    return (total_src + total_drc), cur_template_set, candidate_tuple_template_match
