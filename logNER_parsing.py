@@ -1057,21 +1057,9 @@ if __name__=="__main__":
         # 벨류 딕셔너리는 키가 템플릿 인덱스, 벨류가 이 로그가 이 템플릿을 선택했을 때의 DRC
         log_matching_template_drc_dict = find_log_matching_template_info(wildcard_match_length, drc_each_variable, template_template_index_dict, log_count_dict)
 
-        # 이하 그룹핑은 그룹핑을 사용할 때만 함
-        # 그룹핑하지 않는 경우 브루트포스 함수는 다른 것을 사용해야 함에 유의
-        if using_grouping:
-            # 키는 후보 템플릿들의 인덱스로 이루어진 튜플
-            # 벨류는 키가 템플릿 인덱스, 벨류가 변수 정보(character_set, variance_length)의 리스트인 딕셔너리
-            first_grouping_result, first_grouping_log_counts = grouping_by_whole_candidate_template(log_matching_template_drc_dict, log_count_dict)
-            # 키는 가장 general한 템플릿의 인덱스
-            # 벨류는 가장 general한 템플릿을 포함하고 있는 candidate tuple들의 리스트
-            second_grouping_result, second_grouping_log_counts = grouping_by_most_general_template(first_grouping_result, first_grouping_log_counts)
-
-        # 포멧 통일을 위해 그룹핑은 하지 않았으나 딕셔너리로 둘러싸야 함
-        else:
-            second_grouping_result, second_grouping_log_counts = make_dummy_group(log_matching_template_drc_dict, log_count_dict)
-            # 실제 변수의 의미와 같지는 않지만 이후 코드의 통일성을 위해 변수명 통일
-            first_grouping_result = log_matching_template_drc_dict
+        # 함수 내에서 플래그 이용해서 그룹핑하지 않는 경우와 하는 경우 관리
+        first_grouping_result, first_grouping_log_counts, first_grouping_logs = first_grouping_result, first_grouping_log_counts = grouping_by_whole_candidate_template(log_matching_template_drc_dict, log_count_dict, using_grouping)
+        second_grouping_result, second_grouping_log_counts = grouping_by_most_general_template(first_grouping_result, first_grouping_log_counts, using_grouping)
 
         # best_template_set을 구하는 함수
         min_mdl_cost, best_template_set = find_best_template_set(first_grouping_result, second_grouping_result, second_grouping_log_counts, template_list, GROUP_ELEMENT_THRESHOLD)
