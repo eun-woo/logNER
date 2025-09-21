@@ -38,9 +38,9 @@ def get_var_info(current_log, var_info, drc_calculated_by_each_variable, log_cou
     if not drc_calculated_by_each_variable and len(var_info) != 0:
         temp_list = [set(), 0]
         for char_set, var_len in var_info_list:
-            temp_list[0].union(char_set)
+            temp_list[0] = temp_list[0].union(char_set)
             temp_list[1] += var_len
-        var_info_list = temp_list
+        var_info_list = [temp_list]
     # 변수가 없으면 빈 리스트를 리턴
     return var_info_list
 
