@@ -1,6 +1,7 @@
 from tqdm import tqdm
 import math
 
+
 # 첫번째 그룹핑
 # 후보 템플릿이 같은 것들끼리 그룹핑
 # 로그_템플릿_drc 정보를 활용
@@ -12,10 +13,10 @@ def grouping_by_whole_candidate_template(log_template_variable_info, log_count, 
     print("첫번째 그룹핑 중")
 
     if not using_grouping:
-    first_group_logs = dict()
-    for cur_log in log_template_variable_info:
-        first_group_logs[cur_log] = [cur_log]
-    return log_template_variable_info, log_count, first_group_logs
+        first_group_logs = dict()
+        for cur_log in log_template_variable_info:
+            first_group_logs[cur_log] = [cur_log]
+        return log_template_variable_info, log_count, first_group_logs
 
     # 딕셔너리의 키는 후보 템플릿 튜플
     first_group_info = dict()
@@ -64,10 +65,18 @@ def grouping_by_whole_candidate_template(log_template_variable_info, log_count, 
 
 
 # 가장 general한 템플릿을 기준으로 그룹핑
-def grouping_by_most_general_template(candidates_template_idx_drc_info, candidate_templates_log_count):
+def grouping_by_most_general_template(candidates_template_idx_drc_info, candidate_templates_log_count, using_grouping):
     print("두번째 그룹핑 중")
     second_group_info = dict()
     second_group_log_count = dict()
+
+    if not using_grouping:
+        second_group_info[-1] = list()
+        second_group_log_count[-1] = 0
+        for log in candidates_template_idx_drc_info:
+            second_group_info[-1].append(log)
+            second_group_log_count[-1] += candidate_templates_log_count[log]
+
 
     # 템플릿 리스트가 길이 오름차순으로 정렬되었고, candidate tuple은 오름차순으로 정렬되었으므로 0번째 성분이 가장 general한 템플릿
     for candidate_tuple in candidates_template_idx_drc_info:
