@@ -6,7 +6,7 @@ import math
 from transformers import AutoTokenizer
 from tqdm import tqdm
 import random
-from utils import find_best_template_by_log_and_candidate_templates
+from utils.find_template_by_candidates import find_best_template_by_log_and_candidate_templates
 
 # if 'p' in os.environ:
 # os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
