@@ -1064,8 +1064,8 @@ if __name__=="__main__":
         # best_template_set을 구하는 함수
         min_mdl_cost, best_template_set = find_best_template_set(first_grouping_result, second_grouping_result, second_grouping_log_counts, template_list, GROUP_ELEMENT_THRESHOLD)
 
-        template_occurrences = get_template_occurence(first_grouping_log_counts, candidate_tuple_matching_templates, templates)
-        log_template_dict = get_log_matching_best_template(first_grouping_logs, candidate_tuple_matching_templates, templates)
+        template_occurrences = get_template_occurence(first_grouping_log_counts, candidate_tuple_matching_templates, template_list)
+        log_template_dict = get_log_matching_best_template(first_grouping_logs, candidate_tuple_matching_templates, template_list)
 
         for group in second_grouping_result:
             cur_log_set_list = second_grouping_result[group]
