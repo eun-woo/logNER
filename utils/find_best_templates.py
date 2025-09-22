@@ -1,5 +1,9 @@
 from tqdm import tqdm
 import math
+
+root = '*'
+
+
 def src(template):
     return len(template) * math.ceil(math.log2(len(set(template))))
 
@@ -41,7 +45,6 @@ def find_best_template_sub_set_by_bruteforce(cur_idx, cur_templates, min_mdl, mi
             cur_templates[cur_idx] = template_idx
             min_mdl, min_mdl_templates = find_best_template_sub_set_by_bruteforce(cur_idx+1, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count)
         return min_mdl, min_mdl_templates
-
 
 
 # 인풋은 candidate_tuple들의 리스트
@@ -86,9 +89,9 @@ def insert_into_tree(cur_node, visited, cur_template, tree, template_candidate_t
     return
 
 
+#  템플릿 간의 포함 관계를 표현하는 템플릿 트리 생성
 def generating_template_tree(template_candidate_tuple_info):
     tree = dict()
-    root = '*'
     
     tree[root] = list()
     
@@ -104,29 +107,130 @@ def generating_template_tree(template_candidate_tuple_info):
     return tree
 
 
-def find_best_template_set_by_group_fast(candidate_tuple_list, first_grouping):
+# 두 큐의 순서와 성분이 같은지 검사
+def is_two_queue_same(q1, q2):
+    if len(q1) != len(q2):
+        return False
+    for i in range(len(q1)):
+        if q1[i] != q2[i]:
+            return False
+    return True
+
+
+def get_drc_and_matching_templates(candidate_tuple_list, q, first_grouping, group_count, templates):
+    template_set = set(q)
+    total_drc = 0
+
+    matching_template_list = []
+
+    # 매칭되는 템플릿들 중 drc가 최소인 템플릿을 선택
+    for candidate_tuple in candidate_tuple_list:
+        cur_min_drc = float("inf")
+        cur_min_temp_idx = -1
+        for template_idx in candidate_tuple:
+            # 매칭되는 템플릿이 q에 있으면
+            if template_idx in template_set:
+                cur_drc_info = first_grouping[candidate_tuple][template_idx]
+                cur_drc = drc(cur_drc_info)
+                if cur_min_drc > cur_drc:
+                    cur_min_drc = cur_drc
+                    cur_min_temp_idx = template_idx
+        if cur_min_temp_idx == -1:
+            print("find_best_template_tree 에서 매칭 안 되는 템플릿이 생김")
+            exit()
+        matching_template_list.append(cur_min_temp_idx)
+        total_drc += cur_min_drc
+
+    cur_template_set = set(matching_template_list)
+    total_src = sum(src(templates[idx]) for idx in cur_template_set)
+
+    return (total_src / len(cur_template_set) + total_drc / group_count), matching_template_list
+
+
+# 자식 노드들 찾기
+# 리프노드면 스킵
+# 자식 노드들의 매칭 로그들이 부모 노드와 달라도 스킵
+# 이를 위해 매칭 로그 집합을 알아야 함 (tempalte_candidate_tuple_info)
+def find_next_q(q, tree, template_candidate_tuple_info, visited):
+    next_q = []
+
+    for cur_template_idx in q:
+        if cur_template_idx in visited:
+            next_q.append(cur_template_idx)
+            continue
+
+        cur_template_set = template_candidate_tuple_info[cur_template_idx]
+        child_template_set = set()
+        for child in tree[cur_template_idx]:
+            child_template_set = child_template_set.union(template_candidate_tuple_info[child])
+        # 부모의 매칭로그들과 자식의 매칭로그들이 같으면 자식들을 next_q에 추가
+        if len(cur_template_set.difference(child_template_set)) == 0:
+            for child in tree[cur_template_idx]:
+                next_q.append(child)
+        else:
+            next_q.append(cur_template_idx)
+            visited.add(cur_template_idx)
+
+    return next_q
+
+
+#  템플릿 트리를 bfs로 탐색하여 각 레벨의 템플릿 집합 찾기
+def find_best_template_by_template_tree(template_tree, first_grouping, group_count, candidate_tuple_list, templates, template_candidate_tuple_info):
+    # 최초의 큐
+    q = []
+    next_q = template_tree[root]
+
+    cur_best_mdl = float("inf")
+    cur_best_candidate_tuple_matching_templates = []
+
+    # 현재 큐에는 이번에 탐색할 템플릿 노드들이 저장
+    # 이번에 탐색할 템플릿 노드들과 다음에 탐색할 템플릿 노드들이 완벽히 같으면 while문 종료
+    while not is_two_queue_same(q, next_q):
+        q = next_q
+
+        # 현재 템플릿들에 대하여 DRC 계산 먼저
+        # 이 때 각 그룹이 현재 템플릿 집합에서 어떤 템플릿을 선택할지 결정
+        # 리턴되어야 할 것: 현재 템플릿 집합을 선택할 때의 mdl, 각 그룹(first group)이 선택한 템플릿
+        # 이게 현재 계산된 것 중 가장 최선이면 각 그룹이 선택한 템플릿을 리턴
+        cur_mdl, candidate_tuple_matching_template_list = get_drc_and_matching_templates(candidate_tuple_list, q, first_grouping, group_count, templates)
+        if cur_mdl < cur_best_mdl:
+            cur_best_mdl = cur_mdl
+            cur_best_candidate_tuple_matching_templates = candidate_tuple_matching_template_list
+
+        # next_q 찾기
+        # visited 는 이미 자식 노드로 내려가지 않는게 결정된 노드들의 집합, 여기 있으면 다시 검사할 필요 없음
+        visited = set()
+        next_q = find_next_q(q, template_tree, template_candidate_tuple_info, visited)
+
+    return cur_best_mdl, cur_best_candidate_tuple_matching_templates
+
+
+# 2nd group의 성분 수가 너무 많을 때 사용하는 메소드
+# 최소 mdl, best template을 리턴해야 함
+def find_best_template_set_by_group_fast(candidate_tuple_list, first_grouping, group_count, templates):
     template_candidate_tuple_info = get_template_matched_candidate_tuple_info(candidate_tuple_list)
     template_tree = generating_template_tree(template_candidate_tuple_info)
-
-    return
-
+    best_mdl, best_candidate_tuple_matching_template_list = find_best_template_by_template_tree(template_tree, first_grouping, group_count, candidate_tuple_list, templates, template_candidate_tuple_info)
+    return best_mdl, best_candidate_tuple_matching_template_list
 
 
 # 첫번째 그룹핑 결과와 두번째 그룹핑 결과를 매개변수로 받아야 함
-def find_best_template_set(first_grouping, second_grouping, second_grouping_log_count, templates, threshold):
+def find_best_template_set(first_grouping, second_grouping, second_grouping_log_count, templates, threshold, using_fast):
     # 지금까지 나온 모든 DRC
     total_drc = 0
     cur_template_set = set()
 
     candidate_tuple_template_match = dict()
 
-
     for group_idx in tqdm(second_grouping):
         candidate_tuple_list = second_grouping[group_idx]
         temp_template_list = [-1] * len(candidate_tuple_list)
 
-        # 그룹의 성분 개수가 많으면 브루트포스 하지 않는 함수 추가 필요
-        cur_min_mdl, cur_best_templates = find_best_template_sub_set_by_bruteforce(0, temp_template_list, float("inf"), None, candidate_tuple_list, first_grouping, templates, second_grouping_log_count[group_idx])
+        # 그룹의 성분 개수가 너무 많으면 그룹핑을 수행하지 않음
+        if len(candidate_tuple_list) > threshold and using_fast:
+            cur_min_mdl, cur_best_templates = find_best_template_set_by_group_fast(candidate_tuple_list, first_grouping, second_grouping_log_count[group_idx], templates)
+        else:
+            cur_min_mdl, cur_best_templates = find_best_template_sub_set_by_bruteforce(0, temp_template_list, float("inf"), None, candidate_tuple_list, first_grouping, templates, second_grouping_log_count[group_idx])
 
         cur_best_template_set = set(cur_best_templates)
         cur_src = (sum(src(templates[idx]) for idx in cur_best_templates)) / len(cur_best_templates)
