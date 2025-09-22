@@ -545,7 +545,6 @@ def densify(x):
     return x
 
 def log_file_tag(log_file):
-    print(log_file)
     if "hadoop" in log_file:
         return "Hadoop"
 
@@ -561,7 +560,7 @@ def make_templates_csv(total_template_occurrence):
     "EventTemplate": total_template_occurrence.keys(),
     "Occurrences": total_template_occurrence.values()
     })
-    templates_log.to_csv('./parsing_result/result_our_templates.csv', index=False)
+    templates_log.to_csv('./parsing_result/result_templates.csv', index=False)
 
 
 def make_struct_csv(log_file, total_log_list, df_log, template_list):
@@ -598,7 +597,7 @@ def make_struct_csv(log_file, total_log_list, df_log, template_list):
             "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
         }, index=None)
 
-    structured_log.to_csv('./parsing_result/result_our_structured.csv', index=False)
+    structured_log.to_csv('./parsing_result/result_structured.csv', index=False)
 
 
 
@@ -1105,11 +1104,11 @@ if __name__=="__main__":
     end_time = time.time()
     execution_time = end_time - start_time  # 실행 시간 계산
     print(f"execution time: {execution_time:.4f}sec\n")
-    print('\033[31m' + f'best mdl cost: {best_mean_src + best_mean_drc}' + '\033[0m')
-    print('\033[31m' + f'best mean src: {best_mean_src}' + '\033[0m')
-    print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
+    # print('\033[31m' + f'best mdl cost: {best_mean_src + best_mean_drc}' + '\033[0m')
+    # print('\033[31m' + f'best mean src: {best_mean_src}' + '\033[0m')
+    # print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
 
-    make_templates_csv(log_file, total_log_list, df_log, template_list, total_template_occurrence)
+    make_templates_csv(total_template_occurrence)
 
 
 
