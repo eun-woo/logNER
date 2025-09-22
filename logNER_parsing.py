@@ -54,21 +54,16 @@ from torch.cuda.amp import autocast
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--log_file', default='log_file/hadoop.log', type=str, required=True)
-
+parser.add_argument('-b', '--batch_size', default=8, type=int)
+parser.add_argument('--model_name', default=None, type=str)
 args = parser.parse_args()
-dataset_name = args.dataset_name
+
 if args.model_name is None:
-    if 'genia' in args.dataset_name:
-        args.model_name = 'dmis-lab/biobert-v1.1'
-    elif args.dataset_name in ('ace2004', 'ace2005'):
-        args.model_name = 'roberta-base'
-    else:
-        args.model_name = 'roberta-base'
+    args.model_name = 'roberta-base'
+        
 
-model_name = args.model_name
-n_head = args.n_head
-debug_mode = args.debug
-
+model_name = 'roberta-base'
+log_file = args.log_file
 ######hyper
 non_ptm_lr_ratio = 100
 schedule = 'linear'
@@ -80,7 +75,7 @@ kernel_size = 3
 
 allow_nested = True
 fitlog.set_log_dir('logs/')
-seed = fitlog.set_rng_seed(rng_seed=args.seed)
+seed = fitlog.set_rng_seed(rng_seed=None)
 os.environ['FASTNLP_GLOBAL_SEED'] = str(seed)
 fitlog.add_hyper(args)
 fitlog.add_hyper_in_file(__file__)
@@ -537,17 +532,8 @@ def find_hier(tokenized_log):
 
 
 # @cache_results('caches/ner_caches.pkl', _refresh=False)
-def get_data(dataset_name, model_name):
-    # 以下是我们自己的数据
-    if dataset_name == 'ace2004':
-        paths = 'preprocess/outputs/ace2004'
-    elif dataset_name == 'ace2005':
-        paths = 'preprocess/outputs/ace2005'
-    elif dataset_name == 'genia':
-        paths = 'preprocess/outputs/genia'
-    
-    else:
-        paths = 'preprocess/outputs/inference'
+def get_data(model_name):
+    paths = 'preprocess/outputs/inference'
     pipe = SpanNerPipe(model_name=model_name)
 
     dl = pipe.process_from_file(paths)
@@ -559,6 +545,7 @@ def densify(x):
     return x
 
 def log_file_tag(log_file):
+    print(log_file)
     if "hadoop" in log_file:
         return "Hadoop"
 
@@ -602,14 +589,14 @@ def make_struct_csv(log_file, total_log_list, df_log, template_list):
         }, index=None)
 
     if "iot" in log_file: 
-    structured_log = pd.DataFrame({
-        "LineId": list(range(1, len(total_log_list)+1)),
-        "Date": df_log["Date"],
-        "Time": df_log["Time"],
-        "Content": total_log_list, 
-        "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-        "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    }, index=None)
+        structured_log = pd.DataFrame({
+            "LineId": list(range(1, len(total_log_list)+1)),
+            "Date": df_log["Date"],
+            "Time": df_log["Time"],
+            "Content": total_log_list, 
+            "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
+            "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
+        }, index=None)
 
     structured_log.to_csv('./parsing_result/result_our_structured.csv', index=False)
 
@@ -680,7 +667,7 @@ if __name__=="__main__":
                 json_data = json.dumps(dic)
                 infer_file.write(json_data + '\n')
 
-        dl, matrix_segs = get_data(dataset_name, model_name) 
+        dl, matrix_segs = get_data(model_name) 
 
         dl.apply_field(densify, field_name='matrix', new_field_name='matrix', progress_bar='Densify')
         ## 디버깅용
