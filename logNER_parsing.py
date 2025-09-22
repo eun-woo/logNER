@@ -67,7 +67,7 @@ parser.add_argument('--n_head', default=4, type=int)
 parser.add_argument('--seed', default=None, type=int)
 parser.add_argument('--accumulation_steps', default=1, type=int)
 parser.add_argument('--debug', action='store_true', help='디버그 모드 (기본값: False)')
-parser.add_argument('--log_file', default='transformed_flush_label6.log', type=str)
+parser.add_argument('--log_file', default='log_file/hadoop.log', type=str, required=True)
 
 args = parser.parse_args()
 dataset_name = args.dataset_name
@@ -575,11 +575,10 @@ def densify(x):
 
 
 # 전체 모델 로드
-model = torch.load("/raid1/eunwoo/CNN_Nested_NER/model_cache/union.pth")
+model = torch.load("./model_cache/union.pth")
 ###################### Load Data ################################################
-log_file = "/raid1/eunwoo/CNN_Nested_NER/Test/data/transformed_flush_multi_sample.log"
-headers, logformat_regex = generate_logformat_regex(benchmark["MultiLog"]["log_format"])
-df_log = log_to_dataframe(log_file, logformat_regex, headers, benchmark["MultiLog"]["log_format"])
+headers, logformat_regex = generate_logformat_regex(benchmark["Hadoop"]["log_format"])
+df_log = log_to_dataframe(log_file, logformat_regex, headers, benchmark["Hadoop"]["log_format"])
 regex_mode = True
 
 ## 길이 제한을 둘 경우
@@ -685,7 +684,7 @@ if __name__=="__main__":
             # input_ids를 사용한 처리
             # print("batch:", batch.keys())
 
-        # dirPath = "/raid1/eunwoo/CNN_Nested_NER/caches"
+        # dirPath = "./caches"
 
         # if os.path.exists(dirPath):
         #     for file in os.scandir(dirPath):
@@ -694,7 +693,7 @@ if __name__=="__main__":
 
 
 
-        # model = torch.load("/raid1/eunwoo/CNN_Nested_NER/model_cache/union.pth")
+        # model = torch.load("./model_cache/union.pth")
         # # 훈련이 끝난 후 바로 추론 수행
         # model.eval()  # 모델을 평가 모드로 전환
         # # 추론할 데이터 준비 (예시 데이터)
@@ -1122,9 +1121,9 @@ if __name__=="__main__":
     end_time = time.time()
     execution_time = end_time - start_time  # 실행 시간 계산
     print(f"execution time: {execution_time:.4f}sec\n")
-    # print('\033[31m' + f'best mdl cost: {best_mean_src + best_mean_drc}' + '\033[0m')
-    # print('\033[31m' + f'best mean src: {best_mean_src}' + '\033[0m')
-    # print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
+    print('\033[31m' + f'best mdl cost: {best_mean_src + best_mean_drc}' + '\033[0m')
+    print('\033[31m' + f'best mean src: {best_mean_src}' + '\033[0m')
+    print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
 
     # template_list = list(map(lambda x: log_template_dict[x], original_logs))
 
@@ -1254,23 +1253,23 @@ if __name__=="__main__":
 
     # # #####################################################
 
-    ############# MultiLog ##################################
-    structured_log = pd.DataFrame({
-        "LineId": list(range(1, len(total_log_list)+1)),
-        "Date": df_log["Date"],
-        "Time": df_log["Time"],
-        "Content": total_log_list, 
-        "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-        "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    }, index=None)
+    # ############# MultiLog ##################################
+    # structured_log = pd.DataFrame({
+    #     "LineId": list(range(1, len(total_log_list)+1)),
+    #     "Date": df_log["Date"],
+    #     "Time": df_log["Time"],
+    #     "Content": total_log_list, 
+    #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
+    #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
+    # }, index=None)
 
-    templates_log = pd.DataFrame({
-        "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], total_template_occurrence)), 
-        "EventTemplate": total_template_occurrence.keys(),
-        "Occurrences": total_template_occurrence.values()
-    })
+    # templates_log = pd.DataFrame({
+    #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], total_template_occurrence)), 
+    #     "EventTemplate": total_template_occurrence.keys(),
+    #     "Occurrences": total_template_occurrence.values()
+    # })
 
-    #####################################################
+    # #####################################################
 
-    # structured_log.to_csv('/raid1/eunwoo/CNN_Nested_NER/parsing_result/Multi2Multi/multi2multi_filtering_our_structured.csv', index=False)
-    # templates_log.to_csv('/raid1/eunwoo/CNN_Nested_NER/parsing_result/Multi2Multi/multi2multi_filtering_our_templates.csv', index=False)
+    # structured_log.to_csv('./parsing_result/Multi2Multi/multi2multi_filtering_our_structured.csv', index=False)
+    # templates_log.to_csv('./parsing_result/Multi2Multi/multi2multi_filtering_our_templates.csv', index=False)
