@@ -39,7 +39,7 @@ def find_best_template_by_log_and_candidate_templates(logs, candidate_templates_
 
     # 로그가 키, 벨류는 딕셔너리
     # 벨류 딕셔너리는 키가 템플릿 인덱스, 벨류가 이 로그가 이 템플릿을 선택했을 때의 DRC
-    log_matching_template_drc_dict = find_log_matching_template_info(wildcard_match_length, drc_each_variable,
+    log_matching_template_drc_dict = find_log_matching_template_info(candidate_templates_info, drc_each_variable,
                                                                      template_template_index_dict, log_count_dict)
 
     # 함수 내에서 플래그 이용해서 그룹핑하지 않는 경우와 하는 경우 관리

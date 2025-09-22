@@ -625,6 +625,8 @@ GROUP_ELEMENT_THRESHOLD = 10
 using_grouping = True
 # drc를 각 변수에 대하여 계산하는지, 모든 변수에 대하여 계산하는지에 대한 플래그
 drc_each_variable = False
+# 그룹의 성분 수가 많을 때, 템플릿 트리를 사용한 경우의 수를 줄이는 방법을 사용할지에 대한 플래그
+using_template_tree = True
 ###################################################################################
 
 if __name__=="__main__":
@@ -1040,7 +1042,7 @@ if __name__=="__main__":
         log_list = [cur_log.strip() for cur_log in log_list]
 
 
-        template_occurrence, log_template_dict = find_best_template_by_log_and_candidate_templates(log_list, wildcard_match_length, GROUP_ELEMENT_THRESHOLD, using_grouping, drc_each_variable)
+        template_occurrence, log_template_dict = find_best_template_by_log_and_candidate_templates(log_list, wildcard_match_length, GROUP_ELEMENT_THRESHOLD, using_grouping, drc_each_variable, using_template_tree)
 
         print(len(log_template_dict.keys()))
         # 너무 general한 템플릿을 제외한 1차로 생성된 템플릿들
