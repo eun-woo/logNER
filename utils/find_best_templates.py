@@ -43,6 +43,73 @@ def find_best_template_sub_set_by_bruteforce(cur_idx, cur_templates, min_mdl, mi
         return min_mdl, min_mdl_templates
 
 
+# 인풋은 candidate_tuple들의 리스트
+# 아웃풋은 어떤 템플릿에 어떤 candidate_tuple들이 매칭되는지 키와 벨류 셋으로 저장된 딕셔너리
+# 집합인 이유는 포함 관계를 판단하기 쉽게 하기 위해서
+def get_template_matched_candidate_tuple_info(candidate_tuple_list):
+    # 템플릿과 템플릿에 매칭되는 candidate_tuple(1차로 그룹핑된 로그들)에 대한 정보를 저장
+    # 이를 통해 템플릿들간의 포함 관계를 알아낼 것
+    template_candidate_tuple_info = dict()
+
+    for candidate_tuple in candidate_tuple_list:
+        for template in candidate_tuple:
+            if template not in template_candidate_tuple_info:
+                template_candidate_tuple_info[template] = set()
+            template_candidate_tuple_info[template].add(candidate_tuple)
+
+    return template_candidate_tuple_info
+
+
+# cur_node: 현재 템플릿이 삽입될 후보 노드, 현재 템플릿을 포함함이 확인됨
+# visited: 한번 삽입된 템플릿에 다시 삽입 안 되도록 하는 visited
+# cur_template: 현재 삽입되는 템플릿
+def insert_into_tree(cur_node, visited, cur_template, tree, template_candidate_tuple_info):
+    child_include = False
+    cur_template_matching_set = template_candidate_tuple_info[cur_template]
+    
+    for child in tree[cur_node]:
+        if child in visited:
+            continue
+        else:
+            visited.add(child)
+            child_matching_set = template_candidate_tuple_info[child]
+            if cur_template_matching_set.issubset(child_matching_set):
+                child_include = True
+                insert_into_tree(child, visited, cur_template, tree, template_candidate_tuple_info)
+
+    # 더 내려갈 곳이 없음
+    if not child_include:
+        tree[cur_node].append(cur_template)
+        tree[cur_template] = list()
+
+    return
+
+
+def generating_template_tree(template_candidate_tuple_info):
+    tree = dict()
+    root = '*'
+    
+    tree[root] = list()
+    
+    # 템플릿에 매칭되는 candidate_tuple 수의 내림차순으로 template 리스트를 정렬
+    template_sorted_by_generality = [template for template in template_candidate_tuple_info]
+    template_sorted_by_generality.sort(reverse=True, key=lambda x : len(template_candidate_tuple_info[x]))
+    
+    # general한 순으로 먼저 트리에 삽입
+    for template in template_sorted_by_generality:
+        visited = set()
+        insert_into_tree(root, visited, template, tree, template_candidate_tuple_info)
+
+    return tree
+
+
+def find_best_template_set_by_group_fast(candidate_tuple_list, first_grouping):
+    template_candidate_tuple_info = get_template_matched_candidate_tuple_info(candidate_tuple_list)
+    template_tree = generating_template_tree(template_candidate_tuple_info)
+
+    return
+
+
 # 첫번째 그룹핑 결과와 두번째 그룹핑 결과를 매개변수로 받아야 함
 def find_best_template_set(first_grouping, second_grouping, second_grouping_log_count, templates, threshold):
     # 지금까지 나온 모든 DRC
@@ -51,7 +118,7 @@ def find_best_template_set(first_grouping, second_grouping, second_grouping_log_
 
     candidate_tuple_template_match = dict()
 
-    for group_idx in second_grouping:
+    for group_idx in tqdm(second_grouping):
         candidate_tuple_list = second_grouping[group_idx]
         temp_template_list = [-1] * len(candidate_tuple_list)
 
