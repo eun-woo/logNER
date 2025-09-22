@@ -53,20 +53,6 @@ import time
 from torch.cuda.amp import autocast
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--lr', default=7e-6, type=float)
-parser.add_argument('-b', '--batch_size', default=8, type=int)
-parser.add_argument('-n', '--n_epochs', default=5, type=int)
-parser.add_argument('--warmup', default=0.1, type=float)
-parser.add_argument('-d', '--dataset_name', default='inference', type=str)
-parser.add_argument('--model_name', default=None, type=str)
-parser.add_argument('--cnn_depth', default=3, type=int)
-parser.add_argument('--cnn_dim', default=200, type=int)
-parser.add_argument('--logit_drop', default=0, type=float)
-parser.add_argument('--biaffine_size', default=400, type=int)
-parser.add_argument('--n_head', default=4, type=int)
-parser.add_argument('--seed', default=None, type=int)
-parser.add_argument('--accumulation_steps', default=1, type=int)
-parser.add_argument('--debug', action='store_true', help='디버그 모드 (기본값: False)')
 parser.add_argument('--log_file', default='log_file/hadoop.log', type=str, required=True)
 
 args = parser.parse_args()
@@ -572,13 +558,68 @@ def densify(x):
     x = x.todense().astype(np.float32)
     return x
 
+def log_file_tag(log_file):
+    if "hadoop" in log_file:
+        return "Hadoop"
+
+    if "spark" in log_file:
+        return "Spark"
+
+    if "iot" in log_file:
+        return "MultiLog"
+
+def make_templates_csv(total_template_occurrence):
+    templates_log = pd.DataFrame({
+    "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], total_template_occurrence)), 
+    "EventTemplate": total_template_occurrence.keys(),
+    "Occurrences": total_template_occurrence.values()
+    })
+    templates_log.to_csv('./parsing_result/result_our_templates.csv', index=False)
+
+
+def make_struct_csv(log_file, total_log_list, df_log, template_list):
+    if "spark" in log_file:
+        structured_log = pd.DataFrame({
+            "LineId": list(range(1, len(total_log_list)+1)),
+            "Level": df_log["Level"],
+            "Component": df_log["Component"],
+            "Content": total_log_list, 
+            "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
+            "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
+        }, index=None)
+    
+    if "hadoop" in log_file:
+        structured_log = pd.DataFrame({
+            "LineId": list(range(1, len(total_log_list)+1)),
+            "Date": df_log["Date"],
+            "Time": df_log["Time"],
+            "Level": df_log["Level"],
+            "Process": df_log["Process"],
+            "Component": df_log["Component"],
+            "Content": total_log_list, 
+            "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
+            "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
+        }, index=None)
+
+    if "iot" in log_file: 
+    structured_log = pd.DataFrame({
+        "LineId": list(range(1, len(total_log_list)+1)),
+        "Date": df_log["Date"],
+        "Time": df_log["Time"],
+        "Content": total_log_list, 
+        "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
+        "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
+    }, index=None)
+
+    structured_log.to_csv('./parsing_result/result_our_structured.csv', index=False)
+
 
 
 # 전체 모델 로드
 model = torch.load("./model_cache/union.pth")
 ###################### Load Data ################################################
-headers, logformat_regex = generate_logformat_regex(benchmark["Hadoop"]["log_format"])
-df_log = log_to_dataframe(log_file, logformat_regex, headers, benchmark["Hadoop"]["log_format"])
+headers, logformat_regex = generate_logformat_regex(benchmark[log_file_tag(log_file)]["log_format"])
+df_log = log_to_dataframe(log_file, logformat_regex, headers, benchmark[log_file_tag(log_file)]["log_format"])
 regex_mode = True
 
 ## 길이 제한을 둘 경우
@@ -1003,10 +1044,6 @@ if __name__=="__main__":
                         wildcard_match_length[candidate_template].append((original_log, []))
 
 
-        # ####################################### pickle 저장 #################################################
-        # with open('/raid1/eunwoo/CNN_Nested_NER/pickle/hadoop_evaluation_switched.pkl', 'wb') as f:
-        #     pickle.dump({'list': original_logs, 'dict': wildcard_match_length}, f)
-        # ####################################################################################################
 
 
 
@@ -1016,13 +1053,6 @@ if __name__=="__main__":
         print("log_list: ", len(log_list))
         log_list = [cur_log.strip() for cur_log in log_list]
 
-        ################################################## 2. pickle 이용시(fast) 사용코드
-        # with open('/raid1/eunwoo/CNN_Nested_NER/pickle/flush_label6_grouping_regex_hier_updated.pkl', 'rb') as f1:
-        #     data = pickle.load(f1)
-        #     wildcard_match_length = data['dict']
-        #     log_list = data['list']
-        #     log_list = [cur_log.strip() for cur_log in log_list]
-        #     original_logs = log_list
 
         template_occurrence, log_template_dict = find_best_template_by_log_and_candidate_templates(log_list, wildcard_match_length, GROUP_ELEMENT_THRESHOLD, using_grouping, drc_each_variable)
 
@@ -1082,39 +1112,6 @@ if __name__=="__main__":
     template_list = list(map(lambda x: total_log_template_dict[x], total_log_list))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # best_mean_src = whole_src / len(set([t for t in template_occurrence]))
     # best_mean_drc = whole_drc / len(log_list)
 
@@ -1125,151 +1122,9 @@ if __name__=="__main__":
     print('\033[31m' + f'best mean src: {best_mean_src}' + '\033[0m')
     print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
 
-    # template_list = list(map(lambda x: log_template_dict[x], original_logs))
-
-    # # ############# BGL ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Label": df_log["Label"],
-    # #     "Timestamp": df_log["Timestamp"],
-    # #     "Date": df_log["Date"],
-    # #     "Node": df_log["Node"],
-    # #     "Time": df_log["Time"],  
-    # #     "NodeRepeat": df_log["NodeRepeat"],
-    # #     "Type": df_log["Type"],
-    # #     "Component": df_log["Component"],
-    # #     "Level": df_log["Level"],
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-    # #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    # # }, index=None)
+    make_templates_csv(log_file, total_log_list, df_log, template_list, total_template_occurrence)
 
 
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-
-    # # #####################################################
 
 
-    # # ############# OpenStack ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Logrecord": df_log["Logrecord"],
-    # #     "Date": df_log["Date"],
-    # #     "Time": df_log["Time"],
-    # #     "Pid": df_log["Pid"],
-    # #     "Level": df_log["Level"],
-    # #     "Component": df_log["Component"],
-    # #     "ADDR": df_log["ADDR"], 
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)),   
-    # #     "EventTemplate": template_list      
-    # # }, index=None)
 
-
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-    # # #####################################################
-
-
-    # # ############## HDFS ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Date": df_log["Date"],
-    # #     "Time": df_log["Time"],
-    # #     "Pid": df_log["Pid"],
-    # #     "Level": df_log["Level"],
-    # #     "Component": df_log["Component"],
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)),   
-    # #     "EventTemplate": template_list      
-    # # }, index=None)
-
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-    # # ######################################################
-
-    # # ############# Cassandra ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-    # #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    # # }, index=None)
-
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-
-    # # #####################################################
-
-    # # ############# Spark ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Level": df_log["Level"],
-    # #     "Component": df_log["Component"],
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-    # #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    # # }, index=None)
-
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-
-    # # #####################################################
-
-    # # ############# Hadoop ##################################
-    # # structured_log = pd.DataFrame({
-    # #     "LineId": list(range(1, len(original_logs)+1)),
-    # #     "Date": df_log["Date"],
-    # #     "Time": df_log["Time"],
-    # #     "Level": df_log["Level"],
-    # #     "Process": df_log["Process"],
-    # #     "Component": df_log["Component"],
-    # #     "Content": original_logs, 
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-    # #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    # # }, index=None)
-
-    # # templates_log = pd.DataFrame({
-    # #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_occurrence)), 
-    # #     "EventTemplate": template_occurrence.keys(),
-    # #     "Occurrences": template_occurrence.values()
-    # # })
-
-    # # #####################################################
-
-    # ############# MultiLog ##################################
-    # structured_log = pd.DataFrame({
-    #     "LineId": list(range(1, len(total_log_list)+1)),
-    #     "Date": df_log["Date"],
-    #     "Time": df_log["Time"],
-    #     "Content": total_log_list, 
-    #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], template_list)), 
-    #     "EventTemplate": template_list       ## log_match_bestTemplate[x].get(x, -1)하면 딕셔너리에 키값이 없어도 error를 반환하지 않고 -1을 반환환
-    # }, index=None)
-
-    # templates_log = pd.DataFrame({
-    #     "EventId": list(map(lambda x: hashlib.md5(x.encode("utf-8")).hexdigest()[0:8], total_template_occurrence)), 
-    #     "EventTemplate": total_template_occurrence.keys(),
-    #     "Occurrences": total_template_occurrence.values()
-    # })
-
-    # #####################################################
-
-    # structured_log.to_csv('./parsing_result/Multi2Multi/multi2multi_filtering_our_structured.csv', index=False)
-    # templates_log.to_csv('./parsing_result/Multi2Multi/multi2multi_filtering_our_templates.csv', index=False)
