@@ -43,6 +43,7 @@ def find_best_template_sub_set_by_bruteforce(cur_idx, cur_templates, min_mdl, mi
         return min_mdl, min_mdl_templates
 
 
+
 # 인풋은 candidate_tuple들의 리스트
 # 아웃풋은 어떤 템플릿에 어떤 candidate_tuple들이 매칭되는지 키와 벨류 셋으로 저장된 딕셔너리
 # 집합인 이유는 포함 관계를 판단하기 쉽게 하기 위해서
@@ -110,6 +111,7 @@ def find_best_template_set_by_group_fast(candidate_tuple_list, first_grouping):
     return
 
 
+
 # 첫번째 그룹핑 결과와 두번째 그룹핑 결과를 매개변수로 받아야 함
 def find_best_template_set(first_grouping, second_grouping, second_grouping_log_count, templates, threshold):
     # 지금까지 나온 모든 DRC
@@ -117,6 +119,7 @@ def find_best_template_set(first_grouping, second_grouping, second_grouping_log_
     cur_template_set = set()
 
     candidate_tuple_template_match = dict()
+
 
     for group_idx in tqdm(second_grouping):
         candidate_tuple_list = second_grouping[group_idx]
