@@ -1,0 +1,262 @@
+EventId,EventTemplate,Occurrences
+9bca4b65,Created MRAppMaster for application .*,69
+7feac570,Executing with tokens :,978
+40723ece,"Kind : .* , Service : , Ident : ( appAttemptId .* keyId : .* )",69
+0594ecc2,Using mapred newApiCommitter.,69
+28a5ee47,OutputCommitter set in config .*,69
+fd1b8d9e,OutputCommitter is .*,69
+46bca898,Registering class .* for class .*,138
+9d66a0a3,Default file system .*,226
+3a03968c,Emitting job history data to the timeline server is not enabled,69
+9ef62c0b,Registering class .* $ Type for class .* $ JobFinishEventHandler,69
+e353c161,loaded properties from .*,978
+6111350e,Scheduled snapshot period at .* second .* .,978
+fc657c96,MRAppMaster metrics system started,69
+8919f23b,Adding job token for .* to jobTokenSecretManager,69
+bebf3fd1,Not uberizing .* because : not enabled ; too many maps ; too much input ;,69
+97118950,Input size for job .* = .* Number of splits = .*,69
+7ecf1fff,Number of reduces for job .* = .*,69
+f03dbdda,"MRAppMaster launching normal , .* , .* job .*",69
+f177d668,Using callQueue class .*,138
+39a52a63,Starting Socket Reader .* for port .*,138
+15199ef0,Adding protocol .* to the server,69
+dab0691c,IPC Server Responder : .*,138
+93e651e4,IPC Server listener on .* : starting,138
+d860da83,Instantiated MRClientService at .* : .*,69
+542cd378,Logging to .* via .*,69
+7f831224,Http request log for .* is not defined,69
+2abc91d1,Added global filter ' safety ' .*,69
+3c6a6d46,Added filter .* to context .*,69
+b52d4de0,adding path spec : .*,138
+04a062dd,Jetty bound to port .*,69
+4fd4a56c,.*,69
+24cb525d,Extract .* to .*,69
+8b3c4f64,Started .*,69
+560204ed,Web app .* started at .*,69
+5ba9445a,Registered webapp guice modules,69
+dd62d2fc,JOB_CREATE .*,69
+9b9549ed,nodeBlacklistingEnabled : .*,69
+7fd590c8,maxTaskFailuresPerNode is .*,69
+70a6ec30,blacklistDisablePercent is .*,69
+b0d12f4a,Connecting to ResourceManager at .* : .*,69
+6356eb80,"maxContainerCapability : < memory : .* , vCores : .* >",69
+1a920940,queue : .*,69
+cda3d414,Upper limit on the thread pool size is .*,69
+f55d490b,.* : .*,903
+275f46e7,.* Transitioned from .* to .*,69
+85a2784f,Processing the event EventType : .*,335
+cc08079c,Resolved .* to .*,3297
+a5d49c11,.* Task Transitioned from .* to .*,684
+3a324c2d,.* TaskAttempt Transitioned from .* to .*,951
+0c49cec6,"mapResourceRequest : < memory : .* , vCores : .* >",65
+73ce2f51,"reduceResourceRequest : < memory : .* , vCores : .* >",69
+4bd99547,"Event Writer setup for JobId : .* , File : hdfs : .*",69
+e61c2007,Before Scheduling : PendingReds : .* ScheduledMaps : .* ScheduledReds : .* AssignedMaps : .* AssignedReds : .* CompletedMaps : .* CompletedReds : .* ContAlloc : .* ContRel : .* HostLocal : .* RackLocal : .*,797
+026b71db,"getResources .* for .* : ask = .* release = .* newContainers = .* finishedContainers = .* resourcelimit = < memory : .* , vCores : .* > knownNMs = .*",899
+260e0795,"Recalculating schedule , headroom = < memory : .* , vCores : .* >",4415
+9a79cb78,Reduce slow start threshold not met. completedMapsForReduceSlowstart .*,3841
+3d123974,Got allocated containers .*,606
+0b170072,Assigned container .* to .*,906
+3dadff39,After Scheduling : PendingReds : .* ScheduledMaps : .* ScheduledReds : .* AssignedMaps : .* AssignedReds : .* CompletedMaps : .* CompletedReds : .* ContAlloc : .* ContRel : .* HostLocal : .* RackLocal : .*,1249
+69bf9370,The .* file on the remote FS is .*,69
+42718e47,Adding .* tokens and .* secret keys for NM use for launching container,69
+a576aadc,Size of containertokens_dob is .*,69
+944f8887,Putting shuffle token in serviceData,69
+172760f5,Processing the event EventType : .* for container .* taskAttempt .*,1744
+3cedfdf5,Launching .*,906
+80b435d9,Opening proxy : .* : .*,1757
+018e722a,Shuffle port returned by ContainerManager for .* : .*,906
+0b4cbf20,TaskAttempt : .* using containerId : .*,1033
+ab8f888a,ATTEMPT_START .*,905
+656282f0,Auth successful for .*,962
+dcaeb205,JVM with ID : .* asked for .* task,902
+1d019a3d,JVM with ID : .* given task : .*,902
+686caac6,Progress of TaskAttempt .* is : .*,45882
+ed6efe4f,Done acknowledgement from .*,605
+b9ad7645,KILLING .*,851
+479ca601,Task succeeded with attempt .*,701
+3764fabf,Num completed Tasks : .*,701
+497ea463,.* we are speculating .*,255
+55a319a5,We launched .* speculations. Sleeping .* milliseconds.,255
+514759f8,Scheduling .* redundant attempt for task .*,194
+ec6b84b4,Reduce slow start threshold reached. Scheduling reduces.,65
+7d0b522d,"completedMapPercent .* totalResourceLimit : < memory : .* , vCores : .* > finalMapResourceLimit : < memory : .* , vCores : .* > finalReduceResourceLimit : < memory : .* , vCores : .* > netScheduledMapResource : < memory : .* , vCores : .* > netScheduledReduceResource : < memory : .* , vCores : .* >",531
+108f8567,Ramping up .*,31
+c133f94c,Received completed container .*,826
+ee8458a1,Diagnostics report from .* : Container killed by the ApplicationMaster.,733
+ff65c706,Assigned to reduce,73
+0c626a89,MapCompletionEvents request from .* startIndex .* maxEvents .*,18140
+a8d378cc,DFSOutputStream ResponseProcessor exception for block .* : .*,14
+e1e5ac19,"Error Recovery for block .* : .* in pipeline .* , .* : .* datanode .*",14
+dd61ea4a,Issuing kill to other attempt .*,182
+4b3120ef,Could not delete hdfs : .*,216
+1ee04543,Socket Reader .* for port .* : readAndProcess from client .* threw exception .*,217
+05b698b9,.* state update from .*,47
+283dbfab,.* given .* go for committing the task output.,47
+9d3dff5f,Commit .* request from .*,47
+53bb6776,Result of canCommit for .* : .*,47
+81e00d20,Calling handler for JobFinishedEvent,47
+dad8f9fa,We are finishing cleanly so this is the last retry,50
+2c2dab3c,Notify .* isAMLastRetry : .*,52
+69d680c5,RMCommunicator notified that shouldUnregistered is : .*,52
+b288d94f,JobHistoryEventHandler notified that forceJobCompletion is true,50
+2784eb31,Calling stop for all the services,52
+82327d55,Stopping JobHistoryEventHandler. Size of the outstanding queue size is .*,52
+f55529d7,Copying .* to .*,94
+c1784254,Copied to done location : hdfs : .*,94
+23bdd343,Moved tmp to done : hdfs : .*,141
+63039132,Stopped JobHistoryEventHandler. .*,48
+9ae352d7,Setting job diagnostics to,48
+731484b6,History url is http : .* : .*,48
+d8bf53b2,Waiting for application to .* successfully unregistered.,45
+63a23417,Final Stats : PendingReds : .* ScheduledMaps : .* ScheduledReds : .* AssignedMaps : .* AssignedReds : .* CompletedMaps : .* CompletedReds : .* ContAlloc : .* ContRel : .* HostLocal : .* RackLocal : .*,48
+523b8974,Deleting staging directory hdfs : .*,45
+050b6918,Stopping server on .*,48
+27a4eb45,Stopping IPC Server listener on .*,48
+8429e6cc,Stopping IPC Server Responder,48
+f495a4dd,TaskHeartbeatHandler thread interrupted,48
+01ae6026,MapTask metrics system started,838
+7e9556a3,"Kind : .* , Service : .* , Ident : .*",909
+25bad32f,Sleeping for .* before retrying again. Got .* now.,909
+08746dbe,.* for child : .*,907
+3e85fab3,".* is deprecated. Instead , use .*",963
+fc4324dd,ProcfsBasedProcessTree currently is supported only on Linux.,905
+f7fb1cea,Using ResourceCalculatorProcessTree : .* @ .*,905
+1fdb3954,Processing split : hdfs : .*,834
+7994f6f8,.* kvi .*,5542
+09a038f0,soft limit at .*,834
+f86cab9e,bufstart = .* ; bufvoid = .*,834
+39b90bb9,kvstart = .* ; length = .*,834
+6e6873b4,Map output collector class = .* $ MapOutputBuffer,834
+895d7761,Spilling map output,5339
+4d26275e,bufstart = .* ; bufend = .* ; bufvoid = .*,5339
+73fc7d9c,kvstart = .* ; kvend = .* ; length = .*,5339
+433a3972,Finished spill .*,5204
+0b5b082c,.* equator .* kv .* kvi .*,4579
+0491d81f,Starting flush of map output,644
+d31d79d7,Merging .* sorted segments,678
+e1fd0688,"Down to the last .* , with .* segments left of total size : .* bytes",678
+c48aca14,Task : .* is done. And is in the process of committing,625
+1968c010,Task ' .* ' done.,616
+18ab5be9,ReduceTask metrics system started,71
+e4f21285,Using ShuffleConsumerPlugin : .*,71
+4b623383,"MergerManager : memoryLimit = .* , maxSingleShuffleLimit = .* , mergeThreshold = .* , ioSortFactor = .* , memToMemMergeOutputsThreshold = .*",71
+78d2085f,.* Thread started : EventFetcher for fetching Map Completion Events,71
+5eb3c747,Assigning .* : .* with .* to .*,305
+f6c7cdaf,assigned .* of .* to .* : .* to .*,469
+f07acfcc,.* : Got .* new map-outputs,414
+ceb7eb09,for url = .* = .* & reduce = .* & map = .* sent hash and received reply,381
+7b34c65e,.* : Shuffling to disk since .* is greater than maxSingleShuffleLimit ( .* ),667
+e33c3dd1,.* about to shuffle output of map .* decomp : .* len : .* to .*,664
+d38b1a25,Read .* bytes from .* for .*,649
+63bbf83a,.* : .* freed by .* in .*,453
+d120a818,EventFetcher is interrupted.. Returning,54
+7fef501a,finalMerge called with .* and .*,56
+4d6a5454,"Merging .* files , .* bytes from disk",56
+4dfcb1e6,"Merging .* segments , .* bytes from memory into reduce",56
+a018cf56,Exception in createBlockOutputStream,30
+ee677b45,Abandoning .* : .*,30
+98b0f88b,Excluding datanode .*,30
+dc0507f4,Task .* is allowed to commit now,48
+51649c50,Saved output of task ' .* ' to hdfs : .*,48
+d872eb07,Releasing unassigned and invalid container Container : .* . RM may have assignment issues,7
+aab6a38d,Container complete event for unknown container id .*,19
+b88326f0,Diagnostics report from .* :,19
+5051a875,Retrying connect to server : .* : .* Already tried .* time .* ; maxRetries = .*,2517
+02171443,Killing taskAttempt : .* because it is running on unusable node : .* : .*,55
+0eba4f27,Diagnostics report from .* : Container released on .* *lost* node,55
+c59f6892,Retrying connect to server : .* : .* Already tried .* time .* ; retry policy is RetryUpToMaximumCountWithFixedSleep .*,1048
+1f3b539d,Stopping MapTask metrics system...,302
+58e2370e,MapTask metrics system stopped.,302
+4ae2b9bb,MapTask metrics system shutdown complete.,302
+0e5c4a3d,Stopping ReduceTask metrics system...,15
+e2e3dd32,ReduceTask metrics system stopped.,15
+17af1c22,ReduceTask metrics system shutdown complete.,15
+ecd97cf9,Cannot assign container Container : .* for .* map as either container memory less than required .* or no pending map tasks .* = .*,12
+17d1edd7,"Communication exception : .* : Failed on local exception : .* : An existing connection was forcibly closed by the remote host ; Host Details : local host is : "" .* "" ; destination host is : "" .* "" : .* ;",44
+52164332,"Failure sending status update : .* : Failed on local exception : .* : An existing connection was forcibly closed by the remote host ; Host Details : local host is : "" .* "" ; destination host is : "" .* "" : .* ;",4
+198f3928,Recovery is enabled. Will try to recover from previous life on best effort basis.,15
+b4a95307,Previous history file is at hdfs : .*,19
+8f924412,"Unable to parse prior job history , aborting recovery",4
+a0380f1e,Could not parse the old history file. Will not have old AMinfos,4
+170daa4d,Ramping down all scheduled reduces : .*,100
+4e57a5a6,Going to preempt .* due to lack of space for maps,100
+6cb7ec38,All maps assigned. Ramping up all remaining reduces : .*,43
+99f1426a,MapCompletionEvents reques,1
+9daf1670,Diagnostics report from .* : AttemptID : .* Timed out after .* secs,7
+8b6ad6b4,Exception in getting events,3
+5df7f745,Read from history task .*,96
+188b56f8,Read completed tasks from history .*,11
+43fc47c1,"Recovering task .* from prior app attempt , status was .*",96
+4ccea502,I/O error constructing remote block reader.,16
+e61cfc32,"Failed to connect to .* for block , .* to deadNodes and continue. .* : Connection timed out : no further information",5
+f5ce4551,Successfully connected to .* for .* : .*,6
+87f49012,"Slow ReadProcessor read fields took .* ; ack : seqno : .* status : .* status : .* downstreamAckTimeNanos : .* , targets : .*",9
+95d5712f,TaskAttempt killed because it ran on unusable node .* : .* AttemptId : .*,25
+5b61fc5c,Merging .* intermediate segments out of .* total of .*,7
+13b75a62,Address change detected. Old : .* : .* New : .* : .*,5795
+56102dce,Failed to renew lease for .* for .* seconds. Will retry shortly ...,5300
+b4ff2357,ERROR IN CONTACTING RM.,480
+662d2b01,Ignoring obsolete output of .* : ' .* ',66
+d1669f70,Communication exception : .* : Call From .* to .* : .* failed on connection exception : .* : Connection timed out : no further information ; For more details see : http : .*,1
+02d47783,Error communicating with RM : Resource Manager doesn ' t recognize AttemptId : .*,2
+19cee14f,JobHistoryEventHandler notified that forceJobCompletion is false,2
+1e3d39f1,Preempting .*,1
+22028c84,Reduce preemption successful .*,1
+db7ee30a,Connection retry failed with .* attempts in .* seconds,1
+0a7b9f14,Failed to connect to .* : .* with .* map outputs,1
+0e00d436,Reporting fetch failure for .* to jobtracker.,1
+0ce32d18,"Failed to connect to .* for block , .* to deadNodes and continue. .* : Connection refused : no further information",1
+591d1697,"IPC Server handler .* on .* , call statusUpdate .* , rpc version = .* , client version = .* , methodsFingerPrint = .* from .* : output error",1
+d94ff5fc,IPC Server handler .* on .* caught an exception,1
+2ef07439,DataStreamer Exception,3
+5d6c874c,Task : .* exited : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,2
+f7ec557d,Diagnostics report from .* : Error : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,4
+451d3a09,Task cleanup failed for attempt .*,2
+8cadf42e,Error writing History Event : .*,4
+6943c1b1,Thread Thread .* threw an Exception.,3
+6a8e4cc0,.* failures on node .*,10
+7e22672a,.* to list of failed maps,10
+e29905ab,Could not contact RM after .* milliseconds.,3
+774ab13a,Error communicating with RM : Could not contact RM after .* milliseconds.,3
+9fb31ae3,Service JobHistoryEventHandler failed in state STOPPED ; cause : .* : Attempt to process .* enum when .* union was expected.,1
+dba39d10,When stopping the service JobHistoryEventHandler : .* : Attempt to process .* enum when .* union was expected.,1
+285dafeb,cleanup failed for container .* : .* : .* : .*,12
+8d466fb5,Diagnostics report from .* : cleanup failed for container .* : .* : .* : .*,12
+625aadcb,Exception while unregistering,3
+9bc7d7cd,Skipping cleaning up the staging dir. assuming AM will .* retried.,3
+98ad1203,Graceful stop failed,3
+3e4feb8d,"Failed to connect to .* for block , .* to deadNodes and continue. .* : No route to host : no further information",10
+e8c89a0f,"Could not obtain .* : .* from any node : .* : No live nodes contain block .* : .* after checking nodes = .* , ignoredNodes = .* No live nodes contain current block Block locations : .* nodes : .* : .* Will get new block locations from namenode and retry...",2
+4667cf59,"DFS chooseDataNode : got # .* IOException , will wait for .* msec.",6
+8a08c061,DFS Read,3
+91041d6f,Exception running child : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,2
+b99c6b8e,Runnning cleanup for the task,6
+e758ffc6,Exception cleaning up : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,2
+11865f5f,"In stop , writing event .*",3
+4422de2f,Communication exception : .* : No Route to Host from .* to .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,10
+02494f76,Process Thread Dump : Communication exception,5
+c556ba33,"Last retry , killing .*",5
+97ade69a,Error closing writer for JobID : .*,1
+ee0b90b4,Found jobId .* to have not been closed. Will close,2
+352dc308,When stopping the service JobHistoryEventHandler : .* : .*,1
+86700843,Service .* failed in state STOPPED ; cause : .* : .*,1
+f1313732,Service JobHistoryEventHandler failed in state STOPPED ; cause : .* : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,1
+d41ff442,When stopping the service JobHistoryEventHandler : .* : .* : No Route to Host from .* to .* : .* failed on socket timeout exception : .* : No route to host : no further information ; For more details see : http : .*,1
+c2420555,Task : .* exited : .* $ DiskErrorException : Could not find any valid local directory for .*,1
+ec4b37a0,Diagnostics report from .* : Error : .* $ DiskErrorException : Could not find any valid local directory for .*,2
+989963ed,Ignoring exception during close for .* $ NewOutputCollector @ .*,1
+02c44425,Exception running child : .* $ DiskErrorException : Could not find any valid local directory for .*,1
+a78dfa88,Task : .* failed due to FSError : .* : There is not enough space on the disk,2
+5a68d722,Diagnostics report from .* : FSError : .* : There is not enough space on the disk,4
+6e9b3fc4,Diagnostics report from .* : Error : .* $ ShuffleError : error in shuffle in .*,2
+b3fdccba,Assigning container Container : .* to fast fail map,8
+a275647a,Assigned from earlierFailedMaps,8
+bf51ff91,Exception running child : .* $ ShuffleError : error in shuffle in .*,2
+b811784b,Task : .* exited : .* : There is not enough space on the disk,6
+23839db7,Diagnostics report from .* : Error : .* : There is not enough space on the disk,12
+a6d3ec06,Task : .* exited : .* : Spill failed,3
+59c845dd,Diagnostics report from .* : Error : .* : Spill failed,6
+5f972578,Task .* failed : .* : .* : There is not enough space on the disk,1
+bc1125f1,Task : .* exited : .* $ ShuffleError : error in shuffle in .*,1
+40e51a7f,Shuffle failed : local error on this node : .*,2

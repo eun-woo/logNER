@@ -1,0 +1,265 @@
+EventTemplate
+Failure sending status update : .* : Failed on local exception : .* : An existing connection was forcibly closed by the remote host ; Host Details : local host is : " .* " ; destination host is : " .* " : .* ;
+Result of canCommit for .*
+.* global filter 'safety' (class=.*)
+Address change detected. Old : .* : .* New : .* : .*
+mapreduce.cluster.local.dir for child: .*
+Task: .* - exited : java.io.IOException: Spill failed
+Received completed container .*
+for url=.*/mapOutput?job=.*=0&map=.* sent hash and received reply
+kvstart = .* kvend = .* length = .*
+adding path spec: /mapreduce/*
+Created MRAppMaster for application .*
+Error writing History Event: .*
+.* Shuffling to disk since .* is greater than maxSingleShuffleLimit .*
+Commit go/no-go request from .*
+ReduceTask metrics system stopped.
+Stopping IPC Server Responder
+We launched .* speculations. Sleeping .* milliseconds.
+Using ShuffleConsumerPlugin: .*
+Skipping cleaning up the staging dir. assuming AM will .* retried.
+Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+Default file system .*
+TaskHeartbeatHandler thread interrupted
+Input size for job .* = .* Number of splits = .*
+Processing the event EventType: .* for container .* taskAttempt .*
+.* TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+Exception running child : org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in .*
+Task .* failed : org.apache.hadoop.fs.FSError: java.io.IOException: There is not enough space on the disk
+"Failed to connect to .* for block, .* to deadNodes and continue. java.net.ConnectException: Connection timed out: no further information"
+Excluding datanode .*
+Merging .* intermediate segments out of .* total of .*
+Calling stop for all the services
+IPC Server listener on .* starting
+"MergerManager: memoryLimit=.*, maxSingleShuffleLimit=.*, mergeThreshold=.*, ioSortFactor=.*, memToMemMergeOutputsThreshold=.*"
+Address change detected. Old: .* New: msra-sa-41:.*
+Exception in createBlockOutputStream
+Using ResourceCalculatorProcessTree : .*
+When stopping the service JobHistoryEventHandler : org.apache.avro.AvroTypeException: Attempt to process .* enum when .* union was expected.
+Registering class .* for class .*
+.* Transitioned from SETUP to RUNNING
+".*:<memory:.*, vCores:.*>"
+Shuffle failed : local error on this node: .*
+Starting Socket Reader #1 for port .*
+bufstart = .* bufvoid = .*
+OutputCommitter set in config null
+Could not contact RM after .* milliseconds.
+TaskAttempt killed because it ran on unusable node .*:.* AttemptId:.*
+DefaultSpeculator.addSpeculativeAttempt -- we are speculating .*
+Reduce slow start threshold not met. completedMapsForReduceSlowstart .*
+.* TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+Diagnostics report from .* Container released on .* *lost* node
+.* TaskAttempt Transitioned from KILL_CONTAINER_CLEANUP to KILL_TASK_CLEANUP
+Jetty bound to port .*
+"Failed to connect to .* for block, .* to deadNodes and continue. java.net.ConnectException: Connection refused: no further information"
+Upper limit on the thread pool size is .*
+IPC Server Responder: starting
+Exception running child : org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for .*
+Resolved .* to /default-rack
+queue: default
+Stopping JobHistoryEventHandler. Size of the outstanding queue size is .*
+.* Got .* new map-outputs
+Stopping IPC Server listener on .*
+Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+bufstart = .* bufend = .* bufvoid = .*
+Failed to connect to MININT-FNANLI5.fareast.corp.microsoft.com:.* with .* map outputs
+"Cannot assign container Container: [ContainerId: .* NodeId: MININT-FNANLI5.fareast.corp.microsoft.com:.*, NodeHttpAddress: MININT-FNANLI5.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] for .* map as either container memory less than required <memory:.*, vCores:.*> or no pending map tasks - maps.isEmpty=.*"
+"Down to the last merge-pass, with .* segments left of total size: .* bytes"
+Task: .* - exited : org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for .*
+Opening proxy : MSRA-SA-39.fareast.corp.microsoft.com:.*
+Thread .* threw an Exception.
+.* Task Transitioned from SCHEDULED to RUNNING
+Task: .* - exited : org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in .*
+"Cannot assign container Container: [ContainerId: .* NodeId: 04DN8IQ.fareast.corp.microsoft.com:.*, NodeHttpAddress: 04DN8IQ.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] for .* map as either container memory less than required <memory:.*, vCores:.*> or no pending map tasks - maps.isEmpty=.*"
+Assigned container .* to .*
+"Kind: mapreduce.job, Service: .* Ident: .*"
+Error communicating with RM: Resource Manager doesn't recognize AttemptId: .*
+Process Thread Dump: Communication exception
+mapreduce.task.io.sort.mb: .*
+Killing taskAttempt:.* because it is running on unusable node:.*:.*
+Task: .* - exited : java.net.NoRouteToHostException: No Route to Host from .* to msra-sa-41:.* failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: .*
+Stopping .* metrics system...
+finalMerge called with .* in-memory map-outputs and .* on-disk map-outputs
+Sleeping for .* before retrying again. Got null now.
+"Cannot assign container Container: [ContainerId: .* NodeId: MSRA-SA-39.fareast.corp.microsoft.com:.*, NodeHttpAddress: MSRA-SA-39.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] for .* map as either container memory less than required <memory:.*, vCores:.*> or no pending map tasks - maps.isEmpty=.*"
+Emitting job history data to the timeline server is not enabled
+Diagnostics report from .*
+Shuffle port returned by ContainerManager for .* : .*
+JVM with ID : .* asked for .* task
+Error closing writer for JobID: .*
+.* failures on node .*
+Notify RMCommunicator isAMLastRetry: true
+Adding #0 tokens and #1 secret keys for NM use for launching container
+.* Transitioned from NEW to INITED
+Event Writer setup for JobId: .* File: .*
+All maps assigned. Ramping up all remaining reduces:.*
+nodeBlacklistingEnabled:true
+Read from history task .*
+Container complete event for unknown container id .*
+.*
+Exception running child : java.net.NoRouteToHostException: No Route to Host from .* to msra-sa-41:.* failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: .*
+"Recalculating schedule, headroom=<memory:.*, vCores:.*>"
+Registered webapp guice modules
+"completedMapPercent .* totalResourceLimit:<memory:.*, vCores:.*> finalMapResourceLimit:<memory:.*, vCores:.*> finalReduceResourceLimit:<memory:.*, vCores:.*> netScheduledMapResource:<memory:.*, vCores:.*> netScheduledReduceResource:<memory:.*, vCores:.*>"
+.* Transitioned from INITED to SETUP
+MapCompletionEvents request from .* startIndex .* maxEvents .*
+History url is .*
+"Merging .* files, .* bytes from disk"
+"getResources() for .* ask=.* release= .* newContainers=.* finishedContainers=.* resourcelimit=<memory:.*, vCores:.*> knownNMs=.*"
+"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: .* destination host is: "".*"":.*;"
+"Merging .* segments, .* bytes from memory into reduce"
+Graceful stop failed
+.* is .*
+Notify .* isAMLastRetry: true
+.* Task Transitioned from .* to SUCCEEDED
+ReduceTask metrics system shutdown complete.
+Ramping up .*
+"Releasing unassigned and invalid container Container: [ContainerId: .* NodeId: MININT-75DGDAM1.fareast.corp.microsoft.com:.*, NodeHttpAddress: MININT-75DGDAM1.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ]. RM may have assignment issues"
+"session.id is deprecated. Instead, use dfs.metrics.session-id"
+Could not delete .*
+Opening proxy : .*:.*
+Connecting to ResourceManager at .*
+Web app /mapreduce started at .*
+Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+"Releasing unassigned and invalid container Container: [ContainerId: .* NodeId: .*, NodeHttpAddress: .*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ]. RM may have assignment issues"
+"Assigning container Container: [ContainerId: .* NodeId: MSRA-SA-41.fareast.corp.microsoft.com:.*, NodeHttpAddress: MSRA-SA-41.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] to fast fail map"
+.* filter AM_PROXY_FILTER (class=.*) to context .*
+JobHistoryEventHandler notified that forceJobCompletion is false
+"MRAppMaster launching normal, non-uberized, multi-container job .*"
+Executing with tokens:
+Error communicating with RM: Could not contact RM after .* milliseconds.
+Task .* done.
+"Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: .* cluster_timestamp: .* } attemptId: .* } keyId: .*"
+.* Transitioned from COMMITTING to SUCCEEDED
+soft limit at .*
+"Retrying connect to server: msra-sa-41:8030. Already tried .* time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=.*, sleepTime=.* MILLISECONDS)"
+Exception while unregistering
+assigned .* of .* to .*:.* to .*
+Task cleanup failed for attempt .*
+Notify .* isAMLastRetry: false
+Socket Reader #1 for port .* readAndProcess from client .* threw exception [java.io.IOException: An existing connection was forcibly closed by the remote host]
+Extract .* to .*
+Failed to renew lease for .* for .* seconds. Will retry shortly ...
+Scheduling .* redundant attempt for task .*
+KILLING .*
+Reduce slow start threshold reached. Scheduling reduces.
+Going to preempt .* due to lack of space for maps
+Got allocated containers .*
+"Assigning container Container: [ContainerId: .* NodeId: 04DN8IQ.fareast.corp.microsoft.com:.*, NodeHttpAddress: 04DN8IQ.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] to fast fail map"
+DataStreamer Exception
+JVM with ID: .* given task: .*
+Could not parse the old history file. Will not have old AMinfos
+(EQUATOR) .* kvi .*
+Saved output of task .* to .*
+Adding job token for .* to jobTokenSecretManager
+.* .*
+Scheduled snapshot period at .* second(s).
+Stopping server on .*
+cleanup failed for container .* : java.lang.IllegalArgumentException: java.net.UnknownHostException: .*
+DFSOutputStream ResponseProcessor exception for block .*
+"Retrying connect to server: .* Already tried .* time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=.*, sleepTime=.* MILLISECONDS)"
+EventFetcher is interrupted.. Returning
+"Unable to parse prior job history, aborting recovery"
+Could not obtain .* from any node: java.io.IOException: No live nodes contain block .* after checking nodes = .* ignoredNodes = null No live nodes contain current block Block locations: .* nodes: .* Will get new block locations from namenode and retry...
+"DFS chooseDataNode: got # .* IOException, will wait for .* msec."
+Using callQueue class java.util.concurrent.LinkedBlockingQueue
+Communication exception: java.net.NoRouteToHostException: No Route to Host from .* to .* failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: .*
+Not uberizing .* because: not enabled; too many maps; too much input;
+Diagnostics report from .* Error: java.io.IOException: Spill failed
+"Cannot assign container Container: [ContainerId: .* NodeId: MININT-75DGDAM1.fareast.corp.microsoft.com:.*, NodeHttpAddress: MININT-75DGDAM1.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ] for .* map as either container memory less than required <memory:.*, vCores:.*> or no pending map tasks - maps.isEmpty=.*"
+Putting shuffle token in serviceData
+.* to list of failed maps
+Size of containertokens_dob is .*
+Setting job diagnostics to
+Num completed Tasks: .*
+kvstart = .* length = .*
+Runnning cleanup for the task
+Read completed tasks from history .*
+Moved tmp to done: .*
+Started .*
+jetty-6.1.26
+JobHistoryEventHandler notified that forceJobCompletion is true
+Merging .* sorted segments
+.* Transitioned from RUNNING to .*
+.* Scheduling: PendingReds:.* ScheduledMaps:.* ScheduledReds:.* AssignedMaps:.* AssignedReds:.* CompletedMaps:.* CompletedReds:.* ContAlloc:.* ContRel:.* HostLocal:.* RackLocal:.*
+Calling handler for JobFinishedEvent
+.* about to shuffle output of map .* decomp: .* len: .* to DISK
+Connection retry failed with .* attempts in .* seconds
+Http request log for http.requests.mapreduce is not defined
+TaskAttempt: .* using containerId: .* on NM: [.*:.*]
+.* TaskAttempt Transitioned from ASSIGNED to RUNNING
+RMCommunicator notified that shouldUnregistered is: true
+"Recovering task .* from prior app attempt, status was SUCCEEDED"
+Copying .* to .*
+Task:.* is done. And is in the process of committing
+"Releasing unassigned and invalid container Container: [ContainerId: .* NodeId: MININT-FNANLI5.fareast.corp.microsoft.com:.*, NodeHttpAddress: MININT-FNANLI5.fareast.corp.microsoft.com:.*, Resource: <memory:.*, vCores:.*>, Priority: .* Token: Token { kind: ContainerToken, service: .* }, ]. RM may have assignment issues"
+.* Thread started: EventFetcher for fetching Map Completion Events
+Copied to done location : hdfs : .*
+Retrying connect to server: .* Already tried .* time(s); maxRetries=.*
+ERROR IN CONTACTING RM.
+We are finishing cleanly so this is the last retry
+"mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords"
+Progress of TaskAttempt .* is : .*
+Done acknowledgement from .*
+.* metrics system started
+Abandoning .*
+Ignoring obsolete output of .* map-task: .*
+"In stop, writing event .*"
+Ramping down all scheduled reduces:.*
+OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+(RESET) equator .* kv .* kvi .*
+Previous history file is at .*
+Processing split: .*
+adding path spec: .*
+Processing the event EventType: .*
+Found jobId .* to have not been closed. Will close
+Starting flush of map output
+Task succeeded with attempt .*
+Recovery is enabled. Will try to recover from previous life on best effort basis.
+Task: .* - exited : java.io.IOException: There is not enough space on the disk
+.*:.* freed by .* in .*
+Final Stats: PendingReds:.* ScheduledMaps:.* ScheduledReds:.* AssignedMaps:.* AssignedReds:.* CompletedMaps:.* CompletedReds:.* ContAlloc:.* ContRel:.* HostLocal:.* RackLocal:.*
+Commit-pending state update from .*
+The .* file on the remote FS is .*
+loaded properties from hadoop-metrics2.properties
+Assigning .*:.* with .* to .*
+Issuing kill to other attempt .*
+Assigned to reduce
+.* TaskAttempt Transitioned from COMMIT_PENDING to SUCCESS_CONTAINER_CLEANUP
+Using mapred newApiCommitter.
+Slow ReadProcessor read fields took .* (threshold=.*); ack: seqno: .* status: SUCCESS status: ERROR downstreamAckTimeNanos: .* targets: .*
+I/O error constructing remote block reader.
+Read .* bytes from map-output for .*
+Instantiated MRClientService at .*
+Error Recovery for block .* in pipeline .* datanode .*
+Task: .* - failed due to FSError: java.io.IOException: There is not enough space on the disk
+When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from .* to msra-sa-41:.* failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: .*
+"Failed to connect to .* for block, .* to deadNodes and continue. java.net.NoRouteToHostException: No route to host: no further information"
+Deleting staging directory .*
+RMCommunicator notified that shouldUnregistered is: false
+"Last retry, killing .*"
+.* given .* go for committing the task output.
+.* TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+Processing the event EventType: CONTAINER_DEALLOCATE
+Task .* is allowed to commit now
+When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+Spilling map output
+yarn.client.max-cached-nodemanagers-proxies : .*
+Notify JHEH isAMLastRetry: true
+DFS Read
+.* Task Transitioned from SUCCEEDED to SCHEDULED
+.* TaskAttempt Transitioned from .* to .*
+Diagnostics report from .* Error: java.io.IOException: There is not enough space on the disk
+ProcfsBasedProcessTree currently is supported only on Linux.
+Exception in getting events
+"maxContainerCapability: <memory:.*, vCores:.*>"
+MapTask metrics system .*
+Assigned from earlierFailedMaps
+Number of reduces for job .* = .*
+Stopped JobHistoryEventHandler. super.stop()
+"IPC Server handler .* on .* call .* rpc version=.*, client version=.*, methodsFingerPrint=.* from .* Call#68 Retry#0: output error"
+Successfully connected to .* for .*
+Auth successful for .* (auth:SIMPLE)
+Finished spill .*
+Waiting for application to .* successfully unregistered.
+Diagnostics report from .* Container killed by the ApplicationMaster.
