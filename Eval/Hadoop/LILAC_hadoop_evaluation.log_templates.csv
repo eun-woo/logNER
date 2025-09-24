@@ -1,0 +1,915 @@
+EventId,EventTemplate
+E1,Created MRAppMaster for application <*>
+E2,Executing with tokens:
+E3,"Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: <*> cluster_timestamp: <*> } attemptId: <*> } keyId: <*>)"
+E4,Using mapred newApiCommitter.
+E5,OutputCommitter set in config null
+E6,OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+E7,Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+E8,Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+E9,Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+E10,Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+E11,Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+E12,Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+E13,Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+E14,Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+E15,Default file system [hdfs://msra-sa-<*>]
+E16,Emitting job history data to the timeline server is not enabled
+E17,Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+E18,loaded properties from hadoop-metrics2.properties
+E19,Scheduled snapshot period at <*> second(s).
+E20,MRAppMaster metrics system started
+E21,Adding job token for <*> to jobTokenSecretManager
+E22,Not uberizing <*> because: not enabled; too many maps; too much input;
+E23,Input size for job <*> = <*>. Number of splits = <*>
+E24,Number of reduces for job <*> = <*>
+E25,<*> Transitioned from NEW to INITED
+E26,"MRAppMaster launching normal, non-uberized, multi-container job <*>."
+E27,Using callQueue class java.util.concurrent.LinkedBlockingQueue
+E28,Starting Socket Reader <*> for port <*>
+E29,Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+E30,IPC Server Responder: starting
+E31,IPC Server listener on <*>: starting
+E32,Instantiated MRClientService at MSRA-SA-<*>.fareast.corp.microsoft.com/<*>
+E33,Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+E34,Http request log for http.requests.mapreduce is not defined
+E35,Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+E36,Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+E37,Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+E38,adding path spec: /mapreduce/*
+E39,adding path spec: /ws/*
+E40,Jetty bound to port <*>
+E41,jetty-<*>
+E42,Extract jar:file:/D:/hadoop-<*>-localbox/share/hadoop/yarn/hadoop-yarn-common-<*>-SNAPSHOT.jar!/webapps/mapreduce to C:<*>
+E43,Started HttpServer2$SelectChannelConnectorWithSafeStartup@<*>
+E44,Web app /mapreduce started at <*>
+E45,Registered webapp guice modules
+E46,JOB_CREATE <*>
+E47,nodeBlacklistingEnabled:true
+E48,maxTaskFailuresPerNode is <*>
+E49,blacklistDisablePercent is <*>
+E50,Connecting to ResourceManager at MSRA-SA-<*>
+E51,"maxContainerCapability: <memory:<*>, vCores:<*>"
+E52,queue: default
+E53,Upper limit on the thread pool size is <*>
+E54,yarn.client.max-cached-nodemanagers-proxies : <*>
+E55,<*> Transitioned from INITED to SETUP
+E56,Processing the event EventType: JOB_SETUP
+E57,<*> Transitioned from SETUP to RUNNING
+E58,Resolved MSRA-SA-<*>.fareast.corp.microsoft.com to /default-rack
+E59,<*> Task Transitioned from NEW to SCHEDULED
+E60,<*> TaskAttempt Transitioned from NEW to UNASSIGNED
+E61,"mapResourceRequest:<memory:<*>, vCores:<*>"
+E62,"reduceResourceRequest:<memory:<*>, vCores:<*>"
+E63,"Event Writer setup for JobId: <*>, File: hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job_<*>_<*>_<*>.jhist"
+E64,Before Scheduling: PendingReds:<*> ScheduledMaps:<*> ScheduledReds:<*> AssignedMaps:<*> AssignedReds:<*> CompletedMaps:<*> CompletedReds:<*> ContAlloc:<*> ContRel:<*> HostLocal:<*> RackLocal:<*>
+E65,"getResources() for <*>: ask=<*> release= <*> newContainers=<*> finishedContainers=<*> resourcelimit=<memory:<*>, vCores:<*> knownNMs=<*>"
+E66,"Recalculating schedule, headroom=<memory:<*>, vCores:<*>"
+E67,Reduce slow start threshold not met. completedMapsForReduceSlowstart <*>
+E68,Got allocated containers <*>
+E69,Assigned container <*> to <*>
+E70,After Scheduling: PendingReds:<*> ScheduledMaps:<*> ScheduledReds:<*> AssignedMaps:<*> AssignedReds:<*> CompletedMaps:<*> CompletedReds:<*> ContAlloc:<*> ContRel:<*> HostLocal:<*> RackLocal:<*>
+E71,The job-jar file on the remote FS is hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job.jar
+E72,The job-conf file on the remote FS is /tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job.xml
+E73,Adding <*> tokens and <*> secret keys for NM use for launching container
+E74,Size of containertokens_dob is <*>
+E75,Putting shuffle token in serviceData
+E76,<*> TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+E77,Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container <*> taskAttempt <*>
+E78,Launching <*>
+E79,Opening proxy : MSRA-SA-<*>.fareast.corp.microsoft.com:<*>
+E80,Shuffle port returned by ContainerManager for <*> : <*>
+E81,TaskAttempt: [<*>] using containerId: [<*> on NM: [MSRA-SA-<*>.fareast.corp.microsoft.com:<*>]
+E82,<*> TaskAttempt Transitioned from ASSIGNED to RUNNING
+E83,ATTEMPT_START <*>
+E84,<*> Task Transitioned from SCHEDULED to RUNNING
+E85,Auth successful for <*> (auth:SIMPLE)
+E86,JVM with ID : <*> asked for a task
+E87,JVM with ID: <*> given task: <*>
+E88,Progress of TaskAttempt <*> is : <*>
+E89,Done acknowledgement from <*>
+E90,<*> TaskAttempt Transitioned from RUNNING to SUCCESS_CONTAINER_CLEANUP
+E91,Processing the event EventType: CONTAINER_REMOTE_CLEANUP for container <*> taskAttempt <*>
+E92,KILLING <*>
+E93,<*> TaskAttempt Transitioned from SUCCESS_CONTAINER_CLEANUP to SUCCEEDED
+E94,Task succeeded with attempt <*>
+E95,<*> Task Transitioned from RUNNING to SUCCEEDED
+E96,Num completed Tasks: <*>
+E97,DefaultSpeculator.addSpeculativeAttempt -- we are speculating <*>
+E98,We launched <*> speculations. Sleeping <*> milliseconds.
+E99,Scheduling a redundant attempt for task <*>
+E100,Reduce slow start threshold reached. Scheduling reduces.
+E101,"completedMapPercent <*> totalResourceLimit:<memory:<*>, vCores:<*> finalMapResourceLimit:<memory:<*>, vCores:<*> finalReduceResourceLimit:<memory:<*>, vCores:<*> netScheduledMapResource:<memory:<*>, vCores:<*> netScheduledReduceResource:<memory:<*>, vCores:<*>"
+E102,Ramping up <*>
+E103,Received completed container <*>
+E104,Diagnostics report from <*>: Container killed by the ApplicationMaster.
+E105,Assigned to reduce
+E106,MapCompletionEvents request from <*>. startIndex <*> maxEvents <*>
+E107,DFSOutputStream ResponseProcessor exception for block BP-<*>-<*>
+E108,"Error Recovery for block BP-<*>-<*> in pipeline <*>, <*>: bad datanode <*>"
+E109,Issuing kill to other attempt <*>
+E110,<*> TaskAttempt Transitioned from RUNNING to KILL_CONTAINER_CLEANUP
+E111,<*> TaskAttempt Transitioned from KILL_CONTAINER_CLEANUP to KILL_TASK_CLEANUP
+E112,Processing the event EventType: TASK_ABORT
+E113,Could not delete hdfs://msra-sa-<*>/pageout/out1/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E114,<*> TaskAttempt Transitioned from KILL_TASK_CLEANUP to KILLED
+E115,Socket Reader <*> for port <*>: readAndProcess from client <*> threw exception [java.io.IOException: An existing connection was forcibly closed by the remote host]
+E116,Commit-pending state update from <*>
+E117,<*> TaskAttempt Transitioned from RUNNING to COMMIT_PENDING
+E118,<*> given a go for committing the task output.
+E119,Commit go/no-go request from <*>
+E120,Result of canCommit for <*>:true
+E121,<*> TaskAttempt Transitioned from COMMIT_PENDING to SUCCESS_CONTAINER_CLEANUP
+E122,<*> Transitioned from RUNNING to COMMITTING
+E123,Processing the event EventType: JOB_COMMIT
+E124,Calling handler for JobFinishedEvent
+E125,<*> Transitioned from COMMITTING to SUCCEEDED
+E126,We are finishing cleanly so this is the last retry
+E127,Notify RMCommunicator isAMLastRetry: true
+E128,RMCommunicator notified that shouldUnregistered is: true
+E129,Notify JHEH isAMLastRetry: true
+E130,JobHistoryEventHandler notified that forceJobCompletion is true
+E131,Calling stop for all the services
+E132,Stopping JobHistoryEventHandler. Size of the outstanding queue size is <*>
+E133,Copying hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job_<*>_<*>_<*>.jhist to hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging
+E134,Copied to done location: hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging
+E135,Copying hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job_<*>_<*>_<*>_conf.xml to hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging
+E136,Moved tmp to done: hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging
+E137,Stopped JobHistoryEventHandler. super.stop()
+E138,Setting job diagnostics to
+E139,History url is http://MSRA-SA-<*>.fareast.corp.microsoft.com:<*>/jobhistory/job/job_<*>_<*>
+E140,Waiting for application to be successfully unregistered.
+E141,Final Stats: PendingReds:<*> ScheduledMaps:<*> ScheduledReds:<*> AssignedMaps:<*> AssignedReds:<*> CompletedMaps:<*> CompletedReds:<*> ContAlloc:<*> ContRel:<*> HostLocal:<*> RackLocal:<*>
+E142,Deleting staging directory hdfs://msra-sa-<*> /tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>
+E143,Stopping server on <*>
+E144,Stopping IPC Server listener on <*>
+E145,Stopping IPC Server Responder
+E146,TaskHeartbeatHandler thread interrupted
+E147,MapTask metrics system started
+E148,"Kind: mapreduce.job, Service: <*>, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@46afb4f8)"
+E149,Sleeping for 0ms before retrying again. Got null now.
+E150,mapreduce.cluster.local.dir for child: /tmp/hadoop-msrabi/nm-local-dir/usercache/msrabi/appcache/application_<*>_<*>
+E151,"session.id is deprecated. Instead, use dfs.metrics.session-id"
+E152,ProcfsBasedProcessTree currently is supported only on Linux.
+E153,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1153ed81
+E154,Processing split: hdfs://msra-sa-<*>/pageinput2.txt:<*>+<*>
+E155,(EQUATOR) <*> kvi <*>(<*>)
+E156,mapreduce.task.io.sort.mb: <*>
+E157,soft limit at <*>
+E158,bufstart = <*>; bufvoid = <*>
+E159,kvstart = <*>; length = <*>
+E160,Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+E161,Spilling map output
+E162,Finished spill <*>
+E163,(RESET) equator <*> kv <*>(<*>) kvi <*>(<*>)
+E164,Starting flush of map output
+E165,Merging <*> sorted segments
+E166,"Down to the last merge-pass, with <*> segments left of total size: <*> bytes"
+E167,Task:<*> is done. And is in the process of committing
+E168,Task <*> done.
+E169,"Kind: mapreduce.job, Service: <*>, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@666adef3)"
+E170,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@93fcf10
+E171,"Kind: mapreduce.job, Service: <*>, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@56b87a95)"
+E172,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@56a9c13f
+E173,"Kind: mapreduce.job, Service: <*>, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@<*>)"
+E174,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@4f38d8fa
+E175,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@2c93d898
+E176,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@236494a1
+E177,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@db57326
+E178,ReduceTask metrics system started
+E179,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1e30bbc5
+E180,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@35c7d3d3
+E181,"MergerManager: memoryLimit=<*>, maxSingleShuffleLimit=<*>, mergeThreshold=<*>, ioSortFactor=<*>, memToMemMergeOutputsThreshold=<*>"
+E182,<*> Thread started: EventFetcher for fetching Map Completion Events
+E183,Assigning MSRA-SA-<*>.fareast.corp.microsoft.com:<*> with <*> to fetcher#<*>
+E184,assigned <*> of <*> to MSRA-SA-<*>.fareast.corp.microsoft.com:<*> to fetcher#<*>
+E185,<*>: Got <*> new map-outputs
+E186,for url=<*>/mapOutput?job=<*>&reduce=<*>&map=<*> sent hash and received reply
+E187,<*>: Shuffling to disk since <*> is greater than maxSingleShuffleLimit (<*>)
+E188,fetcher#<*> about to shuffle output of map <*> decomp: <*> len: <*> to DISK
+E189,Read <*> bytes from map-output for <*>
+E190,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 827ms
+E191,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1265ms
+E192,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2177ms
+E193,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2165ms
+E194,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2122ms
+E195,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1912ms
+E196,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4506ms
+E197,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 692ms
+E198,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1224ms
+E199,EventFetcher is interrupted.. Returning
+E200,finalMerge called with <*> in-memory map-outputs and <*> on-disk map-outputs
+E201,"Merging <*> files, <*> bytes from disk"
+E202,"Merging <*> segments, <*> bytes from memory into reduce"
+E203,"mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords"
+E204,Exception in createBlockOutputStream
+E205,Abandoning BP-<*>-<*>
+E206,Excluding datanode <*>
+E207,Task <*> is allowed to commit now
+E208,Saved output of task <*> to hdfs://msra-sa-<*>/pageout/out1/_temporary/<*>/task_<*>_<*>_r_<*>
+E209,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@3c33282e
+E210,Instantiated MRClientService at MININT-FNANLI5.fareast.corp.microsoft.com/<*>
+E211,Connecting to ResourceManager at msra-sa-<*>
+E212,Resolved MININT-FNANLI5.fareast.corp.microsoft.com to /default-rack
+E213,Opening proxy : MININT-FNANLI5.fareast.corp.microsoft.com:<*>
+E214,TaskAttempt: [<*>] using containerId: [<*> on NM: [MININT-FNANLI5.fareast.corp.microsoft.com:<*>]
+E215,Resolved 04DN8IQ.fareast.corp.microsoft.com to /default-rack
+E216,Opening proxy : 04DN8IQ.fareast.corp.microsoft.com:<*>
+E217,TaskAttempt: [<*>] using containerId: [<*> on NM: [04DN8IQ.fareast.corp.microsoft.com:<*>]
+E218,Resolved MININT-75DGDAM1.fareast.corp.microsoft.com to /default-rack
+E219,Opening proxy : MININT-75DGDAM1.fareast.corp.microsoft.com:<*>
+E220,TaskAttempt: [<*>] using containerId: [<*> on NM: [MININT-75DGDAM1.fareast.corp.microsoft.com:<*>]
+E221,"Releasing unassigned and invalid container Container: [ContainerId: <*>, NodeId: MININT-75DGDAM1.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MININT-75DGDAM1.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ]. RM may have assignment issues"
+E222,Container complete event for unknown container id <*>
+E223,Diagnostics report from <*>:
+E224,Retrying connect to server: 04DN8IQ.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E225,Could not delete hdfs://msra-sa-<*>/pageout/out2/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E226,Killing taskAttempt:<*> because it is running on unusable node:04DN8IQ.fareast.corp.microsoft.com:<*>
+E227,"Retrying connect to server: 04DN8IQ.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E228,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@4e61e6a8
+E229,Stopping MapTask metrics system...
+E230,MapTask metrics system stopped.
+E231,MapTask metrics system shutdown complete.
+E232,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@82aab2f
+E233,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@37a8d4d2
+E234,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@3c28dd37
+E235,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@39f91c0
+E236,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@3aa191be
+E237,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1a3b7d72
+E238,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5180dc79
+E239,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@2d2c438a
+E240,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1679c647
+E241,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1fcaf332
+E242,Assigning MININT-75DGDAM1.fareast.corp.microsoft.com:<*> with <*> to fetcher#<*>
+E243,assigned <*> of <*> to MININT-75DGDAM1.fareast.corp.microsoft.com:<*> to fetcher#<*>
+E244,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3557ms
+E245,Assigning MININT-FNANLI5.fareast.corp.microsoft.com:<*> with <*> to fetcher#<*>
+E246,assigned <*> of <*> to MININT-FNANLI5.fareast.corp.microsoft.com:<*> to fetcher#<*>
+E247,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 49273ms
+E248,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 20853ms
+E249,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 23668ms
+E250,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 559ms
+E251,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 619ms
+E252,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 55428ms
+E253,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 68950ms
+E254,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 126936ms
+E255,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 50788ms
+E256,Saved output of task <*> to hdfs://msra-sa-<*>/pageout/out2/_temporary/<*>/task_<*>_<*>_r_<*>
+E257,Stopping ReduceTask metrics system...
+E258,ReduceTask metrics system stopped.
+E259,ReduceTask metrics system shutdown complete.
+E260,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@f810fd9
+E261,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@56ca138e
+E262,Instantiated MRClientService at 04DN8IQ.fareast.corp.microsoft.com/<*>
+E263,"Releasing unassigned and invalid container Container: [ContainerId: <*>, NodeId: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ]. RM may have assignment issues"
+E264,"Releasing unassigned and invalid container Container: [ContainerId: <*>, NodeId: 04DN8IQ.fareast.corp.microsoft.com:<*>, NodeHttpAddress: 04DN8IQ.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ]. RM may have assignment issues"
+E265,"Cannot assign container Container: [ContainerId: <*>, NodeId: MININT-75DGDAM1.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MININT-75DGDAM1.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] for a map as either container memory less than required <memory:<*>, vCores:<*> or no pending map tasks - maps.isEmpty=true"
+E266,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MSRA-SA-<*>""; destination host is: ""04dn8iq.fareast.corp.microsoft.com"":<*>;"
+E267,Retrying connect to server: 04dn8iq.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E268,"Retrying connect to server: 04dn8iq.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E269,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@62d4dcb5
+E270,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@20b2cd5f
+E271,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-75DGDAM1/<*>""; destination host is: ""04dn8iq.fareast.corp.microsoft.com"":<*>;"
+E272,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@7cedd9bc
+E273,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-FNANLI5/<*>""; destination host is: ""04dn8iq.fareast.corp.microsoft.com"":<*>;"
+E274,"Failure sending status update: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-FNANLI5/<*>""; destination host is: ""04dn8iq.fareast.corp.microsoft.com"":<*>;"
+E275,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@6119d61b
+E276,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@1c1d0019
+E277,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5181d903
+E278,"Failure sending status update: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-75DGDAM1/<*>""; destination host is: ""04dn8iq.fareast.corp.microsoft.com"":<*>;"
+E279,Recovery is enabled. Will try to recover from previous life on best effort basis.
+E280,Previous history file is at hdfs://msra-sa-<*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job_<*>_<*>_<*>.jhist
+E281,"Unable to parse prior job history, aborting recovery"
+E282,Could not parse the old history file. Will not have old AMinfos
+E283,Instantiated MRClientService at MININT-75DGDAM1.fareast.corp.microsoft.com/<*>
+E284,Could not delete hdfs://msra-sa-<*>/pageout/out3/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E285,History url is http://MININT-75DGDAM1.fareast.corp.microsoft.com:<*>/jobhistory/job/job_<*>_<*>
+E286,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5d463027
+E287,Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@<*>
+E288,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4da4c44b
+E289,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9748ms
+E290,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 12355ms
+E291,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 15159ms
+E292,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 60331ms
+E293,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8266ms
+E294,Saved output of task <*> to hdfs://msra-sa-<*>/pageout/out3/_temporary/<*>/task_<*>_<*>_r_<*>
+E295,Retrying connect to server: MSRA-SA-<*>.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E296,Could not delete hdfs://msra-sa-<*>/pageout/out4/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E297,History url is http://MININT-FNANLI5.fareast.corp.microsoft.com:<*>/jobhistory/job/job_<*>_<*>
+E298,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@28c26936
+E299,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1183ms
+E300,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1474ms
+E301,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1057ms
+E302,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1002ms
+E303,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1003ms
+E304,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3319ms
+E305,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 805ms
+E306,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 683ms
+E307,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1872ms
+E308,Saved output of task <*> to hdfs://msra-sa-<*>/pageout/out4/_temporary/<*>/task_<*>_<*>_r_<*>
+E309,Ramping down all scheduled reduces:<*>
+E310,Going to preempt <*> due to lack of space for maps
+E311,"Cannot assign container Container: [ContainerId: <*>, NodeId: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] for a map as either container memory less than required <memory:<*>, vCores:<*> or no pending map tasks - maps.isEmpty=true"
+E312,All maps assigned. Ramping up all remaining reduces:<*>
+E313,Could not delete hdfs://msra-sa-<*>/pageout/out5/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E314,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7862f56
+E315,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 721ms
+E316,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 595ms
+E317,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 661ms
+E318,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 578ms
+E319,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8434ms
+E320,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 572ms
+E321,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 563ms
+E322,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 12092ms
+E323,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 565ms
+E324,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10963ms
+E325,Saved output of task <*> to hdfs://msra-sa-<*>/pageout/out5/_temporary/<*>/task_<*>_<*>_r_<*>
+E326,MapCompletionEvents reques
+E327,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3ff0750a
+E328,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 51459ms
+E329,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 68557ms
+E330,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 74782ms
+E331,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 127148ms
+E332,<*> TaskAttempt Transitioned from RUNNING to FAIL_CONTAINER_CLEANUP
+E333,Retrying connect to server: MININT-75DGDAM1.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E334,Killing taskAttempt:<*> because it is running on unusable node:MININT-75DGDAM1.fareast.corp.microsoft.com:<*>
+E335,"Retrying connect to server: MININT-75DGDAM1.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E336,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@38fe9315
+E337,Assigning 04DN8IQ.fareast.corp.microsoft.com:<*> with <*> to fetcher#<*>
+E338,assigned <*> of <*> to 04DN8IQ.fareast.corp.microsoft.com:<*> to fetcher#<*>
+E339,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 71395ms
+E340,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1255ms
+E341,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1188ms
+E342,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 742ms
+E343,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 13032ms
+E344,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14806ms
+E345,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10708ms
+E346,Retrying connect to server: msra-sa-<*>. Already tried <*> time(s); maxRetries=<*>
+E347,Retrying connect to server: MININT-FNANLI5.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E348,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""04DN8IQ/<*>""; destination host is: ""minint-75dgdam1.fareast.corp.microsoft.com"":<*>;"
+E349,Retrying connect to server: minint-75dgdam1.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E350,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5b904247
+E351,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 542ms
+E352,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 402ms
+E353,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1004ms
+E354,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 550ms
+E355,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 635ms
+E356,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9171ms
+E357,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 666ms
+E358,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 844ms
+E359,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 834ms
+E360,Exception in getting events
+E361,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MSRA-SA-<*>""; destination host is: ""minint-75dgdam1.fareast.corp.microsoft.com"":<*>;"
+E362,"Retrying connect to server: minint-75dgdam1.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E363,Read from history task <*>
+E364,Read completed tasks from history <*>
+E365,"Recovering task <*> from prior app attempt, status was SUCCEEDED"
+E366,<*> TaskAttempt Transitioned from NEW to SUCCEEDED
+E367,<*> Task Transitioned from NEW to SUCCEEDED
+E368,<*> TaskAttempt Transitioned from NEW to KILLED
+E369,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@61ea2c55
+E370,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 857ms
+E371,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 23907ms
+E372,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 29789ms
+E373,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 39042ms
+E374,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 69703ms
+E375,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 603ms
+E376,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5180dc79
+E377,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10717ms
+E378,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16065ms
+E379,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 31086ms
+E380,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 73576ms
+E381,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 63999ms
+E382,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3b9af1f7
+E383,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14293ms
+E384,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 21770ms
+E385,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 17048ms
+E386,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 38545ms
+E387,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 73102ms
+E388,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-75DGDAM1/<*>""; destination host is: ""minint-fnanli5.fareast.corp.microsoft.com"":<*>;"
+E389,Retrying connect to server: minint-fnanli5.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); maxRetries=<*>
+E390,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""04DN8IQ/<*>""; destination host is: ""minint-fnanli5.fareast.corp.microsoft.com"":<*>;"
+E391,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4c2d5b57
+E392,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 15708ms
+E393,"Retrying connect to server: minint-fnanli5.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E394,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MSRA-SA-<*>""; destination host is: ""minint-fnanli5.fareast.corp.microsoft.com"":<*>;"
+E395,History url is http://04DN8IQ.fareast.corp.microsoft.com:<*>/jobhistory/job/job_<*>_<*>
+E396,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1023ms
+E397,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1080ms
+E398,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 858ms
+E399,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 786ms
+E400,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3445ms
+E401,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 820ms
+E402,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 822ms
+E403,"Cannot assign container Container: [ContainerId: <*>, NodeId: 04DN8IQ.fareast.corp.microsoft.com:<*>, NodeHttpAddress: 04DN8IQ.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] for a map as either container memory less than required <memory:<*>, vCores:<*> or no pending map tasks - maps.isEmpty=true"
+E404,"Retrying connect to server: MININT-FNANLI5.fareast.corp.microsoft.com/<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E405,Killing taskAttempt:<*> because it is running on unusable node:MININT-FNANLI5.fareast.corp.microsoft.com:<*>
+E406,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3bd8eac0
+E407,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1318ms
+E408,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3361ms
+E409,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 855ms
+E410,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1420ms
+E411,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2012ms
+E412,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 108850ms
+E413,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 11180ms
+E414,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16337ms
+E415,I/O error constructing remote block reader.
+E416,"Failed to connect to /<*> for block, add to deadNodes and continue. java.net.ConnectException: Connection timed out: no further information"
+E417,Successfully connected to /<*> for BP-<*>-<*>
+E418,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4599dc8e
+E419,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 34931ms
+E420,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 26178ms
+E421,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 32639ms
+E422,MININT-75DGDAM1.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1497ms
+E423,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 47002ms
+E424,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 65354ms
+E425,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 17702ms
+E426,Could not delete hdfs://msra-sa-<*>/out/out3/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E427,"Slow ReadProcessor read fields took 48944ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E428,TaskAttempt killed because it ran on unusable node 04DN8IQ.fareast.corp.microsoft.com:<*>. AttemptId:<*>
+E429,<*> TaskAttempt Transitioned from SUCCEEDED to KILLED
+E430,<*> Task Transitioned from SUCCEEDED to SCHEDULED
+E431,Processing split: hdfs://msra-sa-<*>/wordcount2.txt:<*>+<*>
+E432,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@fa12c68
+E433,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6214ms
+E434,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14577ms
+E435,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3738ms
+E436,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2853ms
+E437,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2970ms
+E438,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3333ms
+E439,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3748ms
+E440,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 136300ms
+E441,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 44417ms
+E442,Merging <*> intermediate segments out of a total of <*>
+E443,Saved output of task <*> to hdfs://msra-sa-<*>/out/out3/_temporary/<*>/task_<*>_<*>_r_<*>
+E444,Could not delete hdfs://msra-sa-<*>/out/out5/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E445,Address change detected. Old: msra-sa-<*> New: msra-sa-<*>
+E446,Failed to renew lease for [<*>] for <*> seconds. Will retry shortly ...
+E447,ERROR IN CONTACTING RM.
+E448,"Retrying connect to server: msra-sa-<*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E449,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4fad9bb2
+E450,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9202ms
+E451,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 17994ms
+E452,Ignoring obsolete output of KILLED map-task: '<*>'
+E453,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2021ms
+E454,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2247ms
+E455,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1941ms
+E456,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2589ms
+E457,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2031ms
+E458,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2352ms
+E459,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2082ms
+E460,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1603ms
+E461,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2070ms
+E462,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1678ms
+E463,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 65056ms
+E464,Communication exception: java.net.ConnectException: Call From MSRA-SA-<*> to minint-fnanli5.fareast.corp.microsoft.com:<*> failed on connection exception: java.net.ConnectException: Connection timed out: no further information; For more details see: http://wiki.apache.org/hadoop/ConnectionRefused
+E465,TaskAttempt killed because it ran on unusable node MININT-FNANLI5.fareast.corp.microsoft.com:<*>. AttemptId:<*>
+E466,Ignoring obsolete output of OBSOLETE map-task: '<*>'
+E467,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2895ms
+E468,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2902ms
+E469,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6591ms
+E470,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 17923ms
+E471,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1979ms
+E472,Saved output of task <*> to hdfs://msra-sa-<*>/out/out5/_temporary/<*>/task_<*>_<*>_r_<*>
+E473,Could not delete hdfs://msra-sa-<*>/out/out4/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E474,"Slow ReadProcessor read fields took 48906ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E475,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7138e57a
+E476,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4184ms
+E477,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4803ms
+E478,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5708ms
+E479,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5430ms
+E480,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 11577ms
+E481,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4575ms
+E482,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8521ms
+E483,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5996ms
+E484,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8023ms
+E485,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9783ms
+E486,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 37843ms
+E487,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 42832ms
+E488,Saved output of task <*> to hdfs://msra-sa-<*>/out/out4/_temporary/<*>/task_<*>_<*>_r_<*>
+E489,Could not delete hdfs://msra-sa-<*>/out/out1/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E490,<*> TaskAttempt Transitioned from UNASSIGNED to KILLED
+E491,Processing the event EventType: CONTAINER_DEALLOCATE
+E492,"Slow ReadProcessor read fields took 65036ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E493,Error communicating with RM: Resource Manager doesn't recognize AttemptId: <*>
+E494,<*> Transitioned from RUNNING to REBOOT
+E495,Notify RMCommunicator isAMLastRetry: false
+E496,RMCommunicator notified that shouldUnregistered is: false
+E497,Notify JHEH isAMLastRetry: false
+E498,JobHistoryEventHandler notified that forceJobCompletion is false
+E499,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2938ms
+E500,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1842ms
+E501,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 33594ms
+E502,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1786ms
+E503,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 31694ms
+E504,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 51067ms
+E505,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1639ms
+E506,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 78797ms
+E507,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 37927ms
+E508,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1902ms
+E509,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1929ms
+E510,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1942ms
+E511,Preempting <*>
+E512,Could not delete hdfs://msra-sa-<*>/out/out1/_temporary/<*>/_temporary/attempt_<*>_<*>_r_<*>_<*>
+E513,Reduce preemption successful <*>
+E514,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5387ms
+E515,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5951ms
+E516,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4478ms
+E517,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 18068ms
+E518,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3921ms
+E519,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2863ms
+E520,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6859ms
+E521,Connection retry failed with <*> attempts in <*> seconds
+E522,Failed to connect to MININT-FNANLI5.fareast.corp.microsoft.com:<*> with <*> map outputs
+E523,Reporting fetch failure for <*> to jobtracker.
+E524,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 180042ms
+E525,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@309134f7
+E526,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3139ms
+E527,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3493ms
+E528,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16138ms
+E529,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 21130ms
+E530,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8327ms
+E531,Saved output of task <*> to hdfs://msra-sa-<*>/out/out1/_temporary/<*>/task_<*>_<*>_r_<*>
+E532,Could not delete hdfs://msra-sa-<*>/out/out2/_temporary/<*>/_temporary/attempt_<*>_<*>_m_<*>_<*>
+E533,Could not delete hdfs://msra-sa-<*>/out/out2/_temporary/<*>/_temporary/attempt_<*>_<*>_r_<*>_<*>
+E534,"Failed to connect to /<*> for block, add to deadNodes and continue. java.net.ConnectException: Connection refused: no further information"
+E535,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4c185bfb
+E536,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2525ms
+E537,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2000ms
+E538,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4567ms
+E539,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2520ms
+E540,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9199ms
+E541,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2808ms
+E542,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3142ms
+E543,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2230ms
+E544,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2965ms
+E545,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1657ms
+E546,Saved output of task <*> to hdfs://msra-sa-<*>/out/out2/_temporary/<*>/task_<*>_<*>_r_<*>
+E547,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1735ms
+E548,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 19842ms
+E549,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 25305ms
+E550,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 33221ms
+E551,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@337d44e4
+E552,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5786ms
+E553,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 7149ms
+E554,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4801ms
+E555,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 56602ms
+E556,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2353ms
+E557,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5486ms
+E558,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1793ms
+E559,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4661ms
+E560,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5881ms
+E561,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 41830ms
+E562,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@181586a5
+E563,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6810ms
+E564,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2356ms
+E565,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14890ms
+E566,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2374ms
+E567,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1798ms
+E568,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9318ms
+E569,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1730ms
+E570,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2215ms
+E571,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 11722ms
+E572,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 18657ms
+E573,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@158ca4cf
+E574,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5379ms
+E575,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@22ce3b8c
+E576,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5760ms
+E577,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4264ms
+E578,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2494ms
+E579,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 81348ms
+E580,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1cbd8f1
+E581,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5943ms
+E582,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8239ms
+E583,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8388ms
+E584,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 22560ms
+E585,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4978ms
+E586,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@748443c9
+E587,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 49702ms
+E588,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 81154ms
+E589,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 279654ms
+E590,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 365338ms
+E591,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@7400e044
+E592,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2080ms
+E593,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2772ms
+E594,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9707ms
+E595,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10352ms
+E596,"Cannot assign container Container: [ContainerId: <*>, NodeId: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] for a map as either container memory less than required <memory:<*>, vCores:<*> or no pending map tasks - maps.isEmpty=true"
+E597,"IPC Server handler <*> on <*>, call statusUpdate(<*>, org.apache.hadoop.mapred.MapTaskStatus@cdcdbf7), rpc version=<*>, client version=<*>, methodsFingerPrint=<*> from <*> Call#<*> Retry#<*>: output error"
+E598,IPC Server handler <*> on <*> caught an exception
+E599,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1903ms
+E600,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8893ms
+E601,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2327ms
+E602,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2840ms
+E603,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 66143ms
+E604,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 31275ms
+E605,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 41618ms
+E606,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@49c051a1
+E607,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1b394c94
+E608,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3876ms
+E609,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 520671ms
+E610,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 616622ms
+E611,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 209231ms
+E612,Could not delete hdfs://msra-sa-<*>/out/out5/_temporary/<*>/_temporary/attempt_<*>_<*>_r_<*>_<*>
+E613,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@64bfc93b
+E614,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@283561b9
+E615,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 148132ms
+E616,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 213954ms
+E617,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 498845ms
+E618,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 643623ms
+E619,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 502237ms
+E620,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5b895852
+E621,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1358ms
+E622,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1764ms
+E623,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1851ms
+E624,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 7876ms
+E625,"Slow ReadProcessor read fields took 65020ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E626,DataStreamer Exception
+E627,Task: <*> - exited : java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E628,<*> TaskAttempt Transitioned from FAIL_CONTAINER_CLEANUP to FAIL_TASK_CLEANUP
+E629,Task cleanup failed for attempt <*>
+E630,<*> TaskAttempt Transitioned from FAIL_TASK_CLEANUP to FAILED
+E631,Error writing History Event: org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletionEvent@7317849d
+E632,"Thread Thread[eventHandlingThread,<*>,main] threw an Exception."
+E633,<*> failures on node MININT-FNANLI5.fareast.corp.microsoft.com
+E634,Added <*> to list of failed maps
+E635,Could not contact RM after <*> milliseconds.
+E636,Error communicating with RM: Could not contact RM after <*> milliseconds.
+E637,<*> Transitioned from RUNNING to ERROR
+E638,"In stop, writing event MAP_ATTEMPT_FAILED"
+E639,Service JobHistoryEventHandler failed in state STOPPED; cause: org.apache.avro.AvroTypeException: Attempt to process a enum when a union was expected.
+E640,When stopping the service JobHistoryEventHandler : org.apache.avro.AvroTypeException: Attempt to process a enum when a union was expected.
+E641,cleanup failed for container <*> : java.lang.IllegalArgumentException: java.net.UnknownHostException: MSRA-SA-<*>.fareast.corp.microsoft.com
+E642,<*> TaskAttempt Transitioned from RUNNING to KILLED
+E643,cleanup failed for container <*> : java.lang.IllegalArgumentException: java.net.UnknownHostException: 04DN8IQ.fareast.corp.microsoft.com
+E644,Exception while unregistering
+E645,Skipping cleaning up the staging dir. assuming AM will be retried.
+E646,Service org.apache.hadoop.mapreduce.v2.app.MRAppMaster failed in state STOPPED; cause: org.apache.avro.AvroTypeException: Attempt to process a enum when a union was expected.
+E647,Graceful stop failed
+E648,"Failed to connect to /<*> for block, add to deadNodes and continue. java.net.NoRouteToHostException: No route to host: no further information"
+E649,"Could not obtain BP-<*>-<*> from any node: java.io.IOException: No live nodes contain block BP-<*>-<*> after checking nodes = [<*>, <*>], ignoredNodes = null No live nodes contain current block Block locations: <*> <*> Dead nodes: <*> <*>. Will get new block locations from namenode and retry..."
+E650,"DFS chooseDataNode: got # <*> IOException, will wait for <*> msec."
+E651,DFS Read
+E652,Exception running child : java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E653,Runnning cleanup for the task
+E654,Exception cleaning up: java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E655,"Failure sending status update: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MSRA-SA-<*>""; destination host is: ""minint-fnanli5.fareast.corp.microsoft.com"":<*>;"
+E656,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 712ms
+E657,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 742ms
+E658,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 534ms
+E659,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 836ms
+E660,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 824ms
+E661,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 689ms
+E662,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 667ms
+E663,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 791ms
+E664,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8340ms
+E665,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 11028ms
+E666,"Slow ReadProcessor read fields took 54719ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E667,"In stop, writing event TASK_FINISHED"
+E668,"In stop, writing event JOB_FINISHED"
+E669,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@68b51b8
+E670,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 637ms
+E671,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1104ms
+E672,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 343ms
+E673,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1218ms
+E674,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 598ms
+E675,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 696ms
+E676,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1188ms
+E677,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 732ms
+E678,"Slow ReadProcessor read fields took 48905ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E679,"Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: ""MININT-FNANLI5/<*>""; destination host is: ""<*>"":<*>;"
+E680,"Retrying connect to server: <*>. Already tried <*> time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=<*>, sleepTime=<*> MILLISECONDS)"
+E681,Communication exception: java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to <*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E682,Process Thread Dump: Communication exception
+E683,"Last retry, killing <*>"
+E684,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 823ms
+E685,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1840ms
+E686,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 17251ms
+E687,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 333ms
+E688,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 718ms
+E689,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 13721ms
+E690,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9032ms
+E691,Error closing writer for JobID: <*>
+E692,Found jobId <*> to have not been closed. Will close
+E693,Error writing History Event: org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent@542de48f
+E694,Service JobHistoryEventHandler failed in state STOPPED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+E695,When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+E696,Service org.apache.hadoop.mapreduce.v2.app.MRAppMaster failed in state STOPPED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+E697,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@24a20a63
+E698,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 395ms
+E699,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 545ms
+E700,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 723ms
+E701,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 729ms
+E702,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 604ms
+E703,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 706ms
+E704,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 678ms
+E705,<*> TaskAttempt Transitioned from ASSIGNED to KILL_CONTAINER_CLEANUP
+E706,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4537c278
+E707,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 555ms
+E708,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 531ms
+E709,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 544ms
+E710,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 493ms
+E711,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 594ms
+E712,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 557ms
+E713,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 548ms
+E714,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 662ms
+E715,"Slow ReadProcessor read fields took 58504ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E716,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 50327ms
+E717,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3077ms
+E718,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5814ms
+E719,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1322ms
+E720,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4838ms
+E721,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 29784ms
+E722,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10851ms
+E723,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6401ms
+E724,"Slow ReadProcessor read fields took 48957ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E725,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1215ms
+E726,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5325ms
+E727,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1364ms
+E728,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1201ms
+E729,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1529ms
+E730,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 23884ms
+E731,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 41134ms
+E732,"Slow ReadProcessor read fields took 49366ms (threshold=30000ms); ack: seqno: <*> status: SUCCESS status: ERROR downstreamAckTimeNanos: <*>, targets: [<*>, <*>]"
+E733,Error writing History Event: org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent@13bb724a
+E734,Error writing History Event: org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent@2890300b
+E735,Service JobHistoryEventHandler failed in state STOPPED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E736,When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E737,Service org.apache.hadoop.mapreduce.v2.app.MRAppMaster failed in state STOPPED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from MININT-FNANLI5/<*> to msra-sa-<*> failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+E738,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 29825ms
+E739,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 28065ms
+E740,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 40729ms
+E741,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3597ms
+E742,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14802ms
+E743,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 39489ms
+E744,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5bef7247
+E745,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1974ms
+E746,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1957ms
+E747,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 7273ms
+E748,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 26105ms
+E749,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 30308ms
+E750,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2773ms
+E751,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1895ms
+E752,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2020ms
+E753,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1896ms
+E754,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2470ms
+E755,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1706ms
+E756,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4004ms
+E757,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2367ms
+E758,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 24283ms
+E759,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1333ms
+E760,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6146ms
+E761,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2147ms
+E762,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1588ms
+E763,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 24240ms
+E764,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 30545ms
+E765,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1385ms
+E766,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3816ms
+E767,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9084ms
+E768,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8160ms
+E769,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10646ms
+E770,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 9279ms
+E771,Task: <*> - exited : org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for output/attempt_<*>_<*>_m_<*>_<*>/file.out
+E772,<*> failures on node 04DN8IQ.fareast.corp.microsoft.com
+E773,Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewOutputCollector@6a6585ee
+E774,Exception running child : org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find any valid local directory for output/attempt_<*>_<*>_m_<*>_<*>/file.out
+E775,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1266ms
+E776,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1344ms
+E777,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4415ms
+E778,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 15242ms
+E779,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4207ms
+E780,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5203ms
+E781,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2931ms
+E782,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3079ms
+E783,Ignoring obsolete output of FAILED map-task: '<*>'
+E784,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 5421ms
+E785,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 4444ms
+E786,<*> TaskAttempt Transitioned from NEW to FAILED
+E787,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2435ms
+E788,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2518ms
+E789,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2628ms
+E790,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16313ms
+E791,Task: <*> - failed due to FSError: java.io.IOException: There is not enough space on the disk
+E792,Task: <*> - exited : org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in fetcher#<*>
+E793,Could not delete hdfs://msra-sa-<*>/out/out3/_temporary/<*>/_temporary/attempt_<*>_<*>_r_<*>_<*>
+E794,"Assigning container Container: [ContainerId: <*>, NodeId: 04DN8IQ.fareast.corp.microsoft.com:<*>, NodeHttpAddress: 04DN8IQ.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] to fast fail map"
+E795,Assigned from earlierFailedMaps
+E796,"Assigning container Container: [ContainerId: <*>, NodeId: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MININT-FNANLI5.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] to fast fail map"
+E797,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4247959e
+E798,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 72679ms
+E799,Exception running child : org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError: error in shuffle in fetcher#<*>
+E800,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1291ms
+E801,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2289ms
+E802,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10482ms
+E803,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 59534ms
+E804,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2594ms
+E805,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 144586ms
+E806,Task: <*> - exited : java.io.IOException: There is not enough space on the disk
+E807,Task: <*> - exited : java.io.IOException: Spill failed
+E808,"Assigning container Container: [ContainerId: <*>, NodeId: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ] to fast fail map"
+E809,Task <*> failed : org.apache.hadoop.fs.FSError: java.io.IOException: There is not enough space on the disk
+E810,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2048ms
+E811,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2390ms
+E812,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2760ms
+E813,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2951ms
+E814,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 3779ms
+E815,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1924ms
+E816,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1768ms
+E817,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2233ms
+E818,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 36889ms
+E819,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 87912ms
+E820,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8745ms
+E821,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 12128ms
+E822,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 15076ms
+E823,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 6685ms
+E824,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 27480ms
+E825,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 37975ms
+E826,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 8479ms
+E827,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@e55c068
+E828,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1065ms
+E829,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 878ms
+E830,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1043ms
+E831,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1987ms
+E832,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2383ms
+E833,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 12227ms
+E834,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1227ms
+E835,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 21918ms
+E836,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 720ms
+E837,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 14173ms
+E838,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 766ms
+E839,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 547ms
+E840,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 554ms
+E841,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 601ms
+E842,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 616ms
+E843,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 725ms
+E844,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 870ms
+E845,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 833ms
+E846,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 963ms
+E847,"Releasing unassigned and invalid container Container: [ContainerId: <*>, NodeId: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, NodeHttpAddress: MSRA-SA-<*>.fareast.corp.microsoft.com:<*>, Resource: <memory:<*>, vCores:<*>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ]. RM may have assignment issues"
+E848,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 803ms
+E849,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 747ms
+E850,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 758ms
+E851,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 684ms
+E852,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 745ms
+E853,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 29601ms
+E854,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 583ms
+E855,Could not delete hdfs://msra-sa-<*>/pageout/out4/_temporary/<*>/_temporary/attempt_<*>_<*>_r_<*>_<*>
+E856,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5bec0560
+E857,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 39595ms
+E858,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 23360ms
+E859,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 25522ms
+E860,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 20147ms
+E861,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 12937ms
+E862,Shuffle failed : local error on this node: 04DN8IQ/<*>
+E863,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 69ms
+E864,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 60ms
+E865,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 919ms
+E866,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 958ms
+E867,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2034ms
+E868,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2193ms
+E869,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 668ms
+E870,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 991ms
+E871,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1324ms
+E872,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2033ms
+E873,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 2609ms
+E874,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 676ms
+E875,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 372ms
+E876,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 355ms
+E877,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 371ms
+E878,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 543ms
+E879,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 704ms
+E880,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 647ms
+E881,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 771ms
+E882,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16299ms
+E883,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@64f8145f
+E884,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 767ms
+E885,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1242ms
+E886,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 539ms
+E887,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1126ms
+E888,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 359ms
+E889,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 877ms
+E890,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 792ms
+E891,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@71de9590
+E892,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1033ms
+E893,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 608ms
+E894,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 627ms
+E895,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1111ms
+E896,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 710ms
+E897,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 719ms
+E898,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 18960ms
+E899,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 16391ms
+E900,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10162ms
+E901,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 10477ms
+E902,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@539bd2fe
+E903,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 18199ms
+E904,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 37289ms
+E905,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 34427ms
+E906,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 62601ms
+E907,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 121505ms
+E908,Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@333861df
+E909,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1850ms
+E910,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 54720ms
+E911,MININT-FNANLI5.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 1315ms
+E912,MSRA-SA-<*>.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 49554ms
+E913,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 246671ms
+E914,04DN8IQ.fareast.corp.microsoft.com:<*> freed by fetcher#<*> in 96601ms

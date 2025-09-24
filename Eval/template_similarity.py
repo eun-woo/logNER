@@ -2,9 +2,15 @@ import re
 from Levenshtein import distance as lev
 import pandas as pd
 from tqdm import tqdm
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--parser', type=str, required=True)
+args = parser.parse_args()
+
 
 ground_truth_path = './Hadoop/ground_truth_hadoop_evaluation.log_templates.csv'
-parser_path = './Hadoop/Drain_hadoop_evaluation.log_templates.csv'
+parser_path = f'/raid1/eunwoo/logNER/Eval/Hadoop/{args.parser}_hadoop_evaluation.log_templates.csv'
 
 def sim(truth, template):
     edit_distance_sim = 1 - lev(truth, template) / max(len(truth), len(template))

@@ -1,0 +1,158 @@
+EventId,EventTemplate,Occurrences
+19b75bb3,Created MRAppMaster for application appattempt_<*>_<*>_<*>,69
+b827c7a4,Executing with tokens,978
+17fa4cfa,Kind YARN_AM_RM_TOKEN Service Ident (appAttemptId { application_id { id <*> cluster_timestamp <*> } attemptId <*> } keyId <*>),69
+0594ecc2,Using mapred newApiCommitter.,69
+c0c8618d,OutputCommitter set in config null,69
+d79644a2,OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter,69
+3a2b3aef,Registering class <*> for class <*>,621
+13b447d7,Default file system [hdfs //msra-sa-<*> <*>],226
+034da680,<*> <*> <*> <*> to the <*> server <*>,138
+ca7d7941,loaded properties from hadoop-metrics2.properties,978
+4dc89700,Scheduled snapshot period at <*> second(s).,978
+fc657c96,MRAppMaster metrics system started,69
+6bde6cb0,<*> <*> <*> <*> job_<*>_<*> <*>,2081
+8d67a59c,Not uberizing job_<*>_<*> because not enabled; too many maps; too much input;,69
+000bf029,<*> <*> for job job_<*>_<*> <*> <*> <*> <*> <*>,138
+b4915154,job_<*>_0011Job Transitioned from <*>,10
+c572ee0d,MRAppMaster launching normal non-uberized multi-container job job_<*>_<*>.,69
+916d4a74,Using callQueue class java.util.concurrent.LinkedBlockingQueue,138
+70066a26,Starting Socket Reader #<*> for port <*>,138
+40ffd5d4,IPC Server <*> <*>,373
+f9ec2aa5,Instantiated MRClientService at MSRA-SA-<*>.fareast.corp.microsoft.com<*>,34
+a79a1702,Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog,69
+0859dbfb,Http request log for http.requests.mapreduce is not defined,69
+bbb12783,Added global filter 'safety' (class org.apache.hadoop.http.HttpServer2$QuotingInputFilter),69
+a69a9d3f,Added filter AM_PROXY_FILTER (class org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context <*>,138
+bbcb7314,adding path spec <*>,138
+8aa20788,Jetty bound to port <*>,69
+bc800f0e,jetty-<*>.<*>.<*>,69
+77146639,Extract jar file /D /hadoop-<*>.<*>.<*>-localbox/share/hadoop/yarn/hadoop-yarn-common-<*>.<*>.<*>-SNAPSHOT.jar!/webapps/mapreduce to C <*>,69
+43663525,Started HttpServer2$SelectChannelConnectorWithSafeStartup@<*>,69
+01425cf2,Web app /mapreduce started at <*>,69
+5ba9445a,Registered webapp guice modules,69
+79408ee4,nodeBlacklistingEnabled true,69
+dede275d,<*> <*>,36443
+4de40bfa,Connecting to ResourceManager at <*>,69
+e3133551,<*> <memory <*> vCores <*>>,4616
+eb3e7e39,queue default,69
+293bdc87,Upper limit on the thread pool size is <*>,69
+b6e516de,Processing the event EventType <*>,2056
+5b8159e6,<*> <*> Transitioned from <*> to <*>,1103
+78421907,<*> <*> PendingReds <*> ScheduledMaps <*> ScheduledReds <*> AssignedMaps <*> AssignedReds <*> CompletedMaps <*> CompletedReds <*> ContAlloc <*> ContRel <*> HostLocal <*> RackLocal <*>,2094
+a56c37ef,getResources() for application_<*>_<*> ask <*> release <*> newContainers <*> finishedContainers <*> resourcelimit <memory <*> vCores <*>> knownNMs <*>,899
+04724176,Reduce slow start threshold <*>,3906
+99dd87cd,Assigned container container_<*>_<*>_<*>_<*> to <*>,906
+c9ebd122,The <*> file on the remote FS is <*>,138
+5ad17131,Adding #<*> tokens and #<*> secret keys for NM use for launching container,69
+944f8887,Putting shuffle token in serviceData,69
+4656cd3f,attempt_<*>_<*>_m_<*>_<*> TaskAttempt Transitioned from <*>,4436
+9e63a754,<*> <*> event <*> <*> for container container_<*>_<*>_<*>_<*> <*>,42
+88b159ba,Shuffle port returned by ContainerManager for <*> <*>,906
+b7e5c3c8,TaskAttempt <*> using containerId [container_<*>_<*>_<*>_<*> on NM <*> <*>],1033
+cca837b9,<*> Task Transitioned from <*> <*> RUNNING,1278
+f01c172e,JVM with ID <*> <*> <*> <*> task,1804
+74fa8146,Progress of TaskAttempt <*> is <*>,45882
+007ded00,Task succeeded with attempt <*>,701
+da450fb8,DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_<*>_<*>_m_<*>,255
+71478d85,We launched <*> speculations. Sleeping <*> milliseconds.,255
+1c4b924f,Scheduling a redundant attempt for task task_<*>_<*>_m_<*>,194
+ad0f2d7e,completedMapPercent <*>.<*> totalResourceLimit <memory <*> vCores <*>> finalMapResourceLimit <memory <*> vCores <*>> finalReduceResourceLimit <memory <*> vCores <*>> netScheduledMapResource <memory <*> vCores <*>> netScheduledReduceResource <memory <*> vCores <*>>,531
+b0f66195,Diagnostics report from <*> Container killed by the ApplicationMaster.,733
+c6af2a08,attempt_<*>_<*>_r_<*>_<*> TaskAttempt Transitioned from <*>,396
+f13d7a4d,MapCompletionEvents request from attempt_<*>_<*>_r_<*>_<*>. startIndex <*> maxEvents <*>,18140
+2bfccc8b,DFSOutputStream ResponseProcessor exception for block BP-<*>-<*><*> <*>_<*>,14
+211e0c4a,<*> <*> for <*> BP-<*>-<*><*> <*>_<*> <*>,20
+41351536,Issuing kill to other attempt attempt_<*>_<*>_m_<*>_<*>,182
+410f2668,Could not delete hdfs //msra-sa-<*> <*>,216
+b6430ca0,Socket Reader #<*> for port <*> readAndProcess from client <*> threw exception [java.io.IOException An existing connection was forcibly closed by the remote host],217
+cb2920ef,Commit-pending state update from attempt_<*>_<*>_r_<*>_<*>,47
+4443618d,<*> <*> <*> <*> for <*> the task <*>,53
+1674f7e3,Commit go/no-go request from attempt_<*>_<*>_r_<*>_<*>,47
+534c2952,Result of canCommit for attempt_<*>_<*>_r_<*>_<*> true,47
+dad8f9fa,We are finishing cleanly so this is the last retry,50
+725f3315,<*> notified that <*> is <*>,104
+2784eb31,Calling stop for all the services,52
+c02382a8,Stopping JobHistoryEventHandler. Size of the outstanding queue size is <*>,52
+2f70c71a,<*> <*> <*> <*> to hdfs //msra-sa-<*> <*>/tmp/hadoop-yarn/staging,329
+475374e8,History url is http <*> <*>/jobhistory/job/job_<*>_<*>,48
+fd178178,Waiting for application to be successfully unregistered.,45
+7cf7aaf6,Deleting staging directory hdfs //msra-sa-<*> <*> /tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>,45
+42bce2da,Sleeping for 0ms before retrying again. Got null now.,909
+560a2e26,<*> is deprecated. Instead use <*>,963
+fc4324dd,ProcfsBasedProcessTree currently is supported only on Linux.,905
+b18c363c,Processing split hdfs //msra-sa-<*> <*> <*>+<*>,834
+0ac74dba,Map output collector class org.apache.hadoop.mapred.MapTask$MapOutputBuffer,834
+8afe74ac,bufstart <*>; bufend <*>; bufvoid <*>,5339
+f4817af1,kvstart <*>(<*>); kvend <*>(<*>); length <*>/<*>,5339
+7d6dcece,(RESET) equator <*> kv <*>(<*>) kvi <*>(<*>),4579
+0491d81f,Starting flush of map output,644
+68bbb3b4,Down to the last merge-pass with <*> segments left of total size <*> bytes,678
+a72cd190,Task <*> is done. And is in the process of committing,625
+5f8c7079,MergerManager memoryLimit <*> maxSingleShuffleLimit <*> mergeThreshold <*> ioSortFactor <*> memToMemMergeOutputsThreshold <*>,71
+287d8db9,attempt_<*>_<*>_r_<*>_<*> Thread started EventFetcher for fetching Map Completion Events,71
+27bd8a11,Assigning <*> <*> with <*> to fetcher#<*>,472
+fbfc0dc3,assigned <*> of <*> to <*> <*> to fetcher#<*>,472
+06816a7d,for url <*>/mapOutput?job job_<*>_<*>&reduce <*>&map attempt_<*>_<*>_m_<*>_<*> sent hash and received reply,469
+d3110fcf,attempt_<*>_<*>_m_<*>_<*> Shuffling to disk since <*> is greater than maxSingleShuffleLimit (<*>),667
+1db8d37b,fetcher#<*> about to shuffle output of map attempt_<*>_<*>_m_<*>_<*> decomp <*> len <*> to DISK,664
+250b6f5f,Read <*> bytes from map-output for attempt_<*>_<*>_m_<*>_<*>,649
+e01c46f8,<*> <*> freed by fetcher#<*> in <*>,455
+f3c8ba02,finalMerge called with <*> in-memory map-outputs and <*> on-disk map-outputs,56
+44a7341c,Merging <*> files <*> bytes from disk,56
+044c0902,Merging <*> segments <*> bytes from memory into reduce,56
+cdd9dda4,Task attempt_<*>_<*>_r_<*>_<*> is allowed to commit now,48
+d112ad73,Saved output of task 'attempt_<*>_<*>_r_<*>_<*>' to hdfs //msra-sa-<*> <*>,48
+0eef8032,Releasing unassigned and invalid container Container [ContainerId container_<*>_<*>_<*>_<*> NodeId <*> <*> NodeHttpAddress <*> <*> Resource <memory <*> vCores <*>> Priority <*> Token Token { kind ContainerToken service <*> } ]. RM may have assignment issues,7
+56eb5b61,Retrying connect to server <*> Already tried <*> time(s); <*> <*>,3565
+5836b6b2,Killing taskAttempt <*> because it is running on unusable node <*> <*>,55
+14101cba,Diagnostics report from <*> Container released on a *lost* node,55
+a0763413,<*> metrics system shutdown complete.,317
+15437011,<*> <*> container Container [ContainerId container_<*>_<*>_<*>_<*> NodeId <*> <*> NodeHttpAddress <*> <*> Resource <memory <*> vCores <*>> Priority <*> Token Token { kind ContainerToken service <*> } ] <*> <*> map <*>,20
+c38a4933,<*> <*> java.io.IOException Failed on local exception java.io.IOException An existing connection was forcibly closed by the remote host; Host Details local host is <*> destination host is <*> <*>;,48
+198f3928,Recovery is enabled. Will try to recover from previous life on best effort basis.,15
+66884f27,Previous history file is at hdfs //msra-sa-<*> <*>/tmp/hadoop-yarn/staging/msrabi/.staging/job_<*>_<*>/job_<*>_<*>_<*>.jhist,19
+3e5acbb9,Unable to parse prior job history aborting recovery,4
+a0380f1e,Could not parse the old history file. Will not have old AMinfos,4
+9a394ea9,Ramping down all scheduled reduces <*>,100
+a4ede057,Going to preempt <*> due to lack of space for maps,100
+8f009183,All maps assigned. Ramping up all remaining reduces <*>,43
+d341b0da,Diagnostics report from <*> AttemptID <*> Timed out after <*> secs,7
+7cfeeb03,Read from history <*>,107
+650939ee,Recovering task task_<*>_<*>_m_<*> from prior app attempt status was SUCCEEDED,96
+4ccea502,I/O error constructing remote block reader.,16
+a1380268,Failed to connect to <*> for block add to deadNodes and continue. <*> <*> <*> <*> no further information,16
+2e56208f,Slow ReadProcessor read fields took <*> (threshold 30000ms); ack seqno <*> status SUCCESS status ERROR downstreamAckTimeNanos <*> targets [<*> <*>],9
+a5e64938,TaskAttempt killed because it ran on unusable node <*> <*>. AttemptId attempt_<*>_<*>_m_<*>_<*>,25
+ca635f8f,Merging <*> intermediate segments out of a total of <*>,7
+6f12d907,Address change detected. Old msra-sa-<*><*> New msra-sa-<*> <*>,5795
+bb3261a3,Failed to renew lease for [DFSClient_NONMAPREDUCE_<*>_<*>] for <*> seconds. Will retry shortly ...,5300
+3089d3b5,Ignoring obsolete output of <*> map-task 'attempt_<*>_<*>_m_<*>_<*>',84
+f5c8befd,Communication exception java.net.ConnectException Call From MSRA-SA-<*><*> to minint-fnanli5.fareast.corp.microsoft.com <*> failed on connection exception java.net.ConnectException Connection timed out no further information; For more details see http //wiki.apache.org/hadoop/ConnectionRefused,1
+84e8d8a2,Error communicating with RM Resource Manager doesn't recognize AttemptId application_<*>_<*>,2
+4ee1b94f,Connection retry failed with <*> attempts in <*> seconds,1
+3bee49b4,Failed to connect to MININT-FNANLI5.fareast.corp.microsoft.com <*> with <*> map outputs,1
+34f4dcc4,Reporting fetch failure for attempt_<*>_<*>_m_<*>_<*> to jobtracker.,1
+f8722961,IPC Server handler <*> on <*> call statusUpdate(attempt_<*>_<*>_m_<*>_<*> org.apache.hadoop.mapred.MapTaskStatus@cdcdbf7) rpc version <*> client version <*> methodsFingerPrint <*> from <*> Call#<*> Retry#<*> output error,1
+60427d30,<*> <*> <*> <*> java.net.NoRouteToHostException No Route to Host from MININT-FNANLI5<*> to <*> <*> failed on socket timeout exception java.net.NoRouteToHostException No route to host no further information; For more details see http //wiki.apache.org/hadoop/NoRouteToHost,23
+c9e72472,Task cleanup failed for attempt attempt_<*>_<*>_m_<*>_<*>,2
+b6b2bdd5,Error writing History Event <*>,4
+6a359920,Thread Thread[eventHandlingThread <*> main] threw an Exception.,3
+0e4be9d6,<*> failures on node <*>,10
+ae71f36c,Added attempt_<*>_<*>_m_<*>_<*> to list of failed maps,10
+78876e8e,Could not contact RM after <*> milliseconds.,6
+27ed3b79,In stop writing event <*>,6
+50ab7059,<*> <*> <*> <*> <*> <*> <*> org.apache.avro.AvroTypeException Attempt to process a enum when a union was expected.,3
+18fc47cb,cleanup failed for container container_<*>_<*>_<*>_<*> java.lang.IllegalArgumentException java.net.UnknownHostException <*>,24
+81190c6b,Skipping cleaning up the staging dir. assuming AM will be retried.,3
+9cfcabce,Could not obtain BP-<*>-<*><*> <*>_<*> from any node java.io.IOException No live nodes contain block BP-<*>-<*><*> <*>_<*> after checking nodes [<*> <*>] ignoredNodes null No live nodes contain current block Block locations <*> <*> Dead nodes <*> <*>. Will get new block locations from namenode and retry...,6
+d533ce08,DFS chooseDataNode got # <*> IOException will wait for <*>.<*> msec.,6
+ca0d5e80,Process Thread Dump Communication exception,5
+1d0348c1,Service <*> failed in state STOPPED; cause org.apache.hadoop.yarn.exceptions.YarnRuntimeException java.nio.channels.ClosedChannelException,2
+51645cc3,When stopping the service JobHistoryEventHandler org.apache.hadoop.yarn.exceptions.YarnRuntimeException java.nio.channels.ClosedChannelException,1
+e7cd6c03,<*> <*> <*> <*> org.apache.hadoop.util.DiskChecker$DiskErrorException Could not find any valid local directory for output/attempt_<*>_<*>_m_<*>_<*>/file.out,4
+7531be8f,Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewOutputCollector@6a6585ee,1
+b648b2e1,<*> attempt_<*>_<*>_m_<*>_<*> <*> <*> <*> <*> <*> java.io.IOException There is not enough space on the disk,25
+572acc31,<*> <*> <*> <*> org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError error in shuffle in fetcher#<*>,8
+cf6e8f1f,<*> attempt_<*>_<*>_m_<*>_<*> <*> <*> java.io.IOException Spill failed,9
+5e329f10,Shuffle failed local error on this node 04DN8IQ<*>,2
