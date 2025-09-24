@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 
 ground_truth_path = './Hadoop/ground_truth_lognroll_hadoop_evaluation.log_templates.csv'
-parser_path = './Hadoop/Lognroll_processed_hadoop_evaluation.log_templates.csv'
+parser_path = './Hadoop/Drain_hadoop_evaluation.log_templates.csv'
 
 def sim(truth, template):
     edit_distance_sim = 1 - lev(truth, template) / max(len(truth), len(template))
@@ -194,7 +194,9 @@ if __name__ == '__main__':
             cur_sim /= gt_match_count[gt]
             cur_total_sim += cur_sim
         # cur_total_sim을 현재 템플릿에 매칭된 ground_truth 수로 나누기
-        cur_total_sim /= len(ft_match_pt_similarity[temp])
+        # 그리고 매칭되는 템플릿 개수로 평균
+        # 즉, 분모 제곱으로 나누는 것
+        cur_total_sim /= (len(ft_match_pt_similarity[temp]) ** 2)
         # 이를 total_similarity에 더하기
         total_similarity += cur_total_sim
 
