@@ -142,6 +142,8 @@ if __name__ == '__main__':
     # 어떤 파서 템플릿에 어떤 그라운드 템플릿이 매칭되었고 유사도는 얼마인지 기록
     ft_match_pt_similarity = dict()
 
+    not_matching_cnt = 0
+
     # test는 토크나이징을 완료한 파서가 파싱한 템플릿들
     for i in tqdm(range(len(test))):
         temp = test[i]
@@ -178,6 +180,7 @@ if __name__ == '__main__':
 
         else:
             avg_similarities.append(0)
+            not_matching_cnt += 1
             # 매칭안되는 로그 출력하기`
             print(raw_parser[i])
     # 평균 유사도의 합 / 파싱한 템플릿 개수
@@ -185,6 +188,7 @@ if __name__ == '__main__':
 
     # 개선된 스코어 계산
     total_similarity = 0
+
     for temp in ft_match_pt_similarity:
         cur_cnt = 0
         cur_total_sim = 0
@@ -194,12 +198,13 @@ if __name__ == '__main__':
             cur_sim /= gt_match_count[gt]
             cur_total_sim += cur_sim
         # cur_total_sim을 현재 템플릿에 매칭된 ground_truth 수로 나누기
-        cur_total_sim /= len(ft_match_pt_similarity[temp])
+        cur_total_sim /= (len(ft_match_pt_similarity[temp]) ** 2)
         # 이를 total_similarity에 더하기
         total_similarity += cur_total_sim
 
     # total_similarity 평균내기
-    print(f'new similarity: {total_similarity / len(test)}')
+    print(f'new similarity: {total_similarity / (len(test) - not_matching_cnt)}')
+
 
 
 
