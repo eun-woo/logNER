@@ -3,7 +3,7 @@ from Levenshtein import distance as lev
 import pandas as pd
 from tqdm import tqdm
 
-ground_truth_path = './Hadoop/ground_truth_lognroll_hadoop_evaluation.log_templates.csv'
+ground_truth_path = './Hadoop/ground_truth_hadoop_evaluation.log_templates.csv'
 parser_path = './Hadoop/Drain_hadoop_evaluation.log_templates.csv'
 
 def sim(truth, template):
@@ -198,7 +198,6 @@ if __name__ == '__main__':
             cur_sim /= gt_match_count[gt]
             cur_total_sim += cur_sim
         # cur_total_sim을 현재 템플릿에 매칭된 ground_truth 수로 나누기
-
         cur_total_sim /= (len(ft_match_pt_similarity[temp]) ** 2)
         # 이를 total_similarity에 더하기
         total_similarity += cur_total_sim
