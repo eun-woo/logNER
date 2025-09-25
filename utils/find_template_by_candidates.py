@@ -22,6 +22,10 @@ def test_data():
 
 
 def find_best_template_by_log_and_candidate_templates(logs, candidate_templates_info, GROUP_ELEMENT_THRESHOLD, using_grouping, drc_each_variable, using_template_tree_algorithm):
+    # 현재 grouping을 안 하는 경우 브루트포스로
+    if not using_grouping:
+        using_template_tree_algorithm = False
+
     # 완전히 중복되는 로그들이 많음
     # 이러한 로그들의 중복 계산을 막기 위해 완전 중복되는 로그들의 개수를 카운팅
     log_count_dict = counting_logs(logs)
@@ -44,7 +48,7 @@ def find_best_template_by_log_and_candidate_templates(logs, candidate_templates_
 
     # 함수 내에서 플래그 이용해서 그룹핑하지 않는 경우와 하는 경우 관리
     first_grouping_result, first_grouping_log_counts, first_grouping_logs = grouping_by_whole_candidate_template(
-        log_matching_template_drc_dict, log_count_dict, using_grouping)
+        log_matching_template_drc_dict, log_count_dict)
     second_grouping_result, second_grouping_log_counts = grouping_by_most_general_template(first_grouping_result,
                                                                                            first_grouping_log_counts,
                                                                                            using_grouping)
@@ -69,7 +73,7 @@ if __name__=="__main__":
     # THRESHOLD를 넘어서면 그룹의 성분 수가 너무 많다고 판단, 모든 경우의 수를 고려하지 않고 다른 방법을 사용
     GROUP_ELEMENT_THRESHOLD = 10
     # 그룹핑 사용 여부에 대한 플래그
-    using_grouping = True
+    using_grouping = False
     # drc를 각 변수에 대하여 계산하는지, 모든 변수에 대하여 계산하는지에 대한 플래그
     drc_each_variable = True
     # 그룹의 성분개수가 너무 많을 때 템플릿 트리를 만들어 경우의 수를 줄임
@@ -109,7 +113,7 @@ if __name__=="__main__":
 
     # 함수 내에서 플래그 이용해서 그룹핑하지 않는 경우와 하는 경우 관리
     first_grouping_result, first_grouping_log_counts, first_grouping_logs = grouping_by_whole_candidate_template(
-        log_matching_template_drc_dict, log_count_dict, using_grouping)
+        log_matching_template_drc_dict, log_count_dict)
     second_grouping_result, second_grouping_log_counts = grouping_by_most_general_template(first_grouping_result,
                                                                                            first_grouping_log_counts,
                                                                                            using_grouping)

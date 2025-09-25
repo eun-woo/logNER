@@ -9,14 +9,8 @@ import math
 # 각 그룹이 어떤 템플릿을 선택하면 DRC가 얼마일지 계산하기 위해 정보를 저장
 # 리턴되는 것은 키는 후보 템플릿들의 인덱스로 이루어진 튜플, 벨류는 딕셔너리
 # 벨류 틱셔너리는 키는 템플릿 인덱스, 벨류는 (character_set, 변수 길이)의 리스트
-def grouping_by_whole_candidate_template(log_template_variable_info, log_count, using_grouping):
+def grouping_by_whole_candidate_template(log_template_variable_info, log_count):
     print("첫번째 그룹핑 중")
-
-    if not using_grouping:
-        first_group_logs = dict()
-        for cur_log in log_template_variable_info:
-            first_group_logs[cur_log] = [cur_log]
-        return log_template_variable_info, log_count, first_group_logs
 
     # 딕셔너리의 키는 후보 템플릿 튜플
     first_group_info = dict()
