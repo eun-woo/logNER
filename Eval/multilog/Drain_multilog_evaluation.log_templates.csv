@@ -1,0 +1,277 @@
+EventId,EventTemplate,Occurrences
+37645005,Start to <*> config file <*>,84
+801f2f19,start reading ConfigNode conf file: file:/iotdb/sbin/../conf/iotdb-confignode.properties,1
+89eb427a,<*> environment variables:,2
+ae2c52bb,<*> default charset is: UTF-<*>,2
+e9a56391,Running mode -s,2
+40bc7a82,Starting IoTDB <*>.<*>.<*> (Build: UNKNOWN),2
+7573fcbc,<*> port check successful.,2
+ee215971,Start <*> <*>,3
+9393f343,JDK version is <*>.,2
+40e08c6b,Make dirs: <*>,2
+429c2038,Activating IoTDB-ConfigNode...,1
+212f030d,JMX ServerService JMX port is undefined,2
+bdd9a1e4,Successfully setup internal services.,1
+324f7a8b,Authorizer provider class: org.apache.iotdb.commons.auth.authorizer.LocalFileAuthorizer,1
+816e90cd,<*> info dir <*> is created,2
+f2f288d9,Admin initialized,2
+3aa5a5c8,Initialization of Authorizer completes,1
+0387d48b,new <*> thread pool: <*>,15
+37a51251,new single scheduled thread pool: <*>,97
+9c2a3d53,Make procedure wal dir: /iotdb/data/confignode/system/procedure,1
+3e55f268,new fixed thread pool: <*> thread number: <*>,7
+2769eb95,Successfully initialize ConfigManager.,1
+8dff6e55,<*> latch is null when getting status,8
+5f2ec321,IoTDB: start Config Node service...,1
+3c819d4a,The Config Node service service thread begin to run...,1
+d06b170b,"IoTDB: start Config Node service successfully, listening on ip <*> port <*>",1
+0d3741f5,set <*> = <*>,147
+f0254949,Using SLF4J as the default logging framework,2
+85d22210,-Dorg.apache.ratis.thirdparty.io.netty.leakDetection.level: simple,2
+bc31f0f7,-Dorg.apache.ratis.thirdparty.io.netty.leakDetection.targetRecords: <*>,2
+8e829e30,<*> false,15
+00478c51,Java version: <*>,2
+8ea1115b,<*> available,14
+84be6ce0,direct buffer constructor: unavailable: Reflective setAccessible(true) disabled,2
+784129f3,"java.nio.Bits.unaligned: available, true",2
+71a2e64e,jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class org.apache.ratis.thirdparty.io.netty.util.internal.PlatformDependent0$<*> cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module <*>,2
+55cd0524,"java.nio.DirectByteBuffer.<init>(long, int): unavailable",2
+2d82cb21,<*> <*> bytes,4
+65d49247,<*> /tmp <*>,4
+dee81e07,-Dio.netty.bitMode: <*> (sun.arch.data.model),2
+6b259876,-Dio.netty.uninitializedArrayAllocationThreshold: -<*>,2
+6ede3468,-Dio.netty.allocator.numHeapArenas: <*>,2
+de008490,-Dio.netty.allocator.numDirectArenas: <*>,2
+1cfb8e3b,-Dio.netty.allocator.pageSize: <*>,2
+ee294d45,-Dio.netty.allocator.maxOrder: <*>,2
+39a4fcdd,-Dio.netty.allocator.chunkSize: <*>,2
+2fed94c9,-Dio.netty.allocator.smallCacheSize: <*>,2
+602e5e9d,-Dio.netty.allocator.normalCacheSize: <*>,2
+79d98a24,-Dio.netty.allocator.maxCachedBufferCapacity: <*>,2
+77d5db5d,-Dio.netty.allocator.cacheTrimInterval: <*>,2
+64a5d21a,-Dio.netty.allocator.cacheTrimIntervalMillis: <*>,2
+badb17e2,-Dio.netty.allocator.maxCachedByteBuffersPerChunk: <*>,2
+1e7c3fec,-Dio.netty.threadLocalMap.stringBuilder.initialSize: <*>,2
+fbac51f8,-Dio.netty.threadLocalMap.stringBuilder.maxSize: <*>,2
+613c5354,<*> = <*> (=<*>) <*>,21
+89d5d379,"newRaftServer: <*>, null",3
+2770aa73,<*> = <*> (default),74
+deccf4ae,<*> = <*> (fallback to <*>,12
+2a3aeb7f,<*> = <*> (custom),70
+1703b836,<*> true,12
+3966291d,Successfully loaded the library /tmp/liborg_apache_ratis_thirdparty_netty_transport_native_epoll_x86_<*>.so,2
+15cd936d,"Loopback interface: lo (lo, <*>)",2
+a96d700d,/proc/sys/net/core/somaxconn: <*>,2
+f68b3233,-Dio.netty.eventLoopThreads: <*>,2
+8ecb55da,<*> NEW,24
+270763e8,"Found multiple MetricRegistries implementations: class org.apache.iotdb.consensus.ratis.metrics.MetricRegistryManager, class org.apache.ratis.metrics.impl.MetricRegistriesImpl. Using first found implementation: <*>",2
+125ea08d,<*> NEW -> STARTING,15
+a2e4fab4,<*> start RPC <*>,4
+acb2196b,<*> <*> (auto-detected),4
+c4f4f3d9,-Dio.netty.allocator.type: pooled,2
+f7ec8417,-Dio.netty.threadLocalDirectBufferSize: <*>,2
+1ee538bc,-Dio.netty.maxThreadLocalCharBufferSize: <*>,2
+ba8f37a2,"<*> GrpcService started, listening on <*>",3
+1ea630bc,<*> STARTING -> RUNNING,15
+b8db0b15,JvmPauseMonitor-<*>: Started,3
+4b8fb201,IoTDB configuration:,2
+62b9c513,IoTDB-ConfigNode <*> has registered successfully. Waiting for the leader's scheduling to join the cluster: defaultCluster.,1
+f402849a,MetricService start to init.,2
+95e3bd85,<*> metric service <*> <*> <*>,42
+0b8d5119,"Load metricManager, type: MICROMETER",2
+529a0a15,"Detect more than one MetricManager, will use org.apache.iotdb.metrics.micrometer.MicrometerMetricManager",2
+6fd53a80,"Load metric reporters, type: []",2
+41f47a34,<*> start <*>,6
+31d8edcd,try loading iotdb-common.properties from /iotdb/sbin/../conf/iotdb-common.properties,2
+128c58f7,createPeerForConsensusGroup []...,1
+22814705,"client-AA152EBC1521: send GroupManagementRequest:client-AA152EBC1521-><*>@group-<*>, cid=<*>, seq=<*>, RW, null, Add:group-<*>:[]",1
+a0e41d44,Creating Metrics Registry : <*>,12
+3a0f6ac3,Loaded default ResourceLeakDetector: <*>,2
+d461efd8,-Dio.netty.recycler.maxCapacityPerThread: <*>,2
+b3fdc4d2,-Dio.netty.recycler.ratio: <*>,2
+cf1895fa,-Dio.netty.recycler.chunkSize: <*>,2
+b77f75cd,"[id: <*> L:<*> - <*> <*> SETTINGS: ack=false settings={ENABLE_PUSH=<*>, MAX_CONCURRENT_STREAMS=<*>, INITIAL_WINDOW_SIZE=<*>, MAX_HEADER_LIST_SIZE=<*>}",11
+a4dcad89,"[id: <*> L:<*> - <*> <*> SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=<*>, INITIAL_WINDOW_SIZE=<*>, MAX_HEADER_LIST_SIZE=<*>}",11
+e14a9f01,[id: <*> L:<*> - <*> <*> <*> streamId=<*> <*>,2391
+3cce41d2,[id: <*> L:<*> - <*> <*> SETTINGS: ack=true,22
+3d342674,"[id: <*> L:<*> - <*> <*> HEADERS: streamId=<*> <*> <*> <*> <*> :method: POST, :scheme: http, <*> <*> <*> <*> user-agent: grpc-java-netty/<*>.<*>.<*>, grpc-accept-encoding: gzip, grpc-timeout: <*> streamDependency=<*> weight=<*> exclusive=false padding=<*> endStream=false",10
+93d95a05,[id: <*> L:<*> - <*> <*> <*> streamId=<*> <*> <*> <*> <*>,303624
+0aaed2ea,7: addNew group-<*>:[] returns group-<*>:java.util.concurrent.CompletableFuture@1cf2370f[Not completed],1
+27cfa361,7: new RaftServerImpl for group-<*>:[] with ApplicationStateMachineProxy:uninitialized,1
+3503e565,"7@group-<*>: ConfigurationManager, init=<*>: peers:[]|listeners:[], old=null, confs=<EMPTY_MAP>",1
+cc044f44,"newRaftStorage: <*> WARN_AND_RETURN, RECOVER, <*>",2
+cffbfe3f,"7: newImpl = null <*>@group-<*>:t0, leader=null, voted=null, raftlog=UNINITIALIZED, conf=<*>: peers:[]|listeners:[], old=null NEW",1
+fa02632f,The storage directory <*> does not exist. Creating ...,2
+f14b0fc4,Lock on <*> acquired by nodename <*>@2c3c3f696a4e,2
+998b023a,Storage directory <*> has been successfully formatted.,2
+df4f86a2,new <*>@group-<*>-SegmentedRaftLogWorker for RaftStorageImpl:Storage Directory <*>,2
+c364f7a7,<*> <*> setUnconditionally <*> -> -<*>,4
+3e521072,"7@group-<*>: start with initializing state, conf=<*>: peers:[]|listeners:[], old=null",1
+80c6fbf2,<*> changes role from <*> to <*> at term <*> for <*>,4
+29a88652,"Successfully registered JMX Bean with object name Ratis:service=RaftServer,group=group-<*>,id=<*>",2
+8a3905ce,"[id: <*> L:<*> - <*> <*> HEADERS: streamId=<*> <*> <*>, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] padding=<*> endStream=false",13
+0b6a8531,"<*> receive <*> cid=<*>, SUCCESS, logIndex=<*>, commits[<*>:c-<*>]",2
+96fda619,"[id: <*> L:<*> - R:<*>] INBOUND HEADERS: streamId=<*> headers=GrpcHttp2RequestHeaders[:path: /ratis.grpc.RaftServerProtocolService/appendEntries, :authority: <*>, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-java-netty/<*>.<*>.<*>, grpc-accept-encoding: gzip] streamDependency=<*> weight=<*> exclusive=false padding=<*> endStream=false",4
+f4c8108d,<*> set firstElectionSinceStartup to false for <*>,2
+d181200b,"Current node [nodeId:<*>, ip:port: TEndPoint(ip:<*>, port:<*>)] is not longer the leader, the new leader is [nodeId:<*>]",1
+c45bd5b9,"<*> change Leader from null to <*> at term <*> for appendEntries, leader elected after <*>",2
+077f7550,<*> reply <*>,94404
+2572f6eb,"<*> receive appendEntries(<*>, <*>, <*> <*> <*> <*> <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*>",13542
+a9bb03e9,"7@group-<*>: set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null",1
+66a1310b,"7@group-<*>: set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], <*>",2
+ebdc1549,"7@group-<*>: set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*> <*> <*>",2
+5030d60e,"<*> set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null",2
+0c4ec116,"truncateIndex=<*>, arrayIndex=<*>",92814
+9a3a6d98,<*> Starting segment from index:<*>,2
+87d508e8,<*> adds IO task StartLogSegment:<*>,100
+590c7f70,"<*> adds IO task WriteLog:<*>: (t:<*>, i:<*>), <*> <*>",119437
+4b12c24a,"<*> adds IO task WriteLog:<*>: (t:<*>, i:<*>), METADATAENTRY(c:<*>)",68029
+4b0242bc,Pre-allocated <*> bytes for <*>,592
+5288780e,<*> created new log segment <*>,100
+094d5d0f,<*> flush <*>,124485
+6e988cb6,"<*> succeeded to handle AppendEntries. Reply: <*><<*>#<*>:OK-t1,SUCCESS,nextIndex=<*>,followerCommit=<*>,matchIndex=<*>",92814
+a704e204,<*> applying nextIndex=<*>,187461
+b4795d0d,<*> appliedIndex: incrementAndGet <*> -> <*>,187461
+5e1ea2cb,"7@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",21
+68555109,"Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)). Current ConfigNodeGroup: {<*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>))}",1
+7c2cd232,"7@group-<*>: set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*> <*> <*> <*>",2
+6bae812a,"7@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>)]",12
+0a9e8c12,Successfully update Node <*> 's version.,12
+92bd816a,"Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)). Current ConfigNodeGroup: {<*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>))}",1
+5096dda8,System properties file /iotdb/sbin/../data/confignode/system/confignode-system.properties for ConfigNode is created.,1
+4d1f02a1,[SystemProperties] store <*> <*>,3
+4079f801,IoTDB-ConfigNode has successfully started and joined the cluster: defaultCluster.,1
+6f32dd53,"Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)). Current ConfigNodeGroup: {<*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>))}",1
+54be9d2a,"Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)). Current ConfigNodeGroup: {<*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>))}",1
+0f447938,"<*> receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",692
+5ae7a3ca,"7@group-<*>: set configuration <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[]",1
+07886808,"<*> receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",21
+fd572718,"<*> <*> <*> <*> <*> <*> <*> <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null",2
+8e67ea86,"Successfully apply ConfigNode: TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)). Current ConfigNodeGroup: {<*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>)), <*>=TConfigNodeLocation(configNodeId:<*>, internalEndPoint:TEndPoint(ip:<*>, port:<*>), consensusEndPoint:TEndPoint(ip:<*>, port:<*>))}",1
+e1fb6d5f,"<*> receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",1271
+6a8662c7,initial <*> = <*>,4
+c4e541af,<*> = <*>,4
+316ded83,IoTDB enable memory control: true,1
+f830141c,"MQTT host is not configured, will use dn_rpc_address.",1
+289a97a6,/iotdb/data/datanode/system/schema dir has been created.,1
+b8bc81b9,/iotdb/data/datanode/system/system.properties has been created.,1
+f741b358,"Successfully update ConfigNode: [TEndPoint(ip:<*>, port:<*>)].",1
+b1b574ef,Pulling system configurations from the ConfigNode-leader...,1
+978a183d,"<*> receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",18286
+89c7521e,Successfully pull system configurations from ConfigNode-leader.,1
+976fb953,Sending register request to ConfigNode-leader...,1
+3b10d68a,Create system.properties.tmp /iotdb/data/datanode/system/schema/system.properties.tmp.,1
+c8ae747e,"Successfully update ConfigNode: [TEndPoint(ip:<*>, port:<*>), TEndPoint(ip:<*>, port:<*>), TEndPoint(ip:<*>, port:<*>), TEndPoint(ip:<*>, port:<*>), TEndPoint(ip:<*>, port:<*>), TEndPoint(ip:<*>, port:<*>)].",1
+e7953632,Successfully register to the cluster: defaultCluster,1
+b6bd242f,"folder <*> doesn't exist, create it",2
+3ae86fae,create folder <*> failed. Is the folder existed: true,82
+7e7f626a,Setting up IoTDB DataNode...,1
+9f0e5250,UDF lib root: /iotdb/ext/udf,1
+48a90ab4,<*> pipe receiver dir /iotdb/data/datanode/system/pipe/receiver successfully.,2
+a5544bc2,Recover the schema...,1
+8851d637,used schema engine mode: Memory.,1
+73ec9359,Spent 252ms to recover schema.,1
+4663cda8,Flush sub task manager started.,1
+83fc6837,<*> task manager started.,2
+abfa36c9,start ttl check thread successfully.,1
+942871af,start <*> memtable timed flush check thread successfully.,82
+d91f8281,new thread pool: MPP-Data-Exchange-Task-Executors,1
+b61bb48f,MPPDataExchangeManager init successfully,1
+178e59da,IoTDB: start MPP Data exchange manager...,1
+d031ea13,The MPP Data exchange manager service thread begin to run...,1
+6fbe74ce,"IoTDB: start MPP Data exchange manager successfully, listening on ip <*> port <*>",1
+9486681b,"IoTDB DataNode is setting up, some databases may not be ready now, please wait several seconds...",1
+68f8e8c4,DataNode region migrate pool start,1
+ca6851be,Region migrate service start,1
+74497220,PipeHardlinkBaseDirName: pipe,1
+c9ba1653,PipeHardlinkTsFileDirName: tsfile,1
+efb6482e,PipeHardlinkWALDirName: wal,1
+63b6d8e4,PipeDataStructureTabletRowSize: <*>,1
+723828dc,PipeSubtaskExecutorMaxThreadNum: <*>,1
+3eb5351a,PipeSubtaskExecutorBasicCheckPointIntervalByConsumedEventCount: <*>,1
+64ec8e9b,PipeSubtaskExecutorBasicCheckPointIntervalByTimeDuration: <*>,1
+b008757b,PipeSubtaskExecutorPendingQueueMaxBlockingTimeMs: <*>,1
+a7990936,PipeExtractorAssignerDisruptorRingBufferSize: <*>,1
+387a75a7,PipeExtractorMatcherCacheSize: <*>,1
+56fe3efb,PipeExtractorPendingQueueCapacity: <*>,1
+0261c8fb,PipeExtractorPendingQueueTabletLimit: <*>,1
+f2061549,PipeConnectorTimeoutMs: <*>,1
+0ae934bb,PipeConnectorReadFileBufferSize: <*>,1
+f059c096,PipeConnectorRetryIntervalMs: <*>,1
+9dc78c87,PipeConnectorPendingQueueSize: <*>,1
+947c20ca,PipeAsyncConnectorSelectorNumber: <*>,1
+331a5776,PipeAsyncConnectorCoreClientNumber: <*>,1
+ca41f54f,PipeAsyncConnectorMaxClientNumber: <*>,1
+bf98cf69,PipeHeartbeatIntervalSecondsForCollectingPipeMeta: <*>,1
+cbd1b188,PipeMetaSyncerInitialSyncDelayMinutes: <*>,1
+0c8a659f,PipeMetaSyncerSyncIntervalMinutes: <*>,1
+70b04b02,PipeMetaSyncerAutoRestartPipeCheckIntervalRound: <*>,1
+db74bedc,PipeAirGapReceiverPort: <*>,1
+6fd782b3,Pipe cron event injector is started successfully.,1
+9b91ec4d,IoTDB DataNode has started.,1
+eda430c8,Error processing request,7
+7c223976,IoTDB: start Internal Service...,1
+e79b73a5,<*> quota limit restored <*> <*>,2
+4bf40f96,The <*> <*> service thread begin to run...,2
+e60298d4,"IoTDB: start <*> <*> successfully, listening on ip <*> port <*>",2
+792db05b,"Congratulation, IoTDB DataNode is set up successfully. Now, enjoy yourself!",1
+0b10414c,Start rebooting all timed service.,40
+411639ec,"Stop all timed service successfully, and now restart them.",40
+493c02a3,Reboot all timed service successfully,40
+1173ab9a,There are nothing change in metric config.,40
+57c83030,"construct a data region instance, the database is root.sg1, Thread is <*>",1
+a1770ffd,"Database system Directory /iotdb/data/datanode/system/databases/root.sg1/<*> doesn't exist, create it",1
+e5e87cb7,recovering <*> compaction,3
+9f9a5b03,The data region root.sg1[<*>] is created successfully,1
+4dbae281,"client-A11CBC71104F: send GroupManagementRequest:client-A11CBC71104F-><*>@group-<*>, cid=<*>, seq=<*>, RW, null, Add:group-<*>:[<*>|rpc:<*>|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|priority:<*>|startupRole:FOLLOWER]",1
+54c1745d,"11: addNew group-<*>:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER] returns group-<*>:java.util.concurrent.CompletableFuture@7261db73[Not completed]",1
+64191f3c,"11: new RaftServerImpl for group-<*>:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER] with ApplicationStateMachineProxy:uninitialized",1
+8406dc24,"11@group-<*>: ConfigurationManager, init=<*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null, confs=<EMPTY_MAP>",1
+12ede39e,"11: newImpl = null <*>@group-<*>:t0, leader=null, voted=null, raftlog=UNINITIALIZED, conf=<*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null NEW",1
+0e20bfe6,"11@group-<*>: receive <*> <*>, group-<*>, <*>, (t:<*>, i:<*>))",4
+fc70439b,11: Failed requestVote <*>-><*>#<*>: org.apache.ratis.protocol.exceptions.ServerNotReadyException: <*>@group-<*> is not in [RUNNING]: current state is STARTING,1
+7b7b6ec3,"11@group-<*>-FollowerState: change to CANDIDATE, lastRpcElapsedTime:132221948ns, electionTimeout:129ms",1
+e8f77a27,11: shutdown <*>,2
+2cb771c5,<*> accept <*> from <*>: our priority <*> <= candidate's priority <*>,3
+66437acf,"11@group-<*> replies to <*> vote request: <*> Peer's state: <*> leader=null, <*> raftlog=Memoized:<*>@group-<*>-SegmentedRaftLog:OPENED:c-<*>, conf=<*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null",3
+62caeb72,"11@group-<*>-LeaderElection1 PRE_VOTE round <*>: submit vote requests at term <*> for <*>: peers:[<*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER, <*>|rpc:<*>|admin:|client:|dataStream:|priority:<*>|startupRole:FOLLOWER]|listeners:[], old=null",1
+03f9e3d3,Build channel for <*>,2
+d9408b5d,11@group-<*>-LeaderElection1: RUNNING -> CLOSING,1
+8fb65779,11@group-<*>-LeaderElection1: PRE_VOTE DISCOVERED_A_NEW_TERM (term=<*>) received <*> response(s) and <*> exception(s):,1
+4134d14e,Response <*>: <*><<*>#<*>:OK-t<*>,1
+1290ab00,11@group-<*>-LeaderElection1 PRE_VOTE round <*>: result DISCOVERED_A_NEW_TERM (term=<*>),1
+0781357f,"11@group-<*>: receive appendEntries(<*>, <*>, null, <*>, true, commits:[<*>:c-<*>, <*>:c-<*>, <*>:c-<*>], cId:<*>, entries: [(t:<*>, i:<*>), CONFIGURATIONENTRY(current:id: ""<*>""",1
+df953c2f,"<*> receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>",13
+99e86649,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>)]",22242
+8d321202,<*> is <*>,2
+9c3617f3,create a new tsfile processor /iotdb/data/datanode/data/sequence/root.sg1/<*>/<*>/<*>-<*>-<*>-<*>.tsfile,1
+62e9d166,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",5641
+0fe04993,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",10269
+37e82be1,"Report database Status to the system. After adding <*>, current sg mem cost is <*>.",276
+d6692e28,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*>",16073
+0a8b11c5,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",2216
+a3bc1d63,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",1582
+b06ae958,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",733
+42be52c6,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",34
+e3371caa,11@group-<*>-SegmentedRaftLogWorker: Rolling segment log-<*>_<*> to index:<*>,98
+3cfac52a,11@group-<*>-SegmentedRaftLogWorker adds IO task FinalizeLogSegment:<*>: startIndex=<*> endIndex=<*>,98
+37296c7e,11@group-<*>-SegmentedRaftLogWorker: Rolled log segment from /iotdb/data/datanode/consensus/data_region/<*>-<*>-<*>-<*>-<*>/current/log_inprogress_<*> to /iotdb/data/datanode/consensus/data_region/<*>-<*>-<*>-<*>-<*>/current/log_<*>-<*>,98
+3cb2cf4b,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",49
+e60d92c1,"root.sg1-<*>: TTL not set, ignore the check",26
+f22979c8,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",22
+104ae8cc,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, commits:[<*>:c6291, <*>:c6282, <*>:c6286], cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",1
+04d59e70,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> (t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",7
+bc87c116,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",35
+94c66609,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",19
+fb00717d,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",9
+0368a316,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",4
+725dcab9,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",5
+6e5a492d,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>",2
+42e9c6dd,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, commits:[<*>:c28782, <*>:c28772, <*>:c28777], cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",1
+ed576ee0,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",9
+6ab30c6f,"11@group-<*>: Failed appendEntries as previous log entry ((t:<*>, i:<*>)) is not found",2
+2a6ababb,"11@group-<*>: inconsistency entries. Reply:<*><<*>#<*>:FAIL-t1,INCONSISTENCY,nextIndex=<*>,followerCommit=<*>,matchIndex=-<*>",4
+75e125bf,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, commits:[<*>:c50112, <*>:c50108, <*>:c50109], cId:<*>, entries: [(t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",1
+a6715954,"11@group-<*>: Failed appendEntries as the first entry (index <*>) already exists (snapshotIndex: <*>, commitIndex: <*>)",2
+6d07398e,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), METADATAENTRY(c:<*>), (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745]",2
+ba332615,"11@group-<*>: receive appendEntries(<*>, <*>, (t:<*>, i:<*>), <*>, true, <*> <*> <*> cId:<*>, entries: [(t:<*>, i:<*>), <*> <*> <*> <*> <*> (t:<*>, i:<*>), <*> <*> <*> <*> <*> <*> <*> <*> <*> (t:<*>, i:<*>), <*> <*> <*> <*> <*> (t:<*>, i:<*>), STATEMACHINELOGENTRY, <*>@client-18503BA5C745, (t:<*>, i:<*>), <*> <*> <*> <*> <*>",2

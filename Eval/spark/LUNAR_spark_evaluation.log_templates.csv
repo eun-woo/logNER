@@ -1,0 +1,765 @@
+EventId,EventTemplate
+E1,Start fetching local blocks: (<*>)
+E2,maxBytesInFlight: <*> targetRemoteRequestSize: <*> maxBlocksInFlightPerAddress: <*>
+E3,Getting <*> (<*>) non-empty blocks including <*> (<*>) local and <*> (<*>) host-local and <*> (<*>) push-merged-local and <*> (<*>) remote blocks
+E4,Started <*> remote fetches in <*> ms
+E5,Task <*> release <*> B from <*>
+E6,Getting local shuffle block <*>
+E7,"Collected remote fetch requests for BlockManagerId(<*>, <*> None) in <*> ms"
+E8,"Creating fetch request of <*> at BlockManagerId(<*>, <*> None) with <*> blocks"
+E9,Got local blocks in <*> ms
+E10,Number of requests in flight <*>
+E11,Sending request for <*> blocks (<*> B) from <*>
+E12,Sending request for <*> blocks (<*>) from <*>
+E13,Start fetching local blocks: <*>
+E14,Convert map statuses for shuffle <*> mappers <*> partitions <*>
+E15,Fetching outputs for shuffle <*>
+E16,Sending fetch chunk request <*> to <*>
+E17,Shuffle index for mapId <*>: [<*>]
+E18,Writing shuffle index file for mapId <*> with length <*>
+E19,Start fetching local blocks:
+E20,remainingBlocks: Set(<*>)
+E21,Finished task <*> in stage <*> (TID <*>). <*> bytes result sent to driver
+E22,"stageTCMP: (<*>, <*>) -> <*>"
+E23,ShuffleMapTask finished on <*>
+E24,Moving to <*> after waiting for <*>
+E25,No tasks for locality level <*> so moving to locality level <*>
+E26,"parentName: , name: <*> runningTasks: <*>"
+E27,Launching task <*> on executor id: <*> hostname: <*>.
+E28,Finished task <*> in stage <*> (TID <*>) in <*> ms on <*> (executor <*>) (<*>)
+E29,"Starting task <*> in stage <*> (TID <*>) (<*>, executor <*> partition <*> bytes) taskResourceAssignments Map()"
+E30,task <*> in stage <*> (TID <*>)'s epoch is <*>
+E31,"remainingBlocks: Set(shuffle_18_665_7, shuffle_18_706_7, shuffle_18_668_7, shuffle_18_701_7, shuffle_18_727_7, shuffle_18_748_7, shuffle_18_743_7, shuffle_18_674_7, shuffle_18_666_7, shuffle_18_759_7, shuffle_18_728_7, shuffle_18_749_7, shuffle_18_739_7, shuffle_18_762_7, shuffle_18_726_7, shuffle_18_721_7, shuffle_18_683_7, shuffle_18_755_7, shuffle_18_652_7, shuffle_18_711_7)"
+E32,"remainingBlocks: Set(shuffle_18_665_7, shuffle_18_706_7, shuffle_18_668_7, shuffle_18_701_7, shuffle_18_727_7, shuffle_18_748_7, shuffle_18_743_7, shuffle_18_674_7, shuffle_18_666_7, shuffle_18_759_7, shuffle_18_728_7, shuffle_18_749_7, shuffle_18_739_7, shuffle_18_762_7, shuffle_18_726_7, shuffle_18_721_7, shuffle_18_683_7, shuffle_18_755_7, shuffle_18_711_7)"
+E33,Running task <*> in stage <*> (TID <*>)
+E34,Got assigned task <*>
+E35,"remainingBlocks: Set(shuffle_18_694_12, shuffle_18_739_12, shuffle_18_748_12, shuffle_18_740_12, shuffle_18_674_12, shuffle_18_722_12, shuffle_18_728_12, shuffle_18_683_12, shuffle_18_721_12, shuffle_18_755_12, shuffle_18_701_12, shuffle_18_690_12, shuffle_18_654_12, shuffle_18_679_12, shuffle_18_763_12, shuffle_18_669_12, shuffle_18_717_12, shuffle_18_707_12, shuffle_18_668_12, shuffle_18_716_12, shuffle_18_759_12, shuffle_18_695_12, shuffle_18_659_12)"
+E36,"remainingBlocks: Set(shuffle_18_694_12, shuffle_18_739_12, shuffle_18_748_12, shuffle_18_740_12, shuffle_18_674_12, shuffle_18_722_12, shuffle_18_728_12, shuffle_18_683_12, shuffle_18_721_12, shuffle_18_755_12, shuffle_18_701_12, shuffle_18_690_12, shuffle_18_763_12, shuffle_18_679_12, shuffle_18_669_12, shuffle_18_717_12, shuffle_18_707_12, shuffle_18_668_12, shuffle_18_716_12, shuffle_18_759_12, shuffle_18_695_12, shuffle_18_659_12)"
+E37,"remainingBlocks: Set(shuffle_18_659_13, shuffle_18_668_13, shuffle_18_649_13, shuffle_18_758_13, shuffle_18_694_13, shuffle_18_740_13, shuffle_18_684_13, shuffle_18_666_13, shuffle_18_665_13, shuffle_18_711_13, shuffle_18_674_13, shuffle_18_701_13, shuffle_18_754_13, shuffle_18_710_13, shuffle_18_763_13, shuffle_18_679_13, shuffle_18_727_13, shuffle_18_762_13, shuffle_18_707_13, shuffle_18_706_13, shuffle_18_669_13, shuffle_18_759_13)"
+E38,Done removing broadcast <*> response is <*>
+E39,Sent response: <*> to slave0:<*>
+E40,Cleaned accumulator <*>
+E41,Cleaned broadcast <*>
+E42,Cleaning accumulator <*>
+E43,Got cleaning task <*>(<*>)
+E44,Cleaning broadcast <*>
+E45,Unpersisting TorrentBroadcast <*>
+E46,Removing block <*>
+E47,Removing broadcast <*>
+E48,removing broadcast <*>
+E49,Told master about block <*>
+E50,Updated info of block <*>
+E51,"Updating block info on master <*> for BlockManagerId(<*>, <*> None)"
+E52,Block <*> of size <*> dropped from memory (free <*>)
+E53,Removed <*> on <*> in memory (size: <*> free: <*>)
+E54,"remainingBlocks: Set(shuffle_18_741_19, shuffle_18_731_19, shuffle_18_765_19, shuffle_18_656_19, shuffle_18_719_19, shuffle_18_703_19, shuffle_18_764_19, shuffle_18_664_19, shuffle_18_709_19, shuffle_18_698_19, shuffle_18_772_19, shuffle_18_688_19, shuffle_18_672_19, shuffle_18_771_19, shuffle_18_769_19, shuffle_18_680_19, shuffle_18_770_19, shuffle_18_734_19, shuffle_18_751_19, shuffle_18_660_19, shuffle_18_677_19, shuffle_18_667_19)"
+E55,"Updating block info on master <*> for BlockManagerId(<*>, slave0, <*> None)"
+E56,"remainingBlocks: Set(shuffle_18_701_24, shuffle_18_710_24, shuffle_18_735_24, shuffle_18_763_24, shuffle_18_654_24, shuffle_18_679_24, shuffle_18_700_24, shuffle_18_753_24, shuffle_18_669_24, shuffle_18_762_24, shuffle_18_743_24, shuffle_18_716_24, shuffle_18_759_24, shuffle_18_695_24, shuffle_18_659_24, shuffle_18_694_24, shuffle_18_748_24, shuffle_18_684_24, shuffle_18_674_24, shuffle_18_666_24, shuffle_18_673_24, shuffle_18_711_24, shuffle_18_728_24)"
+E57,"remainingBlocks: Set(shuffle_18_701_24, shuffle_18_710_24, shuffle_18_735_24, shuffle_18_763_24, shuffle_18_679_24, shuffle_18_700_24, shuffle_18_753_24, shuffle_18_669_24, shuffle_18_762_24, shuffle_18_743_24, shuffle_18_716_24, shuffle_18_759_24, shuffle_18_695_24, shuffle_18_659_24, shuffle_18_694_24, shuffle_18_748_24, shuffle_18_684_24, shuffle_18_674_24, shuffle_18_666_24, shuffle_18_673_24, shuffle_18_711_24, shuffle_18_728_24)"
+E58,"remainingBlocks: Set(<*>, <*> <*>)"
+E59,"remainingBlocks: Set(shuffle_18_675_27, shuffle_18_704_27, shuffle_18_729_27, shuffle_18_738_27, shuffle_18_718_27, shuffle_18_702_27, shuffle_18_682_27, shuffle_18_663_27, shuffle_18_655_27, shuffle_18_745_27, shuffle_18_662_27, shuffle_18_744_27, shuffle_18_761_27, shuffle_18_725_27, shuffle_18_708_27, shuffle_18_696_27, shuffle_18_670_27, shuffle_18_733_27, shuffle_18_686_27, shuffle_18_732_27, shuffle_18_757_27, shuffle_18_676_27, shuffle_18_657_27)"
+E60,"remainingBlocks: Set(shuffle_18_675_27, shuffle_18_704_27, shuffle_18_729_27, shuffle_18_738_27, shuffle_18_718_27, shuffle_18_702_27, shuffle_18_682_27, shuffle_18_663_27, shuffle_18_745_27, shuffle_18_662_27, shuffle_18_744_27, shuffle_18_761_27, shuffle_18_725_27, shuffle_18_708_27, shuffle_18_696_27, shuffle_18_670_27, shuffle_18_733_27, shuffle_18_686_27, shuffle_18_732_27, shuffle_18_757_27, shuffle_18_676_27, shuffle_18_657_27)"
+E61,"Start fetching local blocks: (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>)"
+E62,"Start fetching local blocks: (<*>, <*>)"
+E63,"remainingBlocks: Set(shuffle_18_753_70, shuffle_18_669_70, shuffle_18_759_70, shuffle_18_678_70, shuffle_18_716_70, shuffle_18_668_70, shuffle_18_684_70, shuffle_18_683_70, shuffle_18_728_70, shuffle_18_673_70, shuffle_18_763_70, shuffle_18_727_70, shuffle_18_755_70, shuffle_18_711_70, shuffle_18_762_70, shuffle_18_726_70, shuffle_18_754_70, shuffle_18_701_70, shuffle_18_710_70, shuffle_18_690_70, shuffle_18_679_70, shuffle_18_689_70, shuffle_18_700_70)"
+E64,"remainingBlocks: Set(shuffle_18_668_92, shuffle_18_758_92, shuffle_18_694_92, shuffle_18_742_92, shuffle_18_649_92, shuffle_18_748_92, shuffle_18_684_92, shuffle_18_721_92, shuffle_18_674_92, shuffle_18_683_92, shuffle_18_728_92, shuffle_18_673_92, shuffle_18_763_92, shuffle_18_711_92, shuffle_18_762_92, shuffle_18_701_92, shuffle_18_726_92, shuffle_18_689_92, shuffle_18_690_92, shuffle_18_710_92, shuffle_18_716_92, shuffle_18_759_92, shuffle_18_707_92)"
+E65,"remainingBlocks: Set(<*>, <*>"
+E66,"remainingBlocks: Set(shuffle_18_684_97, shuffle_18_728_97, shuffle_18_683_97, shuffle_18_701_97, shuffle_18_679_97, shuffle_18_700_97, shuffle_18_678_97, shuffle_18_716_97, shuffle_18_722_97, shuffle_18_740_97, shuffle_18_763_97, shuffle_18_711_97, shuffle_18_762_97, shuffle_18_689_97, shuffle_18_754_97, shuffle_18_710_97, shuffle_18_735_97, shuffle_18_753_97, shuffle_18_669_97, shuffle_18_707_97, shuffle_18_758_97, shuffle_18_749_97, shuffle_18_748_97)"
+E67,"remainingBlocks: Set(shuffle_18_750_98, shuffle_18_714_98, shuffle_18_675_98, shuffle_18_757_98, shuffle_18_693_98, shuffle_18_738_98, shuffle_18_756_98, shuffle_18_692_98, shuffle_18_682_98, shuffle_18_655_98, shuffle_18_745_98, shuffle_18_744_98, shuffle_18_708_98, shuffle_18_663_98, shuffle_18_752_98, shuffle_18_733_98, shuffle_18_696_98, shuffle_18_761_98, shuffle_18_661_98, shuffle_18_732_98, shuffle_18_760_98, shuffle_18_676_98, shuffle_18_685_98)"
+E68,Increasing epoch to <*>
+E69,submitStage(ResultStage <*> (name=<*> at SparkTC.scala:<*>;jobs=<*>))
+E70,ShuffleMapStage <*> (<*> at SparkTC.scala:<*>) finished in <*> s
+E71,failed: Set()
+E72,looking for newly runnable stages
+E73,running: Set()
+E74,waiting: Set(ResultStage <*>)
+E75,"Removed TaskSet <*> whose tasks have all completed, from pool"
+E76,missing: List()
+E77,submitMissingTasks(<*>)
+E78,Put block <*> locally took <*> ms
+E79,Putting block <*> without replication took <*> ms
+E80,Block <*> stored as values in memory (estimated size <*> free <*>)
+E81,Added <*> in memory on <*> (size: <*> free: <*>)
+E82,Block <*> stored as bytes in memory (estimated size <*> free <*>)
+E83,Created broadcast <*> from broadcast at DAGScheduler.scala:<*>
+E84,Epoch for TaskSet <*>: <*>
+E85,Adding task set <*> with <*> tasks resource profile <*>
+E86,Adding pending tasks took <*> ms
+E87,"Valid locality levels for TaskSet <*>: NODE_LOCAL, RACK_LOCAL, ANY"
+E88,Block <*> was not found
+E89,Getting local block <*>
+E90,Updating epoch to <*> and clearing cache
+E91,Reading piece <*> of <*>
+E92,Getting local block <*> as bytes
+E93,Getting remote block <*>
+E94,Started reading broadcast variable <*> with <*> pieces (estimated total size <*> MiB)
+E95,"Getting remote block <*> from BlockManagerId(<*>, slave0, <*> None)"
+E96,"Level for block <*> is StorageLevel(<*>, <*> <*>)"
+E97,Reading broadcast variable <*> took <*> ms
+E98,Block <*> is unknown by block manager master
+E99,Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://<*>)
+E100,Don't have map outputs for shuffle <*> fetching them
+E101,Handling request to send map/merge output locations for shuffle <*> to <*>
+E102,Asked to send map output locations for shuffle <*> to <*>
+E103,Fetching map output statuses for shuffle <*> took <*> ms
+E104,Got the map output locations
+E105,"Start fetching local blocks: (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>)"
+E106,"Start fetching local blocks: (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>), (<*>)"
+E107,"Start fetching local blocks: (<*>), (<*>), (<*>), (<*>), (<*>), (<*>)"
+E108,"removing (<*>, <*>) from stageTCMP"
+E109,IPC Client (<*>) connection to master/<*> from root sending <*> <*>.getApplicationReport
+E110,IPC Client (<*>) connection to <*> from <*> got value #<*>
+E111,Call: <*> took <*>
+E112,Application report for <*> (state: <*>)
+E113,client token: <*> diagnostics: <*> ApplicationMaster host: <*> ApplicationMaster RPC port: <*> queue: <*> start time: <*> final status: <*> tracking URL: <*> user: <*>
+E114,"DatanodeRegistration(<*>, datanodeUuid=<*>, infoPort=<*>, infoSecurePort=<*>, ipcPort=<*>, storageInfo=lv=-<*>;cid=CID-42d9779f-782d-44ea-a75a-68048e1fb0da;nsid=<*>;c=<*>) Starting thread to transfer BP-<*> to <*>"
+E115,"DataTransfer, at <*>: Transmitted BP-<*> (numBytes=<*>) to /172.<*>"
+E116,Receiving BP-<*> src: <*> dest: <*>
+E117,Received BP-<*> src: <*> dest: <*> of size <*>
+E118,After removal of stage <*> remaining stages = <*>
+E119,Job <*> is finished. Cancelling potential speculative or zombie tasks for this job
+E120,ResultStage <*> (count at SparkTC.scala:<*>) finished in <*> s
+E121,Killing all running tasks in stage <*>: Stage finished
+E122,"Job <*> finished: count at SparkTC.scala:<*>, took <*> s"
+E123,Cleaning indylambda closure: <*>
+E124,+++ indylambda closure ($anonfun$<*>$<*>) is now cleaned +++
+E125,"Can't use serialized shuffle for shuffle <*> because the serializer, <*> does not support object relocation"
+E126,Merging stage rdd profiles: Set()
+E127,eagerlyComputePartitionsForRddAndAncestors for RDD <*> took <*> seconds
+E128,Starting job: count at SparkTC.scala:<*>
+E129,Registering RDD <*> (<*> at <*>) as input to shuffle <*>
+E130,Final stage: ResultStage <*> (count at SparkTC.scala:<*>)
+E131,Got job <*> (count at SparkTC.scala:<*>) with <*> output partitions
+E132,Parents of final stage: List(ShuffleMapStage <*>)
+E133,Missing parents: List(ShuffleMapStage <*>)
+E134,missing: List(ShuffleMapStage <*>)
+E135,submitStage(ShuffleMapStage <*> (name=distinct at SparkTC.scala:<*>;jobs=<*>))
+E136,"missing: List(<*>, <*>)"
+E137,submitStage(ShuffleMapStage <*> (name=<*> at <*>;jobs=<*>))
+E138,"Valid locality levels for TaskSet <*>: PROCESS_LOCAL, NODE_LOCAL, RACK_LOCAL, ANY"
+E139,Found block <*> locally
+E140,running: Set(ShuffleMapStage <*>)
+E141,"waiting: Set(<*>, <*>)"
+E142,Not enough replicas was chosen. Reason: <*>
+E143,"Valid locality levels for TaskSet <*>: PROCESS_LOCAL, NODE_LOCAL, NO_PREF, RACK_LOCAL, ANY"
+E144,"remainingBlocks: Set(shuffle_21_1538_0, shuffle_21_1348_0, shuffle_21_1533_0, shuffle_21_1523_0, shuffle_21_1351_0, shuffle_21_1449_0, shuffle_21_1516_0, shuffle_21_1542_0, shuffle_21_1470_0, shuffle_21_1367_0, shuffle_21_1537_0, shuffle_21_1465_0, shuffle_21_1393_0, shuffle_21_1434_0, shuffle_21_1486_0, shuffle_21_1501_0, shuffle_21_1517_0, shuffle_21_1316_0, shuffle_21_1368_0, shuffle_21_1409_0, shuffle_21_1466_0, shuffle_21_1389_0, shuffle_21_1461_0)"
+E145,"remainingBlocks: Set(shuffle_21_1361_6, shuffle_21_1425_6, shuffle_21_1485_6, shuffle_21_1518_6, shuffle_21_1382_6, shuffle_21_1413_6, shuffle_21_1426_6, shuffle_21_1354_6, shuffle_21_1468_6, shuffle_21_1396_6, shuffle_21_1342_6, shuffle_21_1397_6, shuffle_21_1502_6, shuffle_21_1407_6, shuffle_21_1333_6, shuffle_21_1346_6, shuffle_21_1493_6, shuffle_21_1462_6, shuffle_21_1442_6, shuffle_21_1339_6, shuffle_21_1391_6, shuffle_21_1369_6, shuffle_21_1456_6)"
+E146,"remainingBlocks: Set(shuffle_21_1359_5, shuffle_21_1377_5, shuffle_21_1441_5, shuffle_21_1542_5, shuffle_21_1534_5, shuffle_21_1506_5, shuffle_21_1393_5, shuffle_21_1457_5, shuffle_21_1388_5, shuffle_21_1434_5, shuffle_21_1424_5, shuffle_21_1368_5, shuffle_21_1409_5, shuffle_21_1466_5, shuffle_21_1394_5, shuffle_21_1497_5, shuffle_21_1522_5, shuffle_21_1404_5, shuffle_21_1389_5, shuffle_21_1422_5, shuffle_21_1533_5, shuffle_21_1523_5, shuffle_21_1454_5)"
+E147,"remainingBlocks: Set(shuffle_21_1403_24, shuffle_21_1518_24, shuffle_21_1473_24, shuffle_21_1511_24, shuffle_21_1509_24, shuffle_21_1445_24, shuffle_21_1510_24, shuffle_21_1381_24, shuffle_21_1425_24, shuffle_21_1468_24, shuffle_21_1315_24, shuffle_21_1494_24, shuffle_21_1333_24, shuffle_21_1314_24, shuffle_21_1350_24, shuffle_21_1503_24, shuffle_21_1374_24, shuffle_21_1419_24, shuffle_21_1483_24, shuffle_21_1463_24, shuffle_21_1346_24, shuffle_21_1397_24, shuffle_21_1462_24, shuffle_21_1396_24, shuffle_21_1407_24, shuffle_21_1387_24, shuffle_21_1431_24, shuffle_21_1456_24, shuffle_21_1540_24, shuffle_21_1519_24, shuffle_21_1499_24)"
+E148,"remainingBlocks: Set(shuffle_21_1403_24, shuffle_21_1518_24, shuffle_21_1473_24, shuffle_21_1511_24, shuffle_21_1509_24, shuffle_21_1445_24, shuffle_21_1510_24, shuffle_21_1381_24, shuffle_21_1425_24, shuffle_21_1468_24, shuffle_21_1315_24, shuffle_21_1494_24, shuffle_21_1333_24, shuffle_21_1350_24, shuffle_21_1503_24, shuffle_21_1374_24, shuffle_21_1419_24, shuffle_21_1483_24, shuffle_21_1463_24, shuffle_21_1346_24, shuffle_21_1397_24, shuffle_21_1462_24, shuffle_21_1396_24, shuffle_21_1407_24, shuffle_21_1387_24, shuffle_21_1431_24, shuffle_21_1456_24, shuffle_21_1540_24, shuffle_21_1519_24, shuffle_21_1499_24)"
+E149,"remainingBlocks: Set(shuffle_21_1403_24, shuffle_21_1518_24, shuffle_21_1473_24, shuffle_21_1511_24, shuffle_21_1509_24, shuffle_21_1445_24, shuffle_21_1510_24, shuffle_21_1381_24, shuffle_21_1425_24, shuffle_21_1468_24, shuffle_21_1494_24, shuffle_21_1333_24, shuffle_21_1350_24, shuffle_21_1503_24, shuffle_21_1374_24, shuffle_21_1419_24, shuffle_21_1483_24, shuffle_21_1463_24, shuffle_21_1346_24, shuffle_21_1397_24, shuffle_21_1462_24, shuffle_21_1396_24, shuffle_21_1407_24, shuffle_21_1387_24, shuffle_21_1431_24, shuffle_21_1456_24, shuffle_21_1540_24, shuffle_21_1519_24, shuffle_21_1499_24)"
+E150,Number of pending allocations is <*> Slept for <*>.
+E151,Sending progress
+E152,Updating resource requests for ResourceProfile id: <*> target: <*> pending: <*> running: <*> executorsStarting: <*>
+E153,IPC Client (<*>) connection to master/<*> from root sending <*>
+E154,Call: allocate took <*>
+E155,"remainingBlocks: Set(shuffle_21_1472_78, shuffle_21_1311_78, shuffle_21_1444_78, shuffle_21_1335_78, shuffle_21_1487_78, shuffle_21_1533_78, shuffle_21_1506_78, shuffle_21_1352_78, shuffle_21_1325_78, shuffle_21_1370_78, shuffle_21_1460_78, shuffle_21_1376_78, shuffle_21_1458_78, shuffle_21_1394_78, shuffle_21_1367_78, shuffle_21_1322_78, shuffle_21_1501_78, shuffle_21_1481_78, shuffle_21_1409_78, shuffle_21_1389_78, shuffle_21_1454_78, shuffle_21_1453_78, shuffle_21_1368_78, shuffle_21_1316_78, shuffle_21_1470_78, shuffle_21_1424_78, shuffle_21_1538_78, shuffle_21_1422_78, shuffle_21_1337_78, shuffle_21_1491_78)"
+E156,"Start fetching local blocks: (shuffle_21_1306_97,<*>), (shuffle_21_1308_97,<*>), (shuffle_21_1312_97,<*>), (shuffle_21_1316_97,<*>), (shuffle_21_1322_97,<*>), (shuffle_21_1326_97,<*>), (shuffle_21_1330_97,<*>), (shuffle_21_1334_97,<*>), (shuffle_21_1337_97,<*>), (shuffle_21_1357_97,<*>), (shuffle_21_1363_97,<*>), (shuffle_21_1367_97,<*>), (shuffle_21_1371_97,<*>), (shuffle_21_1376_97,<*>), (shuffle_21_1393_97,<*>), (shuffle_21_1394_97,<*>), (shuffle_21_1416_97,<*>), (shuffle_21_1424_97,<*>), (shuffle_21_1429_97,<*>), (shuffle_21_1433_97,<*>), (shuffle_21_1457_97,<*>), (shuffle_21_1458_97,<*>), (shuffle_21_1461_97,<*>), (shuffle_21_1466_97,<*>), (shuffle_21_1482_97,<*>), (shuffle_21_1486_97,<*>), (shuffle_21_1487_97,<*>), (shuffle_21_1496_97,<*>), (shuffle_21_1497_97,<*>), (shuffle_21_1516_97,<*>), (shuffle_21_1530_97,<*>), (shuffle_21_1533_97,<*>), (shuffle_21_1534_97,<*>), (shuffle_21_1542_97,<*>)"
+E157,"Start fetching local blocks: (<*>), (<*>), (<*>), (<*>)"
+E158,"Start fetching local blocks: (<*>), (<*>), (<*>)"
+E159,"Start fetching local blocks: (<*>), (<*>)"
+E160,"registered UNIX signal handlers for [TERM, HUP, INT]"
+E161,createNameNode []
+E162,Loaded properties from <*>
+E163,NameNode metrics system started
+E164,Scheduled Metric snapshot period at <*> second(s).
+E165,Clients should use <*> to access this namenode/service.
+E166,fs.defaultFS is hdfs://<*>
+E167,Starting JVM pause monitor
+E168,Filter initializers set : <*>
+E169,Starting Web-server for <*> at: <*>
+E170,Logging initialized @<*> to org.eclipse.jetty.util.log.Slf4jLog
+E171,"Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: <*>"
+E172,Http request log for http.requests.<*> is not defined
+E173,Added global filter <*> (class=<*>)
+E174,Added filter <*> (class=<*>) to context <*>
+E175,Jetty bound to port <*>
+E176,jetty-<*>; built: <*>; git: <*>; jvm <*>
+E177,DefaultSessionIdManager workerName=<*>
+E178,"No SessionScavenger set, using defaults"
+E179,node0 Scavenging every <*>
+E180,Started <*>
+E181,Started ServerConnector@<*>
+E182,Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
+E183,Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
+E184,Edit logging is async:<*>
+E185,KeyProvider: <*>
+E186,Detailed lock hold time metrics enabled: <*>
+E187,fsLock is fair: true
+E188,fsOwner = <*> (auth:SIMPLE)
+E189,isPermissionEnabled = <*>
+E190,supergroup = <*>
+E191,HA Enabled: <*>
+E192,isStoragePolicyEnabled = <*>
+E193,dfs.datanode.fileio.profiling.sampling.percentage set to <*> Disabling file IO profiling
+E194,Adding a node <*> to the list of included hosts from <*>
+E195,"dfs.block.invalidate.limit: configured=<*>, counted=<*>, effected=<*>"
+E196,dfs.namenode.datanode.registration.ip-hostname-check=true
+E197,The block deletion will start around <*>
+E198,dfs.namenode.startup.delay.block.deletion.sec is set to <*>
+E199,Computing capacity for map <*>
+E200,VM type = <*>
+E201,<*>% max memory <*> MB = <*>
+E202,capacity = <*> = <*> entries
+E203,Storage policy satisfier is disabled
+E204,dfs.block.access.token.enable = <*>
+E205,defaultReplication = <*>
+E206,dfs.namenode.safemode.extension = <*>
+E207,dfs.namenode.safemode.min.datanodes = <*>
+E208,dfs.namenode.safemode.threshold-pct = <*>
+E209,encryptDataTransfer = <*>
+E210,maxNumBlocksToLog = <*>
+E211,maxReplication = <*>
+E212,maxReplicationStreams = <*>
+E213,minReplication = <*>
+E214,redundancyRecheckInterval = <*>
+E215,<*> serial map: bits=<*> maxEntries=<*>
+E216,ACLs enabled? <*>
+E217,POSIX ACL inheritance enabled? <*>
+E218,XAttrs enabled? <*>
+E219,Caching file names occurring more than <*> times
+E220,"Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: <*>"
+E221,SkipList is disabled
+E222,NNTop conf: dfs.namenode.top.num.users = <*>
+E223,NNTop conf: dfs.namenode.top.window.num.buckets = <*>
+E224,NNTop conf: dfs.namenode.top.windows.minutes = <*>
+E225,Retry cache on namenode is enabled
+E226,Retry cache will use <*> of total heap and retry cache entry expiry time is <*> millis
+E227,Lock on <*>/in_use.lock acquired by nodename <*>
+E228,Recovering unfinalized segments in <*>
+E229,No edit log streams selected.
+E230,"Planning to load image: FSImageFile(file=<*>, cpktTxId=<*>)"
+E231,Loading <*> INodes.
+E232,Successfully loaded <*> inodes
+E233,"Completed update blocks map and name cache, total waiting duration <*>."
+E234,Loaded image for txid <*> from /data/tmp/dfs/name/current/fsimage_0000000000000000000
+E235,Loaded FSImage in <*> seconds.
+E236,"Need to save fs image? <*> (staleImage=<*>, haEnabled=<*>, isRollingUpgrade=<*>)"
+E237,Starting log segment at <*>
+E238,initialized with <*> entries <*> lookups
+E239,Finished loading FSImage in <*> msecs
+E240,Enable NameNode state context:<*>
+E241,RPC server is binding to master:<*>
+E242,"Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: <*> scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false."
+E243,Starting Socket Reader <*> for port <*>
+E244,"Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans."
+E245,Number of blocks under construction: <*>
+E246,Start MarkedDeleteBlockScrubber thread
+E247,Initialized the Default Decommission and Maintenance monitor
+E248,initializing replication queues
+E249,Number of <*> blocks = <*>
+E250,Number of blocks being written = <*>
+E251,Total number of blocks = <*>
+E252,IPC Server Responder: starting
+E253,IPC Server listener on <*>: starting
+E254,NameNode RPC up at: master/<*>
+E255,Initializing quota with <*> thread(s)
+E256,Starting services required for active state
+E257,"Quota initialization completed in <*> milliseconds name space=<*> storage space=<*> storage types=RAM_DISK=<*>, SSD=<*>, DISK=<*>, ARCHIVE=<*>, PROVIDED=<*>"
+E258,Starting CacheReplicationMonitor with interval <*> milliseconds
+E259,Scheduling a check for <*>
+E260,DataNode metrics system started
+E261,Initialized block scanner with targetBytesPerSec <*>
+E262,Configured hostname is <*>
+E263,Starting DataNode with maxLockedMemory = <*>
+E264,Opened streaming server at <*>
+E265,Balancing bandwidth is <*> bytes/s
+E266,Number threads for balancing is <*>
+E267,Got <*> for <*> - will not do any filtering.
+E268,Listening HTTP traffic on <*>
+E269,dnUserName = <*>
+E270,Opened IPC server at <*>
+E271,Refresh request received for nameservices: <*>
+E272,Starting BPOfferServices for nameservices: <*>
+E273,Block pool <*> (Datanode Uuid <*>) service to <*> to offer service
+E274,Acknowledging ACTIVE Namenode during handshakeBlock pool <*> (Datanode Uuid unassigned) service to master/<*>
+E275,"Using <*> threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=<*>, dataDirs=<*>)"
+E276,Storage directory with location [DISK]<*> is not formatted for namespace <*> Formatting...
+E277,Generated new storageID <*> for directory <*>
+E278,Analyzing storage directories for bpid BP-<*>
+E279,Locking is disabled for <*>
+E280,Block pool storage directory for location [DISK]<*> and block pool id <*> is not formatted. Formatting ...
+E281,Formatting block pool <*> directory <*>
+E282,Setting up storage: nsid=<*>;bpid=<*>;lv=<*>;nsInfo=lv=<*>;cid=<*>;nsid=<*>;c=<*>;bpid=<*>;dnuuid=<*>
+E283,Generated and persisted new Datanode UUID <*>
+E284,The datanode lock is a read write lock
+E285,Added new volume: DS-<*>
+E286,"Added volume - [DISK]<*>, StorageType: DISK"
+E287,Initializing cache loader: <*>.
+E288,Registered FSDatasetState MBean
+E289,Adding block pool BP-<*>
+E290,Scanning block pool <*> on volume <*>...
+E291,"dfsUsed file missing in <*>/current/BP-<*>/current, will proceed with Du for space computation calculation,"
+E292,Time taken to scan block pool BP-<*> on <*>: <*>
+E293,Total time to scan all replicas for block pool BP-<*>: <*>
+E294,Replica Cache file: <*>/replicas doesn't exist
+E295,Adding replicas to map for block pool <*> on volume <*>...
+E296,Time to add replicas to map for block pool BP-<*> on volume <*>: <*>
+E297,Total time to add all replicas to map for block pool BP-<*>: <*>
+E298,Scheduled health check for volume <*>
+E299,Periodic Directory Tree Verification scan starting in <*> with interval of 21600000ms and throttle limit of -1ms/s
+E300,Now scanning bpid <*> on volume <*>
+E301,dfs.datanode.directoryscan.throttle.limit.ms.per.sec set to value above <*> ms/sec. Assuming default value of -<*>
+E302,"VolumeScanner(<*>, DS-<*>): finished scanning block pool BP-<*>"
+E303,Block pool BP-<*> (Datanode Uuid <*>) service to master/<*> beginning handshake with NN
+E304,"VolumeScanner(<*>, DS-<*>): no suitable block pools found to scan. Waiting <*> ms."
+E305,Registered DN <*> (<*>).
+E306,Adding a new node: /default-rack/<*>
+E307,Block pool BP-<*> (Datanode Uuid <*>) service to master/<*> successfully registered with NN
+E308,For namenode master/<*> using BLOCKREPORT_INTERVAL of <*> CACHEREPORT_INTERVAL of <*> Initial delay: <*>; heartBeatInterval=<*>
+E309,Adding new storage ID DS-<*> for DN <*>
+E310,Got finalize command for block pool BP-<*>
+E311,"Successfully sent block report <*> with lease ID <*> to namenode: master/<*>, containing <*> storage report(s), of which we sent <*> The reports had <*> total blocks and used <*> RPC(s). This took <*> msecs to generate and <*> msecs for RPC and NN processing. Got back one command: FinalizeCommand/5."
+E312,SecondaryNameNode metrics system started
+E313,Checkpoint Period :<*> secs (<*> min)
+E314,Log Size Trigger :<*> txns
+E315,Web server init done
+E316,Registered RMInfo MBean
+E317,found resource core-site.xml at file:<*>
+E318,<*>.xml not found
+E319,Unable to find '<*>'.
+E320,found resource <*> at <*>
+E321,Registering GenericEventTypeMetrics
+E322,Registering class <*> for class <*>
+E323,NMTokenKeyRollingInterval: <*> and NMTokenKeyActivationDelay: <*>
+E324,ContainerTokenKeyRollingInterval: <*> and ContainerTokenKeyActivationDelay: <*>
+E325,AMRMTokenKeyRollingInterval: <*> and AMRMTokenKeyActivationDelay: <*> ms
+E326,Using Scheduler: <*>
+E327,ResourceManager metrics system started
+E328,org.apache.hadoop.yarn.security.<*> is instantiated.
+E329,Registered RMNMInfo MBean
+E330,Application lifelime monitor interval set to <*> ms.
+E331,Initializing NodeSortingService=<*>
+E332,"Failed to init hostsReader, disabling java.io.FileNotFoundException: <*> (No such file or directory) at java.io.FileInputStream.open0(Native Method) at java.io.FileInputStream.open(FileInputStream.java:<*>) at java.io.FileInputStream.<init>(FileInputStream.java:<*>) at java.io.FileInputStream.<init>(FileInputStream.java:<*>) at org.apache.hadoop.yarn.LocalConfigurationProvider.getConfigurationInputStream(LocalConfigurationProvider.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.createHostsFileReader(NodesListManager.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.serviceInit(NodesListManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.service.CompositeService.serviceInit(CompositeService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceInit(ResourceManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createAndInitActiveServices(ResourceManager.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit(ResourceManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:<*>)"
+E333,Refreshing hosts (include/exclude) list
+E334,"Maximum allocation = <memory:<*>, vCores:<*>"
+E335,"Minimum allocation = <memory:<*>, vCores:<*>"
+E336,"Initialized parent-queue root name=<*>, fullname=<*>"
+E337,Initialized queue: <*>
+E338,"Initialized root queue root: numChildQueue=<*> <*> capacity=<*>, absoluteCapacity=<*>, usedResources=<memory:<*>, vCores:<*>=<*>, numApps=<*>, numContainers=<*>"
+E339,"Initialized queue mappings, override: false"
+E340,"Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:<*>, vCores:<*>, maximumAllocation=<<memory:<*>, vCores:<*>, asynchronousScheduling=false, asyncScheduleInterval=5ms,multiNodePlacementEnabled=false, assignMultipleEnabled=true, maxAssignPerHeartbeat=<*>, offswitchPerHeartbeatLimit=<*>"
+E341,"Initialized workflow priority mappings, override: false"
+E342,MultiNode scheduling is <*> and configured policies are
+E343,Initializing AMS Processing chain. Root Processor=[<*>].
+E344,"disabled placement handler will be used, all scheduling requests will be rejected."
+E345,TimelineServicePublisher is not configured
+E346,Registered webapp guice modules
+E347,Updating the current master key for generating delegation tokens
+E348,"Starting expired delegation token remover thread, tokenRemoverScanInterval=<*> min(s)"
+E349,Web app cluster started at <*>
+E350,Adding protocol <*> to the server
+E351,Transitioning to active state
+E352,Storing <*>.
+E353,Updating AMRMToken
+E354,Rolling master-key for <*>
+E355,storing master key with keyID <*>
+E356,Found Resource plugins from configuration: <*>
+E357,No Resource plugins found from configuration!
+E358,"The pluggable device framework is not enabled. If you want, please set true to yarn.nodemanager.pluggable-device-framework.enabled"
+E359,Created store directory :file:<*>
+E360,Finished write mirror at:<*>
+E361,Finished create editlog file at:file:<*>
+E362,Starting NodeSortingService=<*>
+E363,the rolling interval seconds for the NodeManager Cached Log aggregation status is <*>
+E364,NodeManager metrics system started
+E365,"Missing location for the node health check script ""<*>""."
+E366,Disk Validator <*> is loaded.
+E367,Using ResourceCalculatorPlugin : <*>
+E368,AMRMProxyService is disabled
+E369,per directory file limit = <*>
+E370,Using traffic control bandwidth handler
+E371,Using ResourceCalculatorPlugin: <*>
+E372,Using ResourceCalculatorProcessTree: <*>
+E373,Container Log Monitor Enabled: <*>
+E374,ContainersMonitor enabled: <*>
+E375,Elastic memory control enabled: <*>
+E376,Physical memory check enabled: <*>
+E377,"Setting the resources allocated to containers to <memory:<*>, vCores:<*>"
+E378,Strict memory control enabled: <*>
+E379,Virtual memory check enabled: <*>
+E380,Not a recoverable state store. Nothing to recover.
+E381,"Nodemanager resources is set to: <memory:<*>, vCores:<*>"
+E382,Initialized nodemanager with : physical-memory=<*> virtual-memory=<*> virtual-cores=<*>
+E383,Created Certificate for OU=<*>
+E384,Transitioned to active state
+E385,Storing CA Certificate and Private Key
+E386,Updating node address : <*>
+E387,Localizer started on port <*>
+E388,ContainerManager started at slave<*>
+E389,ContainerManager bound to <*>
+E390,Log Aggregation is disabled.So is the LogAggregationStatusTracker.
+E391,Instantiating NMWebApp at <*>
+E392,Web app node started at <*>
+E393,Node ID assigned is : <*>
+E394,Connecting to ResourceManager at master/<*>
+E395,"NodeManager from node <*>(cmPort: <*> httpPort: <*>) registered with capability: <memory:<*>, vCores:<*>, assigned nodeId <*>"
+E396,<*> Node Transitioned from NEW to RUNNING
+E397,"Added node <*> clusterResource: <memory:<*>, vCores:<*>"
+E398,"Rolling master-key for container-tokens, got key with id <*>"
+E399,"Registered with ResourceManager as <*> with total resource of <memory:<*>, vCores:8>"
+E400,"src: /<*>, dest: /<*>, bytes: <*> op: HDFS_WRITE, cliID: <*> offset: <*> srvID: <*> blockid: BP-<*>, duration(ns): <*>"
+E401,"PacketResponder: BP-<*>, type=LAST_IN_PIPELINE terminating"
+E402,"Failed to place enough replicas: expected size is <*> but only <*> storage types can be selected (replication=<*>, selected=[], unavailable=[<*>], removed=[<*>], policy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]})"
+E403,"Failed to place enough replicas, still in need of <*> to reach <*> (unavailableStorages=[<*>], storagePolicy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]}, newBlock=<*>) All required storage types are unavailable: unavailableStorages=[<*>], storagePolicy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]}"
+E404,"Failed to place enough replicas, still in need of <*> to reach <*> (unavailableStorages=<*>, storagePolicy=<*>, newBlock=<*>) For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy and org.apache.hadoop.net.NetworkTopology"
+E405,"Failed to place enough replicas: expected size is <*> but only <*> storage types can be selected (replication=<*>, selected=[], unavailable=[<*>, <*>], removed=[<*>], policy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]})"
+E406,"Failed to place enough replicas, still in need of <*> to reach <*> (unavailableStorages=[<*>, <*>], storagePolicy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]}, newBlock=false) All required storage types are unavailable: unavailableStorages=[<*>, <*>], storagePolicy=<*>, storageTypes=[<*>], creationFallbacks=[], replicationFallbacks=[<*>]}"
+E407,Number of transactions: <*> Total time for transactions(ms): <*> Number of transactions batched in Syncs: <*> Number of syncs: <*> SyncTimes(ms): <*>
+E408,Ending log segment <*>
+E409,Rolling edit logs
+E410,Roll Edit Log from <*>
+E411,Finalizing edits file <*> -> <*>
+E412,Sending fileName: <*> fileSize: <*> Sent total: <*> bytes. Size of last segment intended to send: -<*> bytes.
+E413,Saving image file <*> using no compression
+E414,Image file <*> of size <*> bytes saved in <*> seconds .
+E415,Rejecting a fsimage due to small time delta and txnid delta. Time since previous checkpoint is <*> expecting at least <*> txnid delta since previous checkpoint is <*> expecting at least <*>
+E416,Adding shutdown hook
+E417,setsid exited with exit code <*>
+E418,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName=<*>, valueName=<*>, about=, interval=<*>, type=DEFAULT, value=[GetGroups])"
+E419,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.<*> with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName=Ops, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Rate of <*> kerberos logins and latency (milliseconds)])"
+E420,"field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName=<*>, valueName=<*>, about=<*>, interval=<*>, type=<*>, value=[Renewal failures since last successful login])"
+E421,"field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(always=false, sampleName=<*>, valueName=<*>, about=<*>, interval=<*>, type=<*>, value=[Renewal failures since startup])"
+E422,"UgiMetrics, User and group related metrics"
+E423,Setting hadoop.security.token.service.use_ip to <*>
+E424,Creating new Groups object
+E425,Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+E426,Trying to load the custom-built native-hadoop library...
+E427,java.library.path=<*>
+E428,Falling back to shell based
+E429,Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+E430,Group mapping impl=<*>
+E431,Group mapping impl=<*>; cacheTimeout=<*>; warningDeltaMs=<*>
+E432,Hadoop login
+E433,hadoop login commit
+E434,Using local user: UnixPrincipal: <*>
+E435,"Using user: ""UnixPrincipal: <*>"" with name: <*>"
+E436,UGI loginUser: root (auth:SIMPLE)
+E437,"User entry: ""<*>"""
+E438,Acquiring creator semaphore for <*>: duration <*>
+E439,Starting: Acquiring creator semaphore for <*>
+E440,Loading filesystems
+E441,Starting: Creating FS <*>
+E442,nullscan:// = class org.apache.hadoop.hive.ql.io.NullScanFileSystem from <*>
+E443,file:// = class org.apache.hadoop.fs.LocalFileSystem from <*>
+E444,file:// = class org.apache.hadoop.hive.ql.io.ProxyLocalFileSystem from <*>
+E445,viewfs:// = class org.apache.hadoop.fs.viewfs.ViewFileSystem from <*>
+E446,har:// = class org.apache.hadoop.fs.HarFileSystem from <*>
+E447,http:// = class org.apache.hadoop.fs.http.HttpFileSystem from <*>
+E448,https:// = class org.apache.hadoop.fs.http.HttpsFileSystem from <*>
+E449,hdfs://<*> = class <*> from <*>
+E450,webhdfs:// = class org.apache.hadoop.hdfs.web.WebHdfsFileSystem from <*>
+E451,swebhdfs:// = class org.apache.hadoop.hdfs.web.SWebHdfsFileSystem from <*>
+E452,Looking for FS supporting file
+E453,looking for configuration option fs.<*>.impl
+E454,FS for file is class <*>
+E455,Looking in service filesystems for implementation class
+E456,Creating FS <*>: duration <*>
+E457,"Created Globber for path=file:<*>, symlinks=true"
+E458,Filesystem glob <*>/spark/examples/jars/<*>
+E459,Pattern: /spark/examples/jars/<*>
+E460,Starting: glob file:<*>
+E461,Component <*> patterned=false
+E462,glob file:<*>: duration <*>
+E463,Service: <*> entered state INITED
+E464,PrivilegedAction [as: <*> (auth:<*>)][action: <*>] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:<*>) at org.apache.hadoop.service.AbstractService.start(AbstractService.java:<*>) at org.apache.spark.deploy.yarn.Client.submitApplication(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.run(Client.scala:<*>) at org.apache.spark.deploy.yarn.YarnClusterApplication.start(Client.scala:<*>) at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doRunMain$<*>(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$$anon$<*>.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+E465,Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.<*>
+E466,Creating YarnRPC for <*>
+E467,"rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@<*>"
+E468,getting client out of cache: Client-<*>
+E469,Service <*> is started
+E470,The ping interval is <*> ms.
+E471,Connecting to <*>
+E472,Setup connection to <*>
+E473,IPC Client (<*>) connection to <*> from <*>: <*> having connections <*>
+E474,Call: getClusterMetrics took <*>
+E475,Requesting a new application from cluster with <*> NodeManagers
+E476,Allocated new applicationId: <*>
+E477,FS for hdfs is class org.apache.hadoop.hdfs.<*>
+E478,Looking for FS supporting hdfs
+E479,dfs.client.domain.socket.data.traffic = <*>
+E480,dfs.client.read.shortcircuit = <*>
+E481,dfs.client.use.legacy.blockreader.local = <*>
+E482,dfs.domain.socket.path =
+E483,Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to <*>
+E484,multipleLinearRandomRetry = <*>
+E485,Both short-circuit local reads and UNIX domain socket are disabled.
+E486,"DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection"
+E487,Adding resource type - name = <*> units = <*> type = <*>
+E488,Mandatory Resource '<*>-allocation' is not configured in resource-types config file. Setting allocation specified using '<*>'
+E489,Verifying our application has not requested more than the maximum memory capability of the cluster (<*> MB per container)
+E490,"Will allocate AM container, with <*> MB memory including <*> MB overhead"
+E491,Setting up container launch context for our AM
+E492,Setting up the launch environment for our AM container
+E493,Preparing resources for our AM container
+E494,/user/root/.sparkStaging/application_<*>: masked=<*>
+E495,"Neither <*> nor <*> is set, falling back to uploading libraries under <*>."
+E496,Uploading resource file:<*> -> <*>
+E497,"computePacketChunkSize: src=<*>, chunkSize=<*>, chunksPerPacket=<*>, packetSize=<*>"
+E498,"WriteChunk allocating new packet seqno=<*>, src=<*>, packetSize=<*>, chunksPerPacket=<*>, bytesCurBlock=<*>, output stream=DFSOutputStream:<*>"
+E499,"enqueue full packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: false lastByteOffsetInBlock: <*> src=<*>, bytesCurBlock=<*>, blockSize=<*>, appendChunk=false, <*>"
+E500,Allocating new block: <*>
+E501,Queued packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: <*> lastByteOffsetInBlock: <*>
+E502,"stage=<*>, block==<*>"
+E503,Connecting to datanode <*>
+E504,"pipeline = [DatanodeInfoWithStorage[<*>,DS-<*>,DISK], DatanodeInfoWithStorage[<*>,DS-<*>,DISK], DatanodeInfoWithStorage[<*>,DS-<*>,DISK]], <*>"
+E505,Send buf size <*>
+E506,SASL encryption trust check: localHostTrusted = <*> remoteHostTrusted = <*>
+E507,"SASL client skipping handshake in unsecured configuration for addr = /<*>, datanodeId = DatanodeInfoWithStorage[<*>,DISK]"
+E508,<*> sending packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: <*> lastByteOffsetInBlock: <*>
+E509,"stage=<*>, <*>"
+E510,DFSClient seqno: <*> reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: <*> flag: <*> flag: <*> flag: <*>
+E511,IPC Client (<*>) connection to <*> from <*>: closed
+E512,"IPC Client (<*>) connection to <*> from <*>: stopped, remaining connections <*>"
+E513,Closing old block BP-<*>
+E514,<*> waiting for ack for: <*>
+E515,PrivilegedAction [as: <*> (auth:<*>)][action: <*>] java.lang.Exception at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*> at <*>
+E516,Creating an archive with the config files for distribution at <*>/__spark_conf__<*>.zip.
+E517,Handling deprecation for all properties in config...
+E518,Handling deprecation for <*>
+E519,===============================================================================
+E520,user class: <*>
+E521,YARN AM launch context:
+E522,env:
+E523,PYTHONHASHSEED -> <*>
+E524,SPARK_USER -> <*>
+E525,SPARK_YARN_STAGING_DIR -> hdfs://<*>/user/root/.sparkStaging/application_<*>
+E526,resources:
+E527,__app__.jar -> resource <*> size: <*> timestamp: <*> type: FILE visibility: PRIVATE
+E528,"__spark_conf__ -> resource <*>"" host: <*> port: <*> file: <*> } size: <*> timestamp: <*> type: ARCHIVE visibility: PRIVATE"
+E529,"<*> -> resource <*>"" host: <*> port: <*> file: <*> } size: <*> timestamp: <*> type: <*> visibility: <*>"
+E530,command:
+E531,<*>/bin/java -server -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -Xmx4096m -Djava.io.tmpdir=<*>/tmp -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.deploy.yarn.ApplicationMaster --class 'org.apache.spark.examples.SparkTC' --jar file:/spark/examples/jars/scopt_2.<*>.jar --properties-file <*>/__spark_conf__/__spark_conf__.properties --dist-cache-conf <*>/__spark_conf__/__spark_dist_cache__.properties 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+E532,Changing view acls to: <*>
+E533,Changing modify acls groups to:
+E534,Changing modify acls to: <*>
+E535,Changing view acls groups to:
+E536,SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(<*>); groups with view permissions: Set(<*>); users with modify permissions: Set(<*>); groups with modify permissions: Set(<*>)
+E537,Using the following builtin delegation token providers: <*> <*>.
+E538,AM resources: Map()
+E539,spark.yarn.maxAppAttempts is not set. Cluster's default value will be used.
+E540,"Created resource capability for AM request: <memory:<*>, vCores:<*>"
+E541,Submitting application <*> to ResourceManager
+E542,Application <*> is submitted without priority hence considering default queue/cluster priority: <*>
+E543,Priority <*> is acceptable in queue : default for application: <*>
+E544,"The specific max attempts: <*> for application: <*> is invalid, because it is less than or equal to zero. Use the rm max attempts instead."
+E545,Application with id <*> submitted by user <*>
+E546,Storing application with id <*>
+E547,Storing info for app: <*>
+E548,<*> State change from <*> to <*> on event = <*>
+E549,"Accepted application application_1707408386401_0001 from user: root, in queue: default"
+E550,Application added - appId: <*> user: <*> leaf-queue of parent: <*> #applications: <*>
+E551,Registering app attempt : appattempt_1707408386401_0001_000001
+E552,Submitted application <*>
+E553,"maximum-am-resource-percent is insufficient to start a single application in queue for user, it is likely set too low. skipping enforcement to allow at least one application to start"
+E554,"maximum-am-resource-percent is insufficient to start a single application in queue, it is likely set too low. skipping enforcement to allow at least one application to start"
+E555,Added Application Attempt <*> to scheduler from user <*> in queue <*>
+E556,Application added - appId: <*> user: <*> leaf-queue: <*> #user-pending-applications: <*> #user-active-applications: <*> #queue-pending-applications: <*> #queue-active-applications: <*> #queue-nonrunnable-applications: <*>
+E557,Application <*> from user: <*> activated in queue: <*>
+E558,"assignedContainer application attempt=<*> container=null queue=default clusterResource=<memory:<*>, vCores:<*> type=OFF_SWITCH requestedPartition="
+E559,<*> Container Transitioned from NEW to ALLOCATED
+E560,"Assigned container <*> of capacity <memory:<*>, vCores:<*> on host <*> which has <*> containers, <memory:<*>, vCores:<*> used and <memory:<*>, vCores:<*> available after allocation"
+E561,Allocation proposal accepted
+E562,"assignedContainer queue=root usedCapacity=<*> absoluteUsedCapacity=<*> used=<memory:<*>, vCores:<*> cluster=<memory:<*>, vCores:24>"
+E563,<*> Container Transitioned from ALLOCATED to ACQUIRED
+E564,Clear node set for <*>
+E565,"Storing attempt: AppId: <*> AttemptId: <*> MasterContainer: Container: [ContainerId: <*> AllocationRequestId: <*> Version: <*> NodeId: <*> NodeHttpAddress: <*> Resource: <memory:<*>, vCores:<*>, Priority: <*> Token: Token <*> }, ExecutionType: <*> ]"
+E566,Launching <*>
+E567,Create AMRMToken for ApplicationAttempt: <*>
+E568,Creating password for <*>
+E569,Auth successful for appattempt_1707408386401_0001_000001 (auth:SIMPLE) from <*>
+E570,"Start request for <*> by user <*> with resource <memory:<*>, vCores:<*>"
+E571,Creating a new application reference for app <*>
+E572,Application <*> transitioned from <*> to <*>
+E573,Adding <*> to application <*>
+E574,Got event CONTAINER_INIT for appId <*>
+E575,"Container <*> is localizing: [<*>, <*> <*>]"
+E576,Container <*> transitioned from NEW to LOCALIZING
+E577,Created localizer for <*>
+E578,"update the launch time for applicationId: application_1707408386401_0001, attemptId: appattempt_1707408386401_0001_000001launchTime: <*>"
+E579,Updating info for app: <*>
+E580,"client token: N/A diagnostics: AM container is launched, waiting for AM container to Register with RM ApplicationMaster host: N/A ApplicationMaster RPC port: -<*> queue: default start time: <*> final status: UNDEFINED tracking URL: http://master:8088/proxy/application_1707408386401_0001/ user: root"
+E581,Writing credentials to the nmPrivate file /data/tmp/nm-local-dir/nmPrivate/container_<*>.tokens
+E582,Initializing user <*>
+E583,Copying from <*>/nmPrivate/container_<*>.tokens to <*>/usercache/root/appcache/application_<*>.tokens
+E584,Localizer CWD set to <*> = file:<*>
+E585,<*> Container Transitioned from ACQUIRED to RUNNING
+E586,Container <*> transitioned from LOCALIZING to SCHEDULED
+E587,Starting container [<*>]
+E588,Container <*> transitioned from SCHEDULED to RUNNING
+E589,Starting resource-monitoring for <*>
+E590,"launchContainer: [bash, /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>/container_<*>_<*>_<*>/default_container_executor.sh]"
+E591,<*>'s ip = <*> and hostname = <*>
+E592,Skipping monitoring container <*> since CPU usage is not yet available.
+E593,Registering signal handler for <*>
+E594,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[GetGroups])"
+E595,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.<*> with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])"
+E596,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])"
+E597,"field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Renewal failures since last successful login])"
+E598,"field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Renewal failures since startup])"
+E599,creating UGI for user: <*>
+E600,Reading credentials from location /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>/container_<*>/container_tokens
+E601,Loaded <*> tokens from <*>/container_tokens
+E602,PrivilegedAction [as: <*> (auth:<*>)][action: <*> <*>] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala)
+E603,ApplicationAttemptId: <*>
+E604,Starting the user application in a separate Thread
+E605,Waiting for spark context initialization...
+E606,Running Spark version <*>
+E607,==============================================================
+E608,Submitted application: <*>
+E609,No custom resources configured for <*>.
+E610,"Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: <*> script: , vendor: , memory -> name: memory, amount: <*> script: , vendor: , offHeap -> name: offHeap, amount: <*> script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: <*>)"
+E611,Limiting resource is cpus at <*> tasks per executor
+E612,Added ResourceProfile id: <*>
+E613,Using SLF4J as the default logging framework
+E614,-Dio.netty.threadLocalMap.stringBuilder.initialSize: <*>
+E615,-Dio.netty.threadLocalMap.stringBuilder.maxSize: <*>
+E616,-Dio.netty.eventLoopThreads: <*>
+E617,-Dio.netty.noUnsafe: <*>
+E618,Java version: <*>
+E619,java.nio.Buffer.address: <*>
+E620,<*>: available
+E621,direct buffer constructor: available
+E622,"java.nio.Bits.unaligned: available, true"
+E623,"java.nio.DirectByteBuffer.<init>(<*>, <*>): available"
+E624,jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+E625,-Dio.netty.bitMode: <*> (sun.arch.data.model)
+E626,-Dio.netty.maxDirectMemory: <*> bytes
+E627,-Dio.netty.tmpdir: <*> (java.io.tmpdir)
+E628,-Dio.netty.uninitializedArrayAllocationThreshold: <*>
+E629,-Dio.netty.noPreferDirect: <*>
+E630,-Dio.netty.noKeySetOptimization: <*>
+E631,-Dio.netty.selectorAutoRebuildThreshold: <*>
+E632,-Dio.netty.leakDetection.level: simple
+E633,-Dio.netty.leakDetection.targetRecords: <*>
+E634,-Dio.netty.allocator.cacheTrimInterval: <*>
+E635,-Dio.netty.allocator.cacheTrimIntervalMillis: <*>
+E636,-Dio.netty.allocator.chunkSize: <*>
+E637,-Dio.netty.allocator.maxCachedBufferCapacity: <*>
+E638,-Dio.netty.allocator.maxCachedByteBuffersPerChunk: <*>
+E639,-Dio.netty.allocator.maxOrder: <*>
+E640,-Dio.netty.allocator.normalCacheSize: <*>
+E641,-Dio.netty.allocator.numDirectArenas: <*>
+E642,-Dio.netty.allocator.numHeapArenas: <*>
+E643,-Dio.netty.allocator.pageSize: <*>
+E644,-Dio.netty.allocator.smallCacheSize: <*>
+E645,-Dio.netty.allocator.useCacheForAllThreads: <*>
+E646,-Dio.netty.<*>: <*> (auto-detected)
+E647,-Djava.net.preferIPv4Stack: <*>
+E648,-Djava.net.preferIPv6Addresses: <*>
+E649,"Loopback interface: lo (lo, <*>)"
+E650,/proc/sys/net/core/somaxconn: <*>
+E651,-Dio.netty.allocator.type: <*>
+E652,-Dio.netty.threadLocalDirectBufferSize: <*>
+E653,-Dio.netty.maxThreadLocalCharBufferSize: <*>
+E654,Shuffle server started on port: <*>
+E655,Successfully started service <*> on port <*>.
+E656,Using serializer: class org.apache.spark.serializer.JavaSerializer
+E657,init
+E658,Registering MapOutputTracker
+E659,Registering BlockManagerMaster
+E660,Using <*> for getting topology information
+E661,BlockManagerMasterEndpoint up
+E662,Registering BlockManagerMasterHeartbeat
+E663,Created local directory at /data/tmp/nm-local-dir/usercache/root/appcache/application_1707408386401_0001/<*>
+E664,MemoryStore started with capacity <*> MiB
+E665,Registering OutputCommitCoordinator
+E666,Created SSL options for ui: <*>
+E667,Using requestHeaderSize: <*>
+E668,Adding filter to <*>: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+E669,Created <*>
+E670,Server created on <*>
+E671,Using <*> for block replication policy
+E672,"Registering BlockManager BlockManagerId(<*>, slave0, <*> None)"
+E673,Got a request for <*>
+E674,"Registering block manager slave0:<*> with <*> MiB RAM, BlockManagerId(<*>, slave0, <*> None)"
+E675,"Registered BlockManager BlockManagerId(<*>, slave0, <*> None)"
+E676,"Initialized BlockManager: BlockManagerId(<*>, slave0, <*> None)"
+E677,Base URL for logs: http://slave<*>:8042/node/containerlogs/container_1707408386401_0001_01_<*>/root
+E678,PrivilegedAction [as: <*> (auth:<*>)][action: <*> <*>] <*> at <*>(<*>.java:<*>)
+E679,Registering the <*>
+E680,Sending sasl message state: <*>
+E681,Get token info proto:interface org.apache.hadoop.yarn.api.<*> info:org.apache.hadoop.yarn.security.<*>
+E682,Looking for a token with service <*>
+E683,Token kind is <*> and the token's service name is <*>
+E684,Creating SASL <*> client to authenticate to service at <*>
+E685,Use <*> authentication for protocol <*>
+E686,SASL client callback: setting realm: <*>
+E687,SASL client callback: setting <*>
+E688,SASL client callback: setting username: <*>
+E689,"Sending sasl message state: INITIATE token: ""charset=utf-<*>,username=\""<*>,qop=auth"" auths <*>"
+E690,Negotiated QOP is :<*>
+E691,AM registration <*>
+E692,Preparing Local resources
+E693,PrivilegedAction [as: <*> (auth:<*>)][action: <*> at <*> at <*>
+E694,Get token info proto:interface <*> info:@<*>
+E695,Sending sasl message state: INITIATE auths <*>
+E696,tokens aren't supported for this protocol or user doesn't have one
+E697,"Resource profile <*> doesn't exist, adding it"
+E698,Custom resources requested: Map()
+E699,"Created resource capability: <memory:<*>, vCores:<*>"
+E700,ApplicationMaster registered as NettyRpcEndpointRef(spark://<*>)
+E701,"Will request <*> executor container(s) for ResourceProfile Id: <*> each with <*> core(s) and <*> MB memory. with custom resources: <memory:<*>, vCores:<*>"
+E702,Added Execution Type=<*>
+E703,Added priority=<*>
+E704,Submitted <*> unlocalized container requests.
+E705,Started progress reporter thread with (heartbeat : <*> initial allocation : <*>) intervals
+E706,Received new token for : <*>
+E707,"Allocated containers: <*> Current executor count: <*> Launching executor count: <*> Cluster resources: <memory:<*>, vCores:<*>."
+E708,"Calling amClient.getMatchingRequests with parameters: priority: <*> location: <*> resource: <memory:<*>, vCores:<*>"
+E709,"Removing container request via AM client: Capability[<memory:<*>, vCores:<*>]Priority[<*>]AllocationRequestId[<*>]ExecutionTypeRequest[<*>, Enforce Execution Type: <*>]Resource Profile[<*>]"
+E710,Launching container <*> on host <*> for executor with ID <*> for ResourceProfile Id <*>
+E711,Starting Executor Container
+E712,"Received <*> containers from YARN, launching executors on <*> of them."
+E713,yarn.client.max-cached-nodemanagers-proxies : <*>
+E714,Opening proxy : <*>
+E715,"Acquired token Kind: NMToken, Service: <*> Ident: (appAttemptId <*> cluster_timestamp: <*> } attemptId: <*> } nodeId <*>"" port: <*> } appSubmitter: <*> keyId: <*>)"
+E716,PrivilegedAction [as: <*> (auth:SIMPLE)][action: <*>] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.yarn.client.ServerProxy.createRetriableProxy(ServerProxy.java:<*>) at org.apache.hadoop.yarn.client.NMProxy.createNMProxy(NMProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.newProxy(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.<init>(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.getProxy(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala:<*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:<*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:<*>) at java.lang.Thread.run(Thread.java:<*>)
+E717,PrivilegedAction [as: appattempt_1707408386401_0001_000001 (auth:SIMPLE)][action: org.apache.hadoop.ipc.Client$Connection$<*>] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:<*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java:<*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at com.sun.proxy.$Proxy38.startContainers(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.startContainers(ContainerManagementProtocolPBClientImpl.java:<*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:<*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:<*>) at java.lang.reflect.Method.invoke(Method.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:<*>) at com.sun.proxy.$Proxy39.startContainers(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala:<*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:<*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:<*>) at java.lang.Thread.run(Thread.java:<*>)
+E718,"Looking for service: <*> Current token is Kind: NMToken, Service: <*> Ident: (appAttemptId <*> attemptId: <*> } nodeId <*> appSubmitter: ""root"" keyId: -<*>)"
+E719,IPC Client (<*>) connection to <*> from <*> sending <*>
+E720,Started daemon with process name: <*>
+E721,PrivilegedAction [as: <*> (auth:<*>)][action: <*> <*>] <*> at <*> at <*> at <*>
+E722,Creating new connection to <*>
+E723,-Dio.netty.buffer.checkAccessible: <*>
+E724,-Dio.netty.buffer.checkBounds: <*>
+E725,Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@<*>
+E726,slave0/<*>
+E727,"Connection to <*> successful, running bootstraps..."
+E728,Successfully created connection to <*> after <*> ms (<*> ms spent in bootstraps)
+E729,New connection accepted for remote address /<*>.
+E730,-Dio.netty.recycler.blocking: <*>
+E731,-Dio.netty.recycler.chunkSize: <*>
+E732,-Dio.netty.recycler.maxCapacityPerThread: <*>
+E733,-Dio.netty.recycler.ratio: <*>
+E734,checking for deactivate of application :<*>
+E735,Connecting to driver: spark://<*>
+E736,Resource profile id is: <*>
+E737,Registered executor NettyRpcEndpointRef(spark-client://Executor) (<*>) with ID <*> ResourceProfileId <*>
+E738,Successfully registered with driver
+E739,Starting executor ID <*> on host <*>
+E740,"Starting executor with user classpath (userClassPathFirst = false): '<<*>/__app__.jar,<<*>/spark-examples_2.<*>.jar,<<*>/__app__.jar,<<*>/spark-examples_2.<*>.jar'"
+E741,"Registering BlockManager BlockManagerId(<*>, <*> <*>)"
+E742,"Registering block manager <*> with <*> MiB RAM, BlockManagerId(<*>, <*> None)"
+E743,"Registered BlockManager BlockManagerId(<*>, <*> <*>)"
+E744,"Initialized BlockManager: BlockManagerId(<*>, <*> <*>)"
+E745,SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: <*>
+E746,YarnClusterScheduler.postStartHook done
+E747,Parents of final stage: List()
+E748,Missing parents: List()
+E749,"Valid locality levels for TaskSet <*>: NO_PREF, ANY"
+E750,slave1/<*>
+E751,slave2/<*>
+E752,"Getting remote block <*> from BlockManagerId(<*>, <*> <*>)"
+E753,"remainingBlocks: Set(shuffle_24_2851_5, shuffle_24_2733_5, shuffle_24_2880_5, shuffle_24_2723_5, shuffle_24_3029_5, shuffle_24_2685_5, shuffle_24_2654_5, shuffle_24_2958_5, shuffle_24_3009_5, shuffle_24_2642_5, shuffle_24_2956_5, shuffle_24_2593_5, shuffle_24_2601_5, shuffle_24_2779_5, shuffle_24_2990_5, shuffle_24_2769_5, shuffle_24_3046_5, shuffle_24_3023_5, shuffle_24_2728_5, shuffle_24_2648_5, shuffle_24_2677_5, shuffle_24_2929_5, shuffle_24_2739_5, shuffle_24_2628_5, shuffle_24_2618_5, shuffle_24_2940_5, shuffle_24_2837_5, shuffle_24_2647_5, shuffle_24_2763_5, shuffle_24_2732_5, shuffle_24_2629_5, shuffle_24_2817_5, shuffle_24_2797_5)"
+E754,"remainingBlocks: Set(shuffle_24_2851_5, shuffle_24_2733_5, shuffle_24_2880_5, shuffle_24_2723_5, shuffle_24_3029_5, shuffle_24_2685_5, shuffle_24_2654_5, shuffle_24_2958_5, shuffle_24_3009_5, shuffle_24_2642_5, shuffle_24_2956_5, shuffle_24_2779_5, shuffle_24_2990_5, shuffle_24_2769_5, shuffle_24_3046_5, shuffle_24_3023_5, shuffle_24_2728_5, shuffle_24_2648_5, shuffle_24_2677_5, shuffle_24_2929_5, shuffle_24_2739_5, shuffle_24_2628_5, shuffle_24_2618_5, shuffle_24_2940_5, shuffle_24_2837_5, shuffle_24_2647_5, shuffle_24_2763_5, shuffle_24_2732_5, shuffle_24_2629_5, shuffle_24_2817_5, shuffle_24_2797_5)"
+E755,"remainingBlocks: Set(shuffle_24_2621_56, shuffle_24_3026_56, shuffle_24_2755_56, shuffle_24_2935_56, shuffle_24_3069_56, shuffle_24_2908_56, shuffle_24_3051_56, shuffle_24_2780_56, shuffle_24_3068_56, shuffle_24_2816_56, shuffle_24_2733_56, shuffle_24_2885_56, shuffle_24_2750_56, shuffle_24_2666_56, shuffle_24_3038_56, shuffle_24_2974_56, shuffle_24_2903_56, shuffle_24_2946_56, shuffle_24_2728_56, shuffle_24_2592_56, shuffle_24_3035_56, shuffle_24_2655_56, shuffle_24_2611_56, shuffle_24_2969_56, shuffle_24_2770_56, shuffle_24_3077_56, shuffle_24_3076_56, shuffle_24_2915_56, shuffle_24_3013_56, shuffle_24_2857_56, shuffle_24_2940_56, shuffle_24_2848_56, shuffle_24_2739_56, shuffle_24_2919_56, shuffle_24_3009_56, shuffle_24_2937_56, shuffle_24_2764_56, shuffle_24_2898_56, shuffle_24_3072_56)"
+E756,"remainingBlocks: Set(shuffle_24_2621_56, shuffle_24_3026_56, shuffle_24_2755_56, shuffle_24_2935_56, shuffle_24_3069_56, shuffle_24_2908_56, shuffle_24_3051_56, shuffle_24_2780_56, shuffle_24_3068_56, shuffle_24_2816_56, shuffle_24_2733_56, shuffle_24_2885_56, shuffle_24_2750_56, shuffle_24_2666_56, shuffle_24_3038_56, shuffle_24_2974_56, shuffle_24_2903_56, shuffle_24_2946_56, shuffle_24_2728_56, shuffle_24_3035_56, shuffle_24_2655_56, shuffle_24_2969_56, shuffle_24_2770_56, shuffle_24_3077_56, shuffle_24_3076_56, shuffle_24_2915_56, shuffle_24_3013_56, shuffle_24_2857_56, shuffle_24_2940_56, shuffle_24_2848_56, shuffle_24_2739_56, shuffle_24_2919_56, shuffle_24_3009_56, shuffle_24_2937_56, shuffle_24_2764_56, shuffle_24_2898_56, shuffle_24_3072_56)"
+E757,"remainingBlocks: Set(shuffle_24_3026_56, shuffle_24_2755_56, shuffle_24_2935_56, shuffle_24_3069_56, shuffle_24_2908_56, shuffle_24_3051_56, shuffle_24_2780_56, shuffle_24_3068_56, shuffle_24_2816_56, shuffle_24_2733_56, shuffle_24_2885_56, shuffle_24_2750_56, shuffle_24_2666_56, shuffle_24_3038_56, shuffle_24_2974_56, shuffle_24_2903_56, shuffle_24_2946_56, shuffle_24_2728_56, shuffle_24_3035_56, shuffle_24_2655_56, shuffle_24_2969_56, shuffle_24_2770_56, shuffle_24_3077_56, shuffle_24_3076_56, shuffle_24_2915_56, shuffle_24_3013_56, shuffle_24_2857_56, shuffle_24_2940_56, shuffle_24_2848_56, shuffle_24_2739_56, shuffle_24_2919_56, shuffle_24_3009_56, shuffle_24_2937_56, shuffle_24_2764_56, shuffle_24_2898_56, shuffle_24_3072_56)"
+E758,"remainingBlocks: Set(shuffle_24_2998_81, shuffle_24_2812_81, shuffle_24_2837_81, shuffle_24_2990_81, shuffle_24_2969_81, shuffle_24_2987_81, shuffle_24_2608_81, shuffle_24_2770_81, shuffle_24_2807_81, shuffle_24_2787_81, shuffle_24_2659_81, shuffle_24_2942_81, shuffle_24_2806_81, shuffle_24_2677_81, shuffle_24_3075_81, shuffle_24_3056_81, shuffle_24_3012_81, shuffle_24_3003_81, shuffle_24_2964_81, shuffle_24_3073_81, shuffle_24_2629_81, shuffle_24_3009_81, shuffle_24_3027_81, shuffle_24_3072_81, shuffle_24_2802_81, shuffle_24_2897_81, shuffle_24_2779_81, shuffle_24_3070_81, shuffle_24_2708_81, shuffle_24_2625_81, shuffle_24_2617_81, shuffle_24_3042_81, shuffle_24_2958_81, shuffle_24_3023_81, shuffle_24_2749_81, shuffle_24_3038_81, shuffle_24_2614_81, shuffle_24_2813_81, shuffle_24_2684_81)"
+E759,"remainingBlocks: Set(shuffle_24_2998_81, shuffle_24_2812_81, shuffle_24_2837_81, shuffle_24_2990_81, shuffle_24_2969_81, shuffle_24_2987_81, shuffle_24_2770_81, shuffle_24_2807_81, shuffle_24_2787_81, shuffle_24_2659_81, shuffle_24_2942_81, shuffle_24_2806_81, shuffle_24_2677_81, shuffle_24_3075_81, shuffle_24_3056_81, shuffle_24_3012_81, shuffle_24_3003_81, shuffle_24_2964_81, shuffle_24_3073_81, shuffle_24_2629_81, shuffle_24_3009_81, shuffle_24_3027_81, shuffle_24_3072_81, shuffle_24_2802_81, shuffle_24_2897_81, shuffle_24_2779_81, shuffle_24_3070_81, shuffle_24_2708_81, shuffle_24_2625_81, shuffle_24_2617_81, shuffle_24_3042_81, shuffle_24_2958_81, shuffle_24_3023_81, shuffle_24_2749_81, shuffle_24_3038_81, shuffle_24_2813_81, shuffle_24_2684_81)"
+E760,"remainingBlocks: Set(shuffle_24_2998_81, shuffle_24_2812_81, shuffle_24_2837_81, shuffle_24_2990_81, shuffle_24_2969_81, shuffle_24_2987_81, shuffle_24_2770_81, shuffle_24_2807_81, shuffle_24_2787_81, shuffle_24_2659_81, shuffle_24_2942_81, shuffle_24_2806_81, shuffle_24_2677_81, shuffle_24_3075_81, shuffle_24_3056_81, shuffle_24_3012_81, shuffle_24_3003_81, shuffle_24_2964_81, shuffle_24_3073_81, shuffle_24_2629_81, shuffle_24_3009_81, shuffle_24_3027_81, shuffle_24_3072_81, shuffle_24_2802_81, shuffle_24_2897_81, shuffle_24_2779_81, shuffle_24_3070_81, shuffle_24_2708_81, shuffle_24_2625_81, shuffle_24_3042_81, shuffle_24_2958_81, shuffle_24_3023_81, shuffle_24_2749_81, shuffle_24_3038_81, shuffle_24_2813_81, shuffle_24_2684_81)"
+E761,"remainingBlocks: Set(shuffle_24_2803_89, shuffle_24_3079_89, shuffle_24_2990_89, shuffle_24_2873_89, shuffle_24_3008_89, shuffle_24_2712_89, shuffle_24_2603_89, shuffle_24_2936_89, shuffle_24_3034_89, shuffle_24_3026_89, shuffle_24_2979_89, shuffle_24_3051_89, shuffle_24_2915_89, shuffle_24_2644_89, shuffle_24_3075_89, shuffle_24_2849_89, shuffle_24_2886_89, shuffle_24_3066_89, shuffle_24_2642_89, shuffle_24_2641_89, shuffle_24_2666_89, shuffle_24_3019_89, shuffle_24_2903_89, shuffle_24_2998_89, shuffle_24_2812_89, shuffle_24_3063_89, shuffle_24_2927_89, shuffle_24_3061_89, shuffle_24_2969_89, shuffle_24_2880_89, shuffle_24_2816_89, shuffle_24_2925_89, shuffle_24_2610_89, shuffle_24_2744_89, shuffle_24_2858_89, shuffle_24_2948_89, shuffle_24_3057_89, shuffle_24_2851_89, shuffle_24_2723_89, shuffle_24_2614_89, shuffle_24_2605_89)"
+E762,"remainingBlocks: Set(shuffle_24_2803_89, shuffle_24_3079_89, shuffle_24_2990_89, shuffle_24_2873_89, shuffle_24_3008_89, shuffle_24_2712_89, shuffle_24_2936_89, shuffle_24_3034_89, shuffle_24_3026_89, shuffle_24_2979_89, shuffle_24_3051_89, shuffle_24_2915_89, shuffle_24_2644_89, shuffle_24_3075_89, shuffle_24_2849_89, shuffle_24_2886_89, shuffle_24_3066_89, shuffle_24_2642_89, shuffle_24_2641_89, shuffle_24_2666_89, shuffle_24_3019_89, shuffle_24_2903_89, shuffle_24_2998_89, shuffle_24_2812_89, shuffle_24_3063_89, shuffle_24_2927_89, shuffle_24_3061_89, shuffle_24_2969_89, shuffle_24_2880_89, shuffle_24_2816_89, shuffle_24_2925_89, shuffle_24_2610_89, shuffle_24_2744_89, shuffle_24_2858_89, shuffle_24_2948_89, shuffle_24_3057_89, shuffle_24_2851_89, shuffle_24_2723_89, shuffle_24_2614_89)"
+E763,"remainingBlocks: Set(shuffle_24_2803_89, shuffle_24_3079_89, shuffle_24_2990_89, shuffle_24_2873_89, shuffle_24_3008_89, shuffle_24_2712_89, shuffle_24_2936_89, shuffle_24_3034_89, shuffle_24_3026_89, shuffle_24_2979_89, shuffle_24_3051_89, shuffle_24_2915_89, shuffle_24_2644_89, shuffle_24_3075_89, shuffle_24_2849_89, shuffle_24_2886_89, shuffle_24_3066_89, shuffle_24_2642_89, shuffle_24_2641_89, shuffle_24_2666_89, shuffle_24_3019_89, shuffle_24_2903_89, shuffle_24_2998_89, shuffle_24_2812_89, shuffle_24_3063_89, shuffle_24_2927_89, shuffle_24_3061_89, shuffle_24_2969_89, shuffle_24_2880_89, shuffle_24_2816_89, shuffle_24_2925_89, shuffle_24_2744_89, shuffle_24_2858_89, shuffle_24_2948_89, shuffle_24_3057_89, shuffle_24_2851_89, shuffle_24_2723_89)"
+E764,"remainingBlocks: Set(shuffle_24_2803_89, shuffle_24_3079_89, shuffle_24_2990_89, shuffle_24_2873_89, shuffle_24_3008_89, shuffle_24_2712_89, shuffle_24_2936_89, shuffle_24_3034_89, shuffle_24_3026_89, shuffle_24_2979_89, shuffle_24_3051_89, shuffle_24_2915_89, shuffle_24_2644_89, shuffle_24_3075_89, shuffle_24_2849_89, shuffle_24_2886_89, shuffle_24_3066_89, shuffle_24_2642_89, shuffle_24_2666_89, shuffle_24_3019_89, shuffle_24_2903_89, shuffle_24_2998_89, shuffle_24_2812_89, shuffle_24_3063_89, shuffle_24_2927_89, shuffle_24_3061_89, shuffle_24_2969_89, shuffle_24_2880_89, shuffle_24_2816_89, shuffle_24_2925_89, shuffle_24_2744_89, shuffle_24_2858_89, shuffle_24_2948_89, shuffle_24_3057_89, shuffle_24_2851_89, shuffle_24_2723_89)"

@@ -13,27 +13,26 @@ args = parser.parse_args()
 ground_truth_path = f'./{args.dataset}/ground_truth_{args.dataset}_evaluation.log_templates.csv'
 parser_path = f'/raid1/eunwoo/logNER/Eval/{args.dataset}/{args.parser}_{args.dataset}_evaluation.log_templates.csv'
 
+
 def sim(truth, template):
     edit_distance_sim = 1 - lev(truth, template) / max(len(truth), len(template))
     return edit_distance_sim
 
 def delete_continuous_wildcard(temp):
-    while '""' in temp:
-        temp = temp.replace('""', '"')
-    while '<*> <*>' in temp:
-        temp = temp.replace('<*> <*>', '<*>')
-    while '<*>.<*>' in temp:
-        temp = temp.replace('<*>.<*>', '<*>')
-    while '<*> , <*>' in temp:
-        temp = temp.replace('<*> , <*>', '<*>')
-    while '<*> : <*>' in temp:
-        temp = temp.replace('<*> : <*>', '<*>')
-    while '<*> | <*>' in temp:
-        temp = temp.replace('<*> | <*>', '<*>')
+    while '.* .*' in temp:
+        temp = temp.replace('.* .*', '.*')
+    while '.*..*' in temp:
+        temp = temp.replace('.*..*', '.*')
+    while '.* , .*' in temp:
+        temp = temp.replace('.* , .*', '.*')
+    while '.* : .*' in temp:
+        temp = temp.replace('.* : .*', '.*')
+    while '.* | .*' in temp:
+        temp = temp.replace('.* | .*', '.*')
     return temp
 
 def tokenizing(log):
-    seps = [':', '(', ')', ';', '=', ' ', '[', ']', '{', '}', ',', '$', '"', "'", "@", "|", "<", ">", "&", ";"]
+    seps = [':', '(', ')', ';', '=', ' ', '[', ']', '{', '}', ',', '$', '"', "'", "@", "|", "<", ">", "&"]
     tokens = []
     token = ""
     length = len(log)
@@ -100,7 +99,6 @@ def compileTemplate(template, mod):
 
     return result
 
-
 def open_files_and_compile():
     # .* 고정
     file1 = pd.read_csv(ground_truth_path)
@@ -108,7 +106,7 @@ def open_files_and_compile():
     gt = [x.replace('"', '').strip() for x in gt]
 
     # 컴파일
-    gtc = [compileTemplate(delete_continuous_wildcard(x), '1') for x in gt]
+    gtc = [compileTemplate(delete_continuous_wildcard(preprocessingTemplate(x, '1')), '1') for x in gt]
     gt = [preprocessingTemplate(x, '1') for x in gt]
     print("ground_truth 불러오기 완료, 컴파일 완료")
 
@@ -118,14 +116,13 @@ def open_files_and_compile():
     rp = list(file2['EventTemplate'])
     t = [x.replace('"', '').strip() for x in rp]
     # 컴파일
-    tc = [compileTemplate(delete_continuous_wildcard(x), mode) for x in t]
+    tc = [compileTemplate(delete_continuous_wildcard(preprocessingTemplate(x, mode)), mode) for x in t]
     t = [preprocessingTemplate(x, mode) for x in t]
 
     print("test 불러오기 완료, 컴파일 완료")
 
     return gt, gtc, t, tc, rp
-
-
+    
 if __name__ == '__main__':
     print('모드를 선택해주세요')
     print("1. .*, 2. <*>")
@@ -137,9 +134,6 @@ if __name__ == '__main__':
     
     ground_truth, ground_truth_compiled, test, test_compiled, raw_parser = open_files_and_compile()
 
-    # 템플릿들은 현재 서로 매칭 가능하도록 준비된 상태
-
-    # 각 템플릿의 평균 유사도
     avg_similarities = []
 
     # 템플릿들의 매칭 정보를 적기 위한 딕셔너리
@@ -211,8 +205,6 @@ if __name__ == '__main__':
 
     # total_similarity 평균내기
     print(f'new similarity: {total_similarity / (len(test) - not_matching_cnt)}')
-
-
 
 
 

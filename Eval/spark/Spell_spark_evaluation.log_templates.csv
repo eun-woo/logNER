@@ -1,0 +1,314 @@
+EventId,EventTemplate,Occurrences
+6c53fd66,Start fetching local blocks <*>,1995
+0cfd690e,maxBytesInFlight <*> targetRemoteRequestSize <*> maxBlocksInFlightPerAddress <*>,3370
+9e026983,Getting <*> (<*>.<*> B) non-empty blocks including <*> (<*>.<*> B) local and <*> (<*>.<*> B) host-local and <*> (<*>.<*> B) push-merged-local and <*> (<*>.<*> B) remote blocks,3370
+32eea014,<*> <*> <*> <*> in <*> ms,10463
+4ad0afd9,Task <*> release <*>.<*> B from <*>,5163
+ebdbd68a,Getting <*> <*> block <*>,56416
+a80f07c1,<*> <*> <*> requests <*> <*> <*> <*> <*> in <*> <*>,3712
+34640875,<*> <*> <*> of <*> <*> <*> <*> <*> <*> <*> <*> blocks,3717
+30ea3940,Sending request for <*> blocks (<*>.<*> <*> from <*> <*>,3711
+6a2165dc,Start fetching local blocks (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>) (shuffle_<*>_<*>_<*> <*>),1375
+f99d4e12,<*> <*> <*> for shuffle <*> <*>,10212
+dede275d,<*> <*>,21927
+14955f02,Shuffle index for mapId <*> [<*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>],3084
+e949bb35,remainingBlocks <*>,11275
+09d7d312,remainingBlocks Set(shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*>),19644
+67edcd83,<*> task <*>.<*> in stage <*>.<*> (TID <*> <*> <*>,20356
+e9c92216,stageTCMP (<*> <*>) -> <*>,8825
+f68b360b,ShuffleMapTask finished on <*>,3084
+602ed955,Moving to RACK_LOCAL after waiting for 0ms,986
+665a1452,No tasks for locality level <*> so moving to locality level <*>,3061
+b0985e64,parentName name TaskSet_<*>.<*> runningTasks <*>,5093
+462b813a,<*> task <*> <*>,6153
+eb754842,Finished <*> <*> in <*> <*> <*> <*> <*> <*> <*>,508
+695cdd85,Starting task <*>.<*> in stage <*>.<*> (TID <*>) (slave2 executor <*> partition <*> PROCESS_LOCAL <*> bytes) taskResourceAssignments Map(),1201
+b69a2d68,<*> <*> broadcast <*> <*>,461
+c431ebf7,<*> <*> <*> to <*> <*>,23517
+8c58d5f8,Cleaned <*> <*>,735
+b731e5d1,Cleaning <*> <*>,745
+d740eec4,Unpersisting TorrentBroadcast <*>,35
+2fb1b0dd,Removing block <*>,258
+80131f67,Told master about block <*>,1593
+41e50116,Updated info of block <*>,1593
+5452a066,Updating block info on master <*> for <*> <*> <*> None),1593
+447a875e,Block <*> of size <*> dropped from memory (free <*>),258
+fe6b1c3a,<*> <*> <*> <*> <*> in memory (size <*>.<*> <*> free <*>.<*> MiB),1593
+5448fefe,<*> <*> <*> count at SparkTC.scala <*>,37
+384177a2,<*> <*> <*> at SparkTC.scala <*> <*> <*> <*>.<*> s,37
+1bea66c5,<*> Set(),45
+50ced6ba,looking for newly runnable stages,27
+807c2bd1,<*> <*> <*>),151
+c6200c60,Removed TaskSet <*>.<*> whose tasks have all completed from pool,36
+103ef2bd,missing List(),37
+4782887a,<*> <*> <*> <*> took <*> ms,3239
+2e8fa0ee,Block <*> stored as <*> in memory (estimated size <*>.<*> <*> free <*>.<*> MiB),1601
+e27fa52e,Epoch for TaskSet <*>.<*> <*>,37
+83797d9d,Valid locality levels for TaskSet <*>.<*> <*> <*> ANY,37
+5932699b,Block <*> was not found,1430
+e5d1f569,Reading piece broadcast_<*>_piece0 of broadcast_<*>,100
+7bae3b80,Started reading broadcast variable <*> with <*> pieces (estimated total size <*>.<*> MiB),100
+dd48c03e,<*> for <*> <*> is <*> <*>,3514
+345d3508,Block rdd_<*>_<*> is unknown by block manager master,1329
+d3dda9f9,Doing the fetch; tracker endpoint NettyRpcEndpointRef(spark //MapOutputTracker@slave0 <*>),79
+f965577d,Got the map output locations,79
+b2dda3c0,Call <*> took <*>,85
+55d42dcf,Application report for application_<*>_<*> (state <*>,31
+d38dcccb,client token N/A diagnostics <*> ApplicationMaster host <*> ApplicationMaster RPC port <*> queue default start time <*> final status UNDEFINED tracking URL http //master <*>/proxy/application_<*>_<*>/ user root,31
+71f66399,DatanodeRegistration(<*> datanodeUuid <*> infoPort <*> infoSecurePort <*> ipcPort <*> storageInfo lv <*>;cid CID-42d9779f-782d-44ea-a75a-68048e1fb0da;nsid <*>;c <*>) Starting thread to transfer BP-<*>-<*><*> <*>_<*> to <*>,113
+374be710,<*> BP-<*>-<*><*> <*>_<*> src <*> dest <*>,3226
+020eb253,After removal of stage <*> remaining stages <*>,117
+f2eb184f,Job <*> is finished. Cancelling potential speculative or zombie tasks for this job,9
+2bf080b5,Killing all running tasks in stage <*> Stage finished,9
+f699fc60,+++ indylambda closure <*> is now cleaned +++,93
+9aaecff6,Can't use serialized shuffle for shuffle <*> because the serializer org.apache.spark.serializer.JavaSerializer does not support object relocation,13
+f2439089,Merging stage rdd profiles Set(),145
+0a542a05,eagerlyComputePartitionsForRddAndAncestors for RDD <*> took <*>.<*> seconds,10
+449a1e85,Final stage ResultStage <*> (count at SparkTC.scala <*>),10
+891efaea,Got job <*> (count at SparkTC.scala <*>) with <*> output partitions,10
+b4b78ce2,submitStage(ShuffleMapStage <*> (name <*> at SparkTC.scala <*>;jobs <*>)),54
+f45dce14,Found block rdd_<*>_<*> locally,2062
+5909c8f5,Not enough replicas was chosen. Reason <*> <*>},1703
+7a9da8a2,Number of pending allocations is <*>. Slept for <*>/<*>.,8
+6020de46,Updating resource requests for ResourceProfile id <*> target <*> pending <*> running <*> executorsStarting <*>,10
+cbabc9b5,registered UNIX signal handlers for [TERM HUP INT],9
+b9240165,createNameNode [],1
+7a3d0110,Loaded properties from hadoop-metrics2.properties,9
+3ae29560,NameNode metrics system started,1
+becc4e71,Scheduled Metric snapshot period at <*> second(s).,9
+b2079add,<*> <*> hdfs //master <*>,11
+5665a4fd,Starting JVM pause monitor,8
+300f39ab,Filter initializers set org.apache.hadoop.http.lib.StaticUserWebFilter org.apache.hadoop.hdfs.web.AuthFilterInitializer,2
+e4ffdde7,Starting Web-server for <*> at http /<*>,2
+5981d5b7,Unable to initialize FileSignerSecretProvider falling back to use random secrets. Reason Could not read signature secret file /root/hadoop-http-auth-signature-secret,15
+2c447c99,Http request log for http.requests.namenode is not defined,1
+bbb12783,Added global filter 'safety' (class org.apache.hadoop.http.HttpServer2$QuotingInputFilter),9
+67893f28,jetty-<*>.<*>.<*>.v20210629; built <*>-<*>-30T11 <*> <*>.254Z; git 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm <*>.<*>.<*>_<*>-8u392-ga-<*>~<*>.<*>-b<*>,9
+f85e864e,DefaultSessionIdManager workerName node<*>,9
+11ab42fe,No SessionScavenger set using defaults,9
+11ab4b15,node0 Scavenging every 660000ms,4
+80cc9ab8,Started <*> <*> file <*> AVAILABLE},18
+0e17244a,Started <*> / file <*> AVAILABLE}{file <*>,5
+00ac854a,Started <*>,14
+9537aee6,Only one <*> storage directory <*> configured. Beware of data loss due to lack of redundant storage directories!,2
+c92cfa8b,<*> <*> <*> <*> true,58
+abbb53a4,KeyProvider null,2
+4a3de0f3,Detailed lock hold time metrics enabled false,2
+27161da7,<*> root (auth SIMPLE),7
+123c93b2,supergroup supergroup,5
+9cc17980,<*> <*> false,48
+b93a1e11,dfs.block.invalidate.limit configured <*> counted <*> effected <*>,2
+6d3c652f,The block deletion will start around <*> Feb <*> <*> <*> <*>,2
+cc6f3a47,Computing capacity for map <*>,7
+ade22687,VM type <*>-bit,7
+5d27848f,<*> max memory <*>.<*> MB <*>.<*> MB,7
+62bc2269,capacity <*>^<*> <*> entries,7
+24876555,Storage policy satisfier is disabled,2
+3f861b60,<*> serial map bits <*> maxEntries <*>,8
+f5ffbc5b,Caching file names occurring more than <*> times,2
+1d1ca2a1,Retry cache on namenode is enabled,1
+c3822603,Retry cache will use <*>.<*> of total heap and retry cache entry expiry time is <*> millis,1
+0e54a777,Lock on <*> acquired by nodename <*>,5
+e6e72f27,Recovering unfinalized segments in /data/tmp/dfs/name/current,1
+38c215f2,No edit log streams selected.,1
+766085f6,Completed update blocks map and name cache total waiting duration 0ms.,1
+73f5bd10,Loaded image for txid <*> from /data/tmp/dfs/name/current/fsimage_<*>,1
+20aae638,Using callQueue class java.util.concurrent.LinkedBlockingQueue queueCapacity <*> scheduler class org.apache.hadoop.ipc.DefaultRpcScheduler ipcBackoff false.,14
+70066a26,Starting Socket Reader #<*> for port <*>,14
+c5d2c86a,Registered FSNamesystemState ReplicatedBlocksState and ECBlockGroupsState MBeans.,1
+3b5c629d,Initialized the Default Decommission and Maintenance monitor,1
+0c5b0a59,IPC Server listener on <*> starting,14
+2cd7c65d,NameNode RPC up at master<*>,1
+f428c98c,Starting services required for active state,1
+c412e3b1,Quota initialization completed in <*> milliseconds name space <*> storage space <*> storage types RAM_DISK <*> SSD <*> DISK <*> ARCHIVE <*> PROVIDED <*>,1
+d134f37f,Starting CacheReplicationMonitor with interval <*> milliseconds,1
+f70f35db,<*> <*> check for <*> /data/tmp/dfs/data,9
+36c4eccc,Initialized block scanner with targetBytesPerSec <*>,3
+afa2400a,Got null for restCsrfPreventionFilter - will not do any filtering.,3
+a01a74fa,Refresh request received for nameservices null,3
+a57f6f96,Starting BPOfferServices for nameservices <default>,3
+36726240,<*> pool <registering> (Datanode Uuid unassigned) service to master<*> <*>,6
+0a798c27,Generated new storageID <*> for directory /data/tmp/dfs/data,3
+2368a53b,Analyzing storage directories for bpid BP-<*>-<*>-<*>,3
+19085cba,<*> <*> <*> <*> <*> <*> <*> <*> <*> block pool <*> BP-<*>-<*><*> <*>,18
+004c7b71,Setting up storage nsid <*>;bpid BP-<*>-<*><*>;lv <*>;nsInfo lv <*>;cid CID-42d9779f-782d-44ea-a75a-68048e1fb0da;nsid <*>;c <*>;bpid BP-<*>-<*><*>;dnuuid null,3
+7cbe50ca,Generated and persisted new Datanode UUID <*>,3
+8ba22eaa,The datanode lock is a read write lock,3
+68377cee,Added volume - [DISK]file /data/tmp/dfs/data StorageType DISK,3
+28ac47e8,dfsUsed file missing in /data/tmp/dfs/data/current/BP-<*>-<*><*>/current will proceed with Du for space computation calculation,3
+a92da2a6,Replica Cache file /data/tmp/dfs/data/current/BP-<*>-<*><*>/current/replicas doesn't exist,3
+358292c5,Periodic Directory Tree Verification scan starting in <*> with interval of 21600000ms and throttle limit of -1ms/s,3
+152a50a0,Now scanning bpid BP-<*>-<*><*> on volume /data/tmp/dfs/data,3
+a632d414,VolumeScanner(/data/tmp/dfs/data <*> finished scanning block pool BP-<*>-<*>-<*>,3
+5485bcf9,Block pool BP-<*>-<*><*> (Datanode Uuid <*> service to master<*> <*> <*> with NN,6
+67805922,Adding a new node /default-rack<*>,3
+242f808a,For namenode master<*> using BLOCKREPORT_INTERVAL of 21600000msecs CACHEREPORT_INTERVAL of 10000msecs Initial delay 0msecs; heartBeatInterval <*>,3
+ec29f5b5,<*> new <*> <*> <*> for <*> <*>,6
+c05e77b0,Got finalize command for block pool BP-<*>-<*>-<*>,3
+ff82eaa3,Successfully sent block report <*> with lease ID <*> to namenode master<*> containing <*> storage report(s) of which we sent <*>. The reports had <*> total blocks and used <*> RPC(s). This took <*> msecs to generate and <*> msecs for RPC and NN processing. Got back one command FinalizeCommand/<*>.,3
+689bdb46,Checkpoint Period <*> secs (<*> min),1
+0e55bd9a,found resource <*> at file <*>,3
+3a2b3aef,Registering class <*> for class <*>,47
+48c6ff9b,<*> 86400000ms and <*> <*>,3
+91a9b24b,Failed to init hostsReader disabling java.io.FileNotFoundException /hadoop/etc/hadoop/ex_workers (No such file or directory) at java.io.FileInputStream.open0(Native Method) at java.io.FileInputStream.open(FileInputStream.java <*>) at java.io.FileInputStream.<init>(FileInputStream.java <*>) at java.io.FileInputStream.<init>(FileInputStream.java <*>) at org.apache.hadoop.yarn.LocalConfigurationProvider.getConfigurationInputStream(LocalConfigurationProvider.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.createHostsFileReader(NodesListManager.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.serviceInit(NodesListManager.java <*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java <*>) at org.apache.hadoop.service.CompositeService.serviceInit(CompositeService.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceInit(ResourceManager.java <*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createAndInitActiveServices(ResourceManager.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit(ResourceManager.java <*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java <*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java <*>),1
+8bcd659b,<*> allocation <memory <*> vCores <*>>,2
+71874467,Initialized parent-queue root name root fullname root,1
+e3eeeef4,Initialized root queue root numChildQueue <*> capacity <*>.<*> absoluteCapacity <*>.<*> usedResources <memory <*> vCores <*>>usedCapacity <*>.<*> numApps <*> numContainers <*>,1
+8a827a22,Initialized CapacityScheduler with calculator class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator minimumAllocation <<memory <*> vCores <*>>> maximumAllocation <<memory <*> vCores <*>>> asynchronousScheduling false asyncScheduleInterval 5ms multiNodePlacementEnabled false assignMultipleEnabled true maxAssignPerHeartbeat <*> offswitchPerHeartbeatLimit <*>,1
+1d2137e3,MultiNode scheduling is 'false' and configured policies are,1
+3e736122,Initializing AMS Processing chain. Root Processor [org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor].,1
+3bf83e83,disabled placement handler will be used all scheduling requests will be rejected.,1
+0bbc78f3,Updating the current master key for generating delegation tokens,4
+34f29702,Starting expired delegation token remover thread tokenRemoverScanInterval <*> min(s),2
+d77c77f7,Started <*> / file <*> AVAILABLE}{jar file <*>,4
+8850209a,Web app <*> started at <*>,4
+dbaa5b5d,storing master key with keyID <*>,2
+ee9d12b0,<*> Resource plugins from <*>,6
+ba879bf1,The pluggable device framework is not enabled. If you want please set true to yarn.nodemanager.pluggable-device-framework.enabled,3
+d046f92a,Created store directory file /tmp/hadoop-yarn-root/node-attribute,1
+4eaa061f,Finished write mirror at file /tmp/hadoop-yarn-root/node-attribute/nodeattribute.mirror,1
+688ca32c,Finished create editlog file at file /tmp/hadoop-yarn-root/node-attribute/nodeattribute.editlog,1
+8c940d79,"Missing location for the node health check script ""script"".",3
+e4c990bb,Disk Validator 'basic' is loaded.,6
+1fdaf6f8,Using traffic control bandwidth handler,3
+109f2422,Initialized nodemanager with physical-memory <*> virtual-memory <*> virtual-cores <*>,3
+a3bf9902,Created Certificate for OU YARN-5a900720-403a-<*>-bb59-73ed858d0ba<*>,1
+cd130dff,Storing CA Certificate and Private Key,1
+ee89da67,Log Aggregation is disabled.So is the LogAggregationStatusTracker.,3
+1a7a885d,Node ID assigned is <*> <*>,3
+46a41fb5,<*> <*> node <*> <*> <*> <*> <*> <*> <*> <memory <*> vCores <*>> <*>,6
+32936dd0,Rolling master-key for container-tokens got key with id <*>,6
+d3867fd4,<*> <*> <*> <*> <*> <*> <*> <*> resource <*> <memory <*> vCores <*>>,15
+09d7827b,PacketResponder BP-<*>-<*><*> <*>_<*> type LAST_IN_PIPELINE terminating,574
+958823ca,Failed to place enough replicas expected size is <*> but only <*> storage types can be selected (replication <*> selected [] unavailable [DISK] removed [DISK] policy BlockStoragePolicy{HOT <*> storageTypes [DISK] creationFallbacks [] replicationFallbacks [ARCHIVE]}),277
+f24384c6,Failed to place enough replicas still in need of <*> to reach <*> (unavailableStorages <*> storagePolicy BlockStoragePolicy{HOT <*> storageTypes [DISK] creationFallbacks [] replicationFallbacks [ARCHIVE]} newBlock true) <*>,444
+92fbfaf7,Failed to place enough replicas still in need of <*> to reach <*> (unavailableStorages <*> <*> storagePolicy BlockStoragePolicy{HOT <*> storageTypes [DISK] creationFallbacks [] replicationFallbacks [ARCHIVE]} newBlock false) <*>,165
+ae3326aa,Number of transactions <*> Total time for transactions(ms) <*> Number of transactions batched in Syncs <*> Number of syncs <*> SyncTimes(ms) <*>,3
+15fd9ef1,Finalizing edits file /data/tmp/dfs/name/current/edits_inprogress_<*> -> /data/tmp/dfs/name/current/edits_<*>-<*>,1
+9e5ea5a8,Sending fileName <*> fileSize <*>. Sent total <*> bytes. Size of last segment intended to send <*> bytes.,2
+109234d2,Saving image file /data/tmp/dfs/namesecondary/current/fsimage.ckpt_<*> using no compression,1
+9207f938,Image file /data/tmp/dfs/namesecondary/current/fsimage.ckpt_<*> of size <*> bytes saved in <*> seconds .,1
+d649be59,Rejecting a fsimage due to small time delta and txnid delta. Time since previous checkpoint is <*> expecting at least <*> txnid delta since previous checkpoint is <*> expecting at least <*>,1
+c83b4dd9,setsid exited with exit code <*>,5
+35c55c34,field <*> <*> with annotation <*> <*> <*> Ops valueName Time about interval <*> type DEFAULT value <*>,25
+f82827e0,UgiMetrics User and group related metrics,5
+010b92f1,java.library.path /usr/java/packages/lib/amd64 /usr/lib/x86_<*>-linux-gnu/jni /lib/x86_<*>-linux-gnu /usr/lib/x86_<*>-linux-gnu /usr/lib/jni /lib /usr/lib,5
+b8eb5419,Unable to load native-hadoop library for your platform... using builtin-java classes where applicable,5
+0467f54f,Group mapping impl org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout <*>; warningDeltaMs <*>,5
+1a386c5c,Using local user UnixPrincipal root,5
+1528c053,"Using user ""UnixPrincipal root"" with name root",5
+1dbc21c5,<*> <*> <*> <*> file /spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar <*>,3
+ac3a3e12,<*> Creating FS file /spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar,2
+0df698eb,<*> // class <*> from <*>,20
+5f8fd2d0,Looking for FS supporting <*>,3
+d1627e76,looking for configuration option <*>,3
+0216c7fa,Looking in service filesystems for implementation class,3
+776086bd,Service <*> entered state INITED,5
+3411ab30,PrivilegedAction [as root (auth SIMPLE)][action <*> java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at <*> <*>) at <*>,5
+1426f85a,Creating a HadoopYarnProtoRpc proxy for protocol interface <*>,5
+695cf66c,rpcKind RPC_PROTOCOL_BUFFER rpcRequestWrapperClass class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest rpcInvoker <*>,2
+72d397b9,getting client out of cache <*>,8
+d8444d5a,The ping interval is <*> ms.,8
+a7a0ac63,Requesting a new application from cluster with <*> NodeManagers,1
+a64f5057,Acquiring creator semaphore for hdfs //master <*> <*>,3
+619188c4,Both short-circuit local reads and UNIX domain socket are disabled.,2
+c8517486,DataTransferProtocol not using SaslPropertiesResolver no QOP found in configuration for dfs.data.transfer.protection,3
+1c983453,Adding resource type - name <*> units <*> type COUNTABLE,4
+9c15dbfb,Mandatory Resource <*> is not configured in resource-types config file. Setting allocation specified using <*>,8
+eae4710a,Verifying our application has not requested more than the maximum memory capability of the cluster (<*> MB per container),1
+3ffdd2db,Will allocate AM container with <*> MB memory including <*> MB overhead,1
+95b90a37,<*> <*> <*> <*> <*> for our AM,3
+d6e7e0a6,<*> masked { masked <*> unmasked <*> },5
+24136c9b,Neither spark.yarn.jars nor spark.yarn.archive is set falling back to uploading libraries under SPARK_HOME.,1
+d8de6460,computePacketChunkSize src <*> chunkSize <*> chunksPerPacket <*> packetSize <*>,4725
+59194bd0,<*> <*> new <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> block null,128
+48e4aa96,<*> <*> packet seqno <*> offsetInBlock <*> lastPacketInBlock false lastByteOffsetInBlock <*> <*>,14171
+80498521,pipeline [DatanodeInfoWithStorage[<*> DS-7c79c993-44f3-4e71-85c2-3a3e4dadf941 DISK] DatanodeInfoWithStorage[<*> DS-6385995c-0eec-<*>-ab52-510c69eb7bcb DISK] DatanodeInfoWithStorage[<*> DS-675b31de-67ed-4c5b-88c9-679e8f1409eb DISK]] <*>_<*>,6
+cc91b536,SASL encryption trust check localHostTrusted false remoteHostTrusted false,6
+410f878d,SASL client skipping handshake in unsecured configuration for addr <*> datanodeId DatanodeInfoWithStorage[<*> <*> DISK],6
+184aab45,DFSClient seqno <*> reply SUCCESS reply SUCCESS reply SUCCESS downstreamAckTimeNanos <*> flag <*> flag <*> flag <*>,4731
+7f759eb0,WriteChunk allocating new packet seqno <*> src /user/root/.sparkStaging/application_<*>_<*>/__spark_libs__<*>.zip packetSize <*> chunksPerPacket <*> bytesCurBlock <*> output stream DFSOutputStream <*>_<*>,4601
+74eb2322,Closing old block BP-<*>-<*><*> <*>_<*>,6
+b625d455,<*> waiting for ack for <*>,4
+1e85103c,PrivilegedAction [as root (auth SIMPLE)][action org.apache.hadoop.fs.FileContext$<*>@21f8e55f] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java <*>) at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java <*>) at org.apache.spark.deploy.yarn.Client.$anonfun$copyFileToRemote$<*>(Client.scala <*>) at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala <*>) at org.apache.spark.deploy.yarn.Client.copyFileToRemote(Client.scala <*>) at org.apache.spark.deploy.yarn.Client.distribute$<*>(Client.scala <*>) at org.apache.spark.deploy.yarn.Client.prepareLocalResources(Client.scala <*>) at org.apache.spark.deploy.yarn.Client.createContainerLaunchContext(Client.scala <*>) at org.apache.spark.deploy.yarn.Client.submitApplication(Client.scala <*>) at org.apache.spark.deploy.yarn.Client.run(Client.scala <*>) at org.apache.spark.deploy.yarn.YarnClusterApplication.start(Client.scala <*>) at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit.doRunMain$<*>(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit$$anon$<*>.doSubmit(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala <*>) at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala),1
+aa8828b5,Creating an archive with the config files for distribution at /tmp/spark-a4f2d5f7-4c76-4d44-b227-ccce67405aa0/__spark_conf__<*>.zip.,1
+e7e46cf6,Handling deprecation for all properties in config...,1
+35f56878,"<*> -> resource { scheme ""hdfs"" host ""master"" port <*> file <*> } size <*> timestamp <*> type <*> visibility PRIVATE",4
+0abcf236,{{JAVA_HOME}}/bin/java -server -XX +IgnoreUnrecognizedVMOptions --add-opens java.base/java.lang ALL-UNNAMED --add-opens java.base/java.lang.invoke ALL-UNNAMED --add-opens java.base/java.lang.reflect ALL-UNNAMED --add-opens java.base/java.io ALL-UNNAMED --add-opens java.base/java.net ALL-UNNAMED --add-opens java.base/java.nio ALL-UNNAMED --add-opens java.base/java.util ALL-UNNAMED --add-opens java.base/java.util.concurrent ALL-UNNAMED --add-opens java.base/java.util.concurrent.atomic ALL-UNNAMED --add-opens java.base/sun.nio.ch ALL-UNNAMED --add-opens java.base/sun.nio.cs ALL-UNNAMED --add-opens java.base/sun.security.action ALL-UNNAMED --add-opens java.base/sun.util.calendar ALL-UNNAMED --add-opens java.security.jgss/sun.security.krb5 ALL-UNNAMED -Xmx4096m -Djava.io.tmpdir {{PWD}}/tmp -Dspark.yarn.app.container.log.dir <LOG_DIR> org.apache.spark.deploy.yarn.ApplicationMaster --class 'org.apache.spark.examples.SparkTC' --jar file /spark/examples/jars/scopt_<*>.<*>-<*>.<*>.<*>.jar --properties-file {{PWD}}/__spark_conf__/__spark_conf__.properties --dist-cache-conf {{PWD}}/__spark_conf__/__spark_dist_cache__.properties <*>> <LOG_DIR>/stdout <*>> <LOG_DIR>/stderr,1
+7283e598,SecurityManager authentication disabled; ui acls disabled; users with view permissions Set(root); groups with view permissions Set(); users with modify permissions Set(root); groups with modify permissions Set(),9
+40f448ee,Using the following builtin delegation token providers hive hadoopfs hbase.,1
+b02e0ef2,spark.yarn.maxAppAttempts is not set. Cluster's default value will be used.,1
+f7e9f191,Application 'application_<*>_<*>' is submitted without priority hence considering default queue/cluster priority <*>,1
+1c10844b,The specific max attempts <*> for application <*> is invalid because it is less than or equal to zero. Use the rm max attempts instead.,1
+516792b5,Application with id <*> submitted by user root,1
+dbf05b56,Storing application with id application_<*>_<*>,1
+45b4b55f,<*> info for app application_<*>_<*>,2
+335ff66f,<*> <*> application_<*>_<*> from user root in queue <*>,2
+c54de27a,Application added - appId application_<*>_<*> user root leaf-queue of parent root #applications <*>,1
+0958242c,maximum-am-resource-percent is insufficient to start a single application in queue <*> <*> it is likely set too low. skipping enforcement to allow at least one application to start,2
+ace5242a,Application added - appId application_<*>_<*> user root leaf-queue root.default #user-pending-applications <*> #user-active-applications <*> #queue-pending-applications <*> #queue-active-applications <*> #queue-nonrunnable-applications <*>,1
+bbe0103d,assignedContainer application attempt appattempt_<*>_<*>_<*> container null queue default clusterResource <memory <*> vCores <*>> type OFF_SWITCH requestedPartition,4
+c39bf7db,Assigned container container_<*>_<*>_<*>_<*> of capacity <memory <*> vCores <*>> on host <*> <*> which has <*> containers <memory <*> vCores <*>> used and <memory <*> vCores <*>> available after allocation,4
+3cc1a2ac,assignedContainer queue root usedCapacity <*>.<*> absoluteUsedCapacity <*>.<*> used <memory <*> vCores <*>> cluster <memory <*> vCores <*>>,4
+a0cf6422,Clear node set for appattempt_<*>_<*>_<*>,1
+87fbdca2,Storing attempt AppId application_<*>_<*> AttemptId appattempt_<*>_<*>_<*> MasterContainer Container [ContainerId container_<*>_<*>_<*>_<*> AllocationRequestId <*> Version <*> NodeId slave0 <*> NodeHttpAddress slave0 <*> Resource <memory <*> vCores <*>> Priority <*> Token Token { kind ContainerToken service <*> } ExecutionType GUARANTEED ],1
+bc721d6b,Create AMRMToken for ApplicationAttempt appattempt_<*>_<*>_<*>,1
+05443426,Auth successful for appattempt_<*>_<*>_<*> (auth SIMPLE) from <*>,5
+500d8417,<*> <*> <*> <*> <*> for <*> application_<*>_<*>,4
+1928f917,Got event CONTAINER_INIT for appId application_<*>_<*>,4
+f6007550,Container container_<*>_<*>_<*>_<*> is localizing [hdfs //master <*>/user/root/.sparkStaging/application_<*>_<*>/__spark_libs__<*>.zip hdfs //master <*>/user/root/.sparkStaging/application_<*>_<*>/__spark_conf__.zip hdfs //master <*>/user/root/.sparkStaging/application_<*>_<*>/scopt_<*>.<*>-<*>.<*>.<*>.jar hdfs //master <*>/user/root/.sparkStaging/application_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar],4
+76eb4115,update the launch time for applicationId application_<*>_<*> attemptId appattempt_<*>_<*>_000001launchTime <*>,1
+d8b60817,container_<*>_<*>_<*>_<*>'s ip <*> and hostname slave<*>,4
+532b0346,Skipping monitoring container container_<*>_<*>_<*>_<*> since CPU usage is not yet available.,4
+3a144308,Registering signal handler for <*>,12
+46df10a9,creating UGI for user root,4
+08449c90,Reading credentials from location /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/container_tokens,4
+9222359d,Starting the user application in a separate Thread,1
+f29e2798,Waiting for spark context initialization...,1
+9d3727ea,No custom resources configured for <*>,4
+10a32cc8,Default ResourceProfile created executor resources Map(cores -> name cores amount <*> script vendor memory -> name memory amount <*> script vendor offHeap -> name offHeap amount <*> script vendor ) task resources Map(cpus -> name cpus amount <*>.<*>),1
+d5a973f4,Limiting resource is cpus at <*> tasks per executor,1
+f0254949,Using SLF4J as the default logging framework,4
+d6f68935,-Dio.netty.machineId <*> <*> ac ff fe <*> <*> <*> (auto-detected),4
+43cb39de,Shuffle server started on port <*>,5
+0c3391ac,Successfully started service <*> on port <*>.,6
+add369a7,Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information,1
+dc6ee373,Created local directory at <*>,4
+e398e247,MemoryStore started with capacity <*>.<*> MiB,4
+a026c358,Created SSL options for ui SSLOptions{enabled false port None keyStore None keyStorePassword None trustStore None trustStorePassword None protocol None enabledAlgorithms Set()},1
+aafe1779,Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy,4
+c3d2b231,<*> BlockManager <*> <*> <*> None),12
+4eff7057,Got a request for slave<*>,4
+b0838bdc,Registering block manager <*> <*> with <*>.<*> MiB RAM <*> <*> <*> None),4
+a0a14b8c,Base URL for logs http <*> <*>/node/containerlogs/container_<*>_<*>_<*>_<*>/root,4
+bb952e71,PrivilegedAction [as root (auth SIMPLE)][action org.apache.hadoop.yarn.client.RMProxy$<*>@5b057c8c] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java <*>) at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java <*>) at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java <*>) at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java <*>) at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java <*>) at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.serviceStart(AMRMClientImpl.java <*>) at org.apache.hadoop.service.AbstractService.start(AbstractService.java <*>) at org.apache.spark.deploy.yarn.YarnRMClient.register(YarnRMClient.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.registerAM(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java <*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+9535a996,PrivilegedAction [as root (auth SIMPLE)][action org.apache.hadoop.ipc.Client$Connection$<*>@5f3b9c57] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java <*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java <*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at com.sun.proxy.$Proxy31.registerApplicationMaster(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.registerApplicationMaster(ApplicationMasterProtocolPBClientImpl.java <*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java <*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java <*>) at java.lang.reflect.Method.invoke(Method.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java <*>) at com.sun.proxy.$Proxy32.registerApplicationMaster(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java <*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java <*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java <*>) at org.apache.spark.deploy.yarn.YarnRMClient.register(YarnRMClient.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.registerAM(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java <*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+501a4f02,Sending sasl message state NEGOTIATE,5
+1edd0dc0,Get token info proto interface <*> info <*>,5
+43865e63,Looking for a token with service <*>,1
+6a788b60,Token kind is YARN_AM_RM_TOKEN and the token's service name is <*>,1
+1b8c8447,Use <*> authentication for protocol <*>,5
+b54e179f,SASL client callback setting <*>,12
+d3badc9b,"Sending sasl message state INITIATE <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> auths { method <*> mechanism <*> <*> """" <*> <*> }",5
+b4c84e24,PrivilegedAction [as root (auth SIMPLE)][action org.apache.hadoop.ipc.Client$Connection$<*>@7dd00705] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java <*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java <*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at com.sun.proxy.$Proxy36.getFileInfo(Unknown Source) at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java <*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java <*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java <*>) at java.lang.reflect.Method.invoke(Method.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java <*>) at com.sun.proxy.$Proxy37.getFileInfo(Unknown Source) at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java <*>) at org.apache.hadoop.hdfs.DistributedFileSystem$<*>.doCall(DistributedFileSystem.java <*>) at org.apache.hadoop.hdfs.DistributedFileSystem$<*>.doCall(DistributedFileSystem.java <*>) at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java <*>) at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.$anonfun$prepareLocalResources$<*>(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.$anonfun$prepareLocalResources$<*>$adapted(ApplicationMaster.scala <*>) at scala.Option.foreach(Option.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.prepareLocalResources(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala <*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java <*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala <*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+6f2df90e,tokens aren't supported for this protocol or user doesn't have one,1
+04f133bc,Resource profile <*> doesn't exist adding it,1
+8e6792b1,Will request <*> executor container(s) for ResourceProfile Id <*> each with <*> core(s) and <*> MB memory. with custom resources <memory <*> vCores <*>>,1
+02aebf1f,Started progress reporter thread with (heartbeat <*> initial allocation <*>) intervals,1
+f7f5d1b1,Allocated containers <*>. Current executor count <*>. Launching executor count <*>. Cluster resources <memory <*> vCores <*>>.,1
+6f601584,Removing container request via AM client Capability[<memory <*> vCores <*>>]Priority[<*>]AllocationRequestId[<*>]ExecutionTypeRequest[{Execution Type GUARANTEED Enforce Execution Type false}]Resource Profile[null],3
+8e8dfaa7,<*> <*> <*> <*> <*> <*> <*> executor <*> ID <*> <*>,6
+69257cea,Received <*> containers from YARN launching executors on <*> of them.,1
+5d3beb7c,"<*> token Kind NMToken Service <*> Ident (appAttemptId { application_id { id <*> cluster_timestamp <*> } attemptId <*> } nodeId { host <*> port <*> } appSubmitter ""root"" keyId <*>)",6
+8879c644,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.yarn.client.ServerProxy$<*>@7b0e34c5] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.yarn.client.ServerProxy.createRetriableProxy(ServerProxy.java <*>) at org.apache.hadoop.yarn.client.NMProxy.createNMProxy(NMProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.newProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.<init>(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.getProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+e2befcce,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.yarn.client.ServerProxy$<*>@1e0266d0] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.yarn.client.ServerProxy.createRetriableProxy(ServerProxy.java <*>) at org.apache.hadoop.yarn.client.NMProxy.createNMProxy(NMProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.newProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.<init>(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.getProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+663d2e4a,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.yarn.client.ServerProxy$<*>@7e8e3dc5] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.yarn.client.ServerProxy.createRetriableProxy(ServerProxy.java <*>) at org.apache.hadoop.yarn.client.NMProxy.createNMProxy(NMProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.newProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.<init>(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.getProxy(ContainerManagementProtocolProxy.java <*>) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+791e49b5,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.ipc.Client$Connection$<*>@3e68327c] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java <*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java <*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at com.sun.proxy.$Proxy38.startContainers(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.startContainers(ContainerManagementProtocolPBClientImpl.java <*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java <*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java <*>) at java.lang.reflect.Method.invoke(Method.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java <*>) at com.sun.proxy.$Proxy39.startContainers(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+f5fd7ee8,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.ipc.Client$Connection$<*>@1b6de8b8] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java <*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java <*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at com.sun.proxy.$Proxy38.startContainers(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.startContainers(ContainerManagementProtocolPBClientImpl.java <*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java <*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java <*>) at java.lang.reflect.Method.invoke(Method.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java <*>) at com.sun.proxy.$Proxy39.startContainers(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+0d79434b,PrivilegedAction [as appattempt_<*>_<*>_<*> (auth SIMPLE)][action org.apache.hadoop.ipc.Client$Connection$<*>@7a7e12b1] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java <*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java <*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java <*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.Client.call(Client.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java <*>) at com.sun.proxy.$Proxy38.startContainers(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.startContainers(ContainerManagementProtocolPBClientImpl.java <*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java <*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java <*>) at java.lang.reflect.Method.invoke(Method.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java <*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java <*>) at com.sun.proxy.$Proxy39.startContainers(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala <*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala <*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java <*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java <*>) at java.lang.Thread.run(Thread.java <*>),1
+ea1e3714,Started daemon with process name <*>@slave<*>,3
+93b8733b,New connection accepted for remote address <*>.,15
+c8be0e86,Registered executor NettyRpcEndpointRef(spark-client //Executor) (<*>) with ID <*> ResourceProfileId <*>,3
+47909925,Starting executor with user classpath (userClassPathFirst false) 'file /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/__app__.jar file /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar file /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/__app__.jar file /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar',3
+50e8e1d8,Parents of final stage List(),1
+542a029d,remainingBlocks Set(shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*> shuffle_<*>_<*>_<*>),16

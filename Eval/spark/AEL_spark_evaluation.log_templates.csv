@@ -1,0 +1,680 @@
+EventId,EventTemplate,Occurrences
+631a35fd,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>)",274
+2526b64a,"maxBytesInFlight: <*>, targetRemoteRequestSize: <*>, maxBlocksInFlightPerAddress: <*>",3370
+be747442,Getting <*> (<*>.<*> <*> non-empty blocks including <*> (<*>.<*> <*> local and <*> (<*>.<*> B) host-local and <*> (<*>.<*> B) push-merged-local and <*> (<*>.<*> <*> remote blocks,3370
+13877f3c,Started <*> remote fetches in <*> ms,3370
+4ad0afd9,Task <*> release <*>.<*> B from <*>,5163
+9f789f18,Getting local shuffle block shuffle_<*>_<*>_<*>,49867
+c9251f80,"Collected remote fetch requests for BlockManagerId(<*>, <*> <*>, None) in <*> ms",3711
+3de319c4,"Creating fetch request of <*> at BlockManagerId(<*>, <*> <*>, None) with <*> blocks",3711
+81d945df,Got local blocks in <*> ms,3370
+947cca99,Number of <*> <*> <*> <*>,3713
+b607d7f5,Sending request for <*> blocks (<*>.<*> <*> from <*>,3711
+d0f190a3,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",24
+7321b052,"Convert map statuses for shuffle <*>, mappers <*>-<*>, partitions <*>-<*>",3371
+93380a2b,Fetching outputs for shuffle <*>,3371
+e404b7b0,Sending fetch chunk request <*> to <*>,32608
+4417bf56,Shuffle index for mapId <*>: <*>,3084
+a0b5d226,Writing shuffle index file for mapId <*> with length <*>,3084
+f5fa94c4,Start fetching local blocks:,1471
+a6084c12,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",475
+e746a818,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",407
+90c60cc2,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",559
+68f5ac89,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",654
+3998d409,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",774
+0a3e8698,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",895
+dede275d,<*> <*>,7070
+cf560dd0,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1040
+361cedd3,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1197
+279bfcb0,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1564
+390318ea,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1365
+453334a1,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1769
+9d73db87,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",2042
+cbba129f,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",2300
+dc154315,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",2557
+23b8683d,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",2829
+7bb52ec9,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",3061
+79848043,Finished task <*>.<*> in stage <*>.<*> (TID <*>). <*> bytes result sent to driver,4410
+054dd393,"stageTCMP: (<*>, <*>) -> <*>",8825
+f68b360b,ShuffleMapTask finished on <*>,3084
+602ed955,Moving to RACK_LOCAL after waiting for 0ms,986
+665a1452,No tasks for locality level <*> so moving to locality level <*>,3061
+dbb8d9d6,"parentName: , name: TaskSet_<*>.<*>, runningTasks: <*>",5093
+8c5fb2b5,Launching task <*> on executor id: <*> hostname: <*>,4416
+6c6134e3,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",354
+c9d2bc33,Finished task <*>.<*> in stage <*>.<*> (TID <*>) in <*> ms on <*> (executor <*>) (<*>/<*>),4409
+2488dc1c,"Starting task <*>.<*> in stage <*>.<*> (TID <*>) <*> executor <*>, partition <*>, <*> <*> bytes) taskResourceAssignments Map()",4415
+be52666a,task <*>.<*> in stage <*>.<*> (TID <*>)'s epoch is <*>,4415
+96d2a025,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",222
+09ce2ddd,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",267
+7c96b88e,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",307
+62307df8,Running task <*>.<*> in stage <*>.<*> (TID <*>),4415
+9ba7fdc2,Got assigned task <*>,4415
+ffd8b1b5,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",93
+5e892075,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",49
+6b2e8e2f,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",11
+8f4c60ef,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",29
+3fda8c1c,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",18
+3b2194ca,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",151
+1c15bec6,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",185
+8cb29e84,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",47
+c474851f,"Done removing broadcast <*>, response is <*>",140
+3f375ba8,Sent response: <*> to slave0:<*>,140
+a4ec7e5b,<*> <*> <*>,1435
+430caab0,Got cleaning task <*>,735
+420c4db4,<*> broadcast <*>,315
+d740eec4,Unpersisting TorrentBroadcast <*>,35
+a7c10615,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",31
+2fb1b0dd,Removing block <*>,258
+80131f67,Told master about block <*>,1593
+41e50116,Updated info of block <*>,1593
+39e9e7a7,"Updating block info on master <*> for <*> <*> <*>, None)",1593
+447a875e,Block <*> of size <*> dropped from memory (free <*>),258
+076bdc3d,<*> <*> <*> <*> <*> <*> (size: <*>.<*> <*> free: <*>.<*> MiB),396
+7ac97528,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",81
+f41385fd,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",90
+b09af51d,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",29
+bdf945ae,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",123
+2c2fdc2a,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",99
+eecbf006,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",13
+f93ebba7,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",24
+864de4ee,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",125
+328e65db,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",32
+b202bb8c,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",72
+82ce29fb,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",11
+cf7db2bd,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",67
+8c0dbfc1,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",55
+aaf4d747,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",64
+9b4bb6ea,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",77
+10c9deb4,<*> <*> to <*>,30
+240b98a4,<*> <*> <*> at SparkTC.scala:<*>;jobs=<*>)),73
+05d47a9e,<*> <*> <*> at SparkTC.scala:<*>) finished in <*>.<*> s,36
+50ced6ba,looking for newly runnable stages,27
+f7162878,waiting: Set(ResultStage <*>),9
+c441a3e5,"Removed TaskSet <*>.<*>, whose tasks have all completed, from pool",36
+c67aa30b,missing: List(),37
+c607dd01,<*> <*>),37
+a5eab337,Put block <*> locally took <*> ms,1601
+0797e754,Putting block <*> without replication took <*> ms,1601
+2e8fa0ee,Block <*> stored as <*> in memory (estimated size <*>.<*> <*> free <*>.<*> MiB),1601
+7b52ee6d,Created broadcast <*> from broadcast at DAGScheduler.scala:<*>,37
+c53e8da4,Epoch for TaskSet <*>.<*>: <*>,37
+bae4ac7c,Adding task set <*>.<*> with <*> tasks resource profile <*>,37
+aefd73b5,Adding pending tasks took <*> ms,37
+6671e8d9,"Valid locality levels for TaskSet <*>.<*>: NODE_LOCAL, RACK_LOCAL, ANY",8
+5932699b,Block <*> was not found,1430
+63cc8db6,Getting <*> block <*>,6249
+9810c47a,Updating epoch to <*> and clearing cache,54
+e5d1f569,Reading piece broadcast_<*>_piece0 of broadcast_<*>,100
+7ab86c5d,Getting local block broadcast_<*>_piece0 as bytes,200
+7bae3b80,Started reading broadcast variable <*> with <*> pieces (estimated total size <*>.<*> MiB),100
+68de492d,"Getting remote block broadcast_<*>_piece0 from <*> <*> <*>, None)",100
+7d9562c1,Level for block <*> is <*> <*> <*> replicas),3489
+c0edc03b,Reading broadcast variable <*> took <*> ms,100
+345d3508,Block rdd_<*>_<*> is unknown by block manager master,1329
+c4855126,Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@slave0:<*>),79
+7fbdb9ef,"Don't have map outputs for shuffle <*>, fetching them",114
+7affedb4,Handling request to send map/merge output locations for shuffle <*> to <*>,79
+495ab367,Asked to send map output locations for shuffle <*> to <*>,79
+a2be0104,Fetching map output statuses for shuffle <*> took <*> ms,114
+f965577d,Got the map output locations,79
+2ac70def,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",149
+fd8a8e21,"Added rdd_<*>_<*> in memory on <*> (size: <*>.<*> B, free: <*>.<*> MiB)",1197
+198d7373,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",105
+f3238759,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",108
+1414ed0e,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",128
+e568e3ee,"removing (<*>, <*>) from stageTCMP",83
+0bf0d259,IPC Client (<*>) connection to <*> from <*> <*> <*> <*>,170
+db4b8903,Call: <*> took <*>,85
+d053da74,Application report for application_<*>_<*> (state: <*>,31
+75e6f6c4,client token: N/A diagnostics: N/A ApplicationMaster host: slave0 ApplicationMaster RPC port: <*> queue: default start time: <*> final status: UNDEFINED tracking URL: http://master:<*>/proxy/application_<*>_<*>/ user: root,24
+1c660302,"DatanodeRegistration(<*>, <*> infoPort=<*>, infoSecurePort=<*>, ipcPort=<*>, storageInfo=lv=<*>;cid=CID-42d9779f-782d-44ea-a75a-68048e1fb0da;nsid=<*>;c=<*>) Starting thread to transfer BP-<*>-<*><*>:<*>_<*> to <*>",113
+69fadffc,"DataTransfer, at <*> Transmitted BP-<*>-<*><*>:<*>_<*> (numBytes=<*>) to <*>",113
+b09deff7,Receiving BP-<*>-<*><*>:<*>_<*> src: <*> dest: <*>,1613
+68dfe22e,Received BP-<*>-<*><*>:<*>_<*> src: <*> dest: <*> of size <*>,113
+f094a658,"After removal of stage <*>, remaining stages = <*>",117
+f2eb184f,Job <*> is finished. Cancelling potential speculative or zombie tasks for this job,9
+62bda2ef,Killing all running tasks in stage <*>: Stage finished,9
+69d500b9,"Job <*> finished: count at SparkTC.scala:<*>, took <*>.<*> s",9
+26a8e8ff,Cleaning indylambda closure: <*>,93
+f699fc60,+++ indylambda closure <*> is now cleaned +++,93
+6d7e5a28,"Can't use serialized shuffle for shuffle <*> because the serializer, org.apache.spark.serializer.JavaSerializer, does not support object relocation",13
+33698433,Merging stage rdd profiles: Set(),145
+0a542a05,eagerlyComputePartitionsForRddAndAncestors for RDD <*> took <*>.<*> seconds,10
+4fda862b,Starting job: count at SparkTC.scala:<*>,10
+eae5a65d,Registering RDD <*> <*> at SparkTC.scala:<*>) as input to shuffle <*>,27
+065151f9,Final stage: ResultStage <*> (count at SparkTC.scala:<*>),10
+3b4d8c87,Got job <*> (count at SparkTC.scala:<*>) with <*> output partitions,10
+752df62f,Parents of final stage: List(ShuffleMapStage <*>),9
+032f1e57,Missing parents: List(ShuffleMapStage <*>),9
+a4c208ca,missing: List(ShuffleMapStage <*>),18
+c80b89c4,"missing: List(ShuffleMapStage <*>, ShuffleMapStage <*>)",9
+5d40592b,"Valid locality levels for TaskSet <*>.<*>: PROCESS_LOCAL, NODE_LOCAL, RACK_LOCAL, ANY",18
+f45dce14,Found block rdd_<*>_<*> locally,2062
+dc9466ff,running: Set(ShuffleMapStage <*>),9
+66961b1d,"waiting: Set(ShuffleMapStage <*>, ResultStage <*>)",18
+4b93af21,Not enough replicas was chosen. Reason: {NO_REQUIRED_STORAGE_TYPE=<*>},1573
+47a63e23,"Valid locality levels for TaskSet <*>.<*>: PROCESS_LOCAL, NODE_LOCAL, NO_PREF, RACK_LOCAL, ANY",9
+d4eb35e4,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",7
+787077ef,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",13
+a23ca047,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",3
+1f537c2e,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",6
+546f2fde,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",25
+117dbf74,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",31
+ccdf9237,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",39
+7a9da8a2,Number of pending allocations is <*>. Slept for <*>/<*>.,8
+90d3440f,Sending progress,9
+08fd120f,"Updating resource requests for ResourceProfile id: <*>, target: <*>, pending: <*>, running: <*>, executorsStarting: <*>",10
+64d349cb,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",3
+f9920460,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",1
+656e61c4,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",110
+22ce6320,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",80
+b8e89aca,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",60
+a6ec12be,"registered UNIX signal handlers for [TERM, HUP, INT]",9
+b9240165,createNameNode [],1
+7a3d0110,Loaded properties from hadoop-metrics2.properties,9
+82b54a4b,<*> metrics system started,9
+becc4e71,Scheduled Metric snapshot period at <*> second(s).,9
+a2c136dc,Clients should use master:<*> to access this namenode/service.,1
+950fffb1,fs.defaultFS is hdfs://master:<*>,1
+5665a4fd,Starting JVM pause monitor,8
+42e62d7a,"Filter initializers set : org.apache.hadoop.http.lib.StaticUserWebFilter,org.apache.hadoop.hdfs.web.AuthFilterInitializer",2
+ccba8d03,Starting Web-server for <*> at: http:/<*>,2
+01861b08,Logging initialized <*> to org.eclipse.jetty.util.log.Slf4jLog,9
+9c1a3d53,"Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /root/hadoop-http-auth-signature-secret",15
+7bec5cbf,Http request log for <*> is not defined,9
+a8927e0e,Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter),9
+02823bc8,Added filter <*> <*> to context <*>,45
+8aa20788,Jetty bound to port <*>,9
+2ab3354c,jetty-<*>.<*>.<*>.v20210629; built: <*>-<*>-30T11:<*>:<*>.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm <*>.<*>.<*>_<*>-8u392-ga-<*>~<*>.<*>-b<*>,9
+bacbae49,DefaultSessionIdManager workerName=node<*>,9
+9ee7bbd8,"No SessionScavenger set, using defaults",9
+502523ab,node0 Scavenging every <*>,9
+00ac854a,Started <*>,36
+3a71660b,Started <*> (http/<*>.<*>)}{<*>},5
+d0373b7d,Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!,1
+0580c1b7,Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!,1
+70ca091d,Edit logging is async:true,2
+1ccbd629,KeyProvider: null,2
+b7c18ee8,Detailed lock hold time metrics enabled: false,2
+5dd37fdb,fsLock is fair: true,2
+cbac9682,<*> <*> root (auth:SIMPLE),7
+7beeef1d,<*> = true,4
+ab88d7ed,supergroup             = supergroup,2
+fe4e731a,HA Enabled: false,2
+c38e656f,dfs.datanode.fileio.profiling.sampling.percentage set to <*>. Disabling file IO profiling,8
+88659fef,"Adding a node ""<*>"" to the list of included hosts from /hadoop/etc/hadoop/workers",6
+bc7dad90,"dfs.block.invalidate.limit: configured=<*>, counted=<*>, effected=<*>",2
+0d0bf2a7,dfs.namenode.datanode.registration.ip-hostname-check=true,2
+3e94e0ad,The block deletion will start around <*> Feb <*> <*>:<*>:<*>,2
+7740be6c,dfs.namenode.startup.delay.block.deletion.sec is set to <*>:<*>:<*>:<*>.<*>,2
+cc6f3a47,Computing capacity for map <*>,7
+f816bca8,VM type       = <*>-bit,7
+f5eb949b,<*> max memory <*>.<*> MB = <*>.<*> <*>,7
+4bc0c292,capacity      = <*>^<*> = <*> entries,7
+24876555,Storage policy satisfier is disabled,2
+933e6ed3,<*> = false,13
+c4e541af,<*> = <*>,14
+f7797a0d,dfs.namenode.safemode.threshold-pct = <*>.<*>,2
+e8e1cd8a,redundancyRecheckInterval  = 3000ms,2
+5592c7a2,<*> serial map: bits=<*> maxEntries=<*>,8
+dceb13fc,<*> enabled? true,4
+a5eb14d5,POSIX ACL inheritance enabled? true,2
+f5ffbc5b,Caching file names occurring more than <*> times,2
+8d3eeb46,"Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: <*>",2
+d3eced73,<*> is disabled,5
+05ccfa1b,NNTop conf: <*> = <*>,4
+0297e112,"NNTop conf: dfs.namenode.top.windows.minutes = <*>,<*>,<*>",2
+1d1ca2a1,Retry cache on namenode is enabled,1
+c3822603,Retry cache will use <*>.<*> of total heap and retry cache entry expiry time is <*> millis,1
+0e54a777,Lock on <*> acquired by nodename <*>,5
+e6e72f27,Recovering unfinalized segments in /data/tmp/dfs/name/current,1
+38c215f2,No edit log streams selected.,1
+1efa050b,"Planning to load image: FSImageFile(file=/data/tmp/dfs/name/current/fsimage_<*>, cpktTxId=<*>)",1
+80ea24b5,Loading <*> INodes.,1
+c22749de,Successfully loaded <*> inodes,1
+a9307ac4,"Completed update blocks map and name cache, total waiting duration 0ms.",1
+73f5bd10,Loaded image for txid <*> from /data/tmp/dfs/name/current/fsimage_<*>,1
+bec78307,Loaded FSImage in <*> seconds.,1
+a17a7715,"Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)",1
+3486315e,<*> log segment <*> <*>,3
+a9b5711b,initialized with <*> entries <*> lookups,1
+40c57c46,Finished loading FSImage in <*> msecs,1
+eeeb2e7d,Enable NameNode state context:false,1
+afd0c954,RPC server is binding to master:<*>,1
+4800a8aa,"Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: <*>, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.",14
+70066a26,Starting Socket Reader #<*> for port <*>,14
+53d10c79,"Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.",1
+aee76932,Start MarkedDeleteBlockScrubber thread,1
+3b5c629d,Initialized the Default Decommission and Maintenance monitor,1
+6733181d,initializing replication queues,1
+e7a4a19b,Number of blocks being written    = <*>,1
+d32a6a20,Total number of blocks            = <*>,1
+ccc17099,IPC Server Responder: starting,14
+73b103d7,IPC Server listener on <*>: starting,14
+f9518bd1,NameNode RPC up at: master<*>,1
+2c20825c,Initializing quota with <*> thread(s),1
+f428c98c,Starting services required for active state,1
+ea407175,"Quota initialization completed in <*> milliseconds name space=<*> storage space=<*> storage types=RAM_DISK=<*>, SSD=<*>, DISK=<*>, ARCHIVE=<*>, PROVIDED=<*>",1
+d134f37f,Starting CacheReplicationMonitor with interval <*> milliseconds,1
+c9951e78,Scheduling a check for <*>,6
+36c4eccc,Initialized block scanner with targetBytesPerSec <*>,3
+3ad0c3ac,Configured hostname is slave<*>,3
+ace4c92c,Starting DataNode with maxLockedMemory = <*>,3
+3d7fb32e,Opened <*> server at <*>,6
+ca395b3f,Balancing bandwidth is <*> bytes/s,3
+54f5a3a6,Number threads for balancing is <*>,3
+112bf754,"Started ServerConnector@176b75f7{HTTP/<*>.<*>, (http/<*>.<*>)}{localhost:<*>}",3
+afa2400a,Got null for restCsrfPreventionFilter - will not do any filtering.,3
+c7c8b64d,Listening HTTP traffic on <*>,3
+6483b526,dnUserName = root,3
+ff335a2c,supergroup = supergroup,3
+bcb7be44,Refresh request received for nameservices: null,3
+1418307a,Starting BPOfferServices for nameservices: <default>,3
+afa2c5f0,Block pool <*> (Datanode Uuid <*> service to master<*> <*> <*> <*> <*>,9
+cb0bfa73,Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to master<*>,3
+6ac026ce,"Using <*> threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=<*>, dataDirs=<*>)",3
+bb647a6f,Storage directory with location [DISK]file:/data/tmp/dfs/data is not formatted for namespace <*>. Formatting...,3
+0a798c27,Generated new storageID <*> for directory /data/tmp/dfs/data,3
+2368a53b,Analyzing storage directories for bpid BP-<*>-<*>-<*>,3
+926b0d2d,Locking is disabled for /data/tmp/dfs/data/current/BP-<*>-<*>-<*>,3
+6b0c02f6,Block pool storage directory for location [DISK]file:/data/tmp/dfs/data and block pool id BP-<*>-<*><*> is not formatted. Formatting ...,3
+7f8e5bc5,Formatting block pool BP-<*>-<*><*> directory /data/tmp/dfs/data/current/BP-<*>-<*><*>/current,3
+106fdbf7,Setting up storage: nsid=<*>;bpid=BP-<*>-<*><*>;lv=<*>;nsInfo=lv=<*>;cid=CID-42d9779f-782d-44ea-a75a-68048e1fb0da;nsid=<*>;c=<*>;bpid=BP-<*>-<*><*>;dnuuid=null,3
+7cbe50ca,Generated and persisted new Datanode UUID <*>,3
+8ba22eaa,The datanode lock is a read write lock,3
+5b21022b,Added new volume: <*>,3
+25496fc2,"Added volume - [DISK]file:/data/tmp/dfs/data, StorageType: DISK",3
+8f5f8edb,Initializing cache loader: MemoryMappableBlockLoader.,3
+d875d4d9,Registered <*> MBean,5
+91934b40,Adding block pool BP-<*>-<*>-<*>,3
+b910cd8d,Scanning block pool BP-<*>-<*><*> on volume /data/tmp/dfs/data...,3
+4fa1db87,"dfsUsed file missing in /data/tmp/dfs/data/current/BP-<*>-<*><*>/current, will proceed with Du for space computation calculation,",3
+52973aaf,Time taken to scan block pool BP-<*>-<*><*> on /data/tmp/dfs/data: <*>,3
+025361b9,Total time to scan all replicas for block pool BP-<*>-<*><*>: <*>,3
+b95afbcb,Replica Cache file: /data/tmp/dfs/data/current/BP-<*>-<*><*>/current/replicas doesn't exist,3
+765575da,Adding replicas to map for block pool BP-<*>-<*><*> on volume /data/tmp/dfs/data...,3
+db4dd0a1,Time to add replicas to map for block pool BP-<*>-<*><*> on volume /data/tmp/dfs/data: <*>,3
+4a48d716,Total time to add all replicas to map for block pool BP-<*>-<*><*>: 2ms,3
+c62aeb14,Scheduled health check for volume /data/tmp/dfs/data,3
+358292c5,Periodic Directory Tree Verification scan starting in <*> with interval of 21600000ms and throttle limit of -1ms/s,3
+152a50a0,Now scanning bpid BP-<*>-<*><*> on volume /data/tmp/dfs/data,3
+26b561dd,dfs.datanode.directoryscan.throttle.limit.ms.per.sec set to value above <*> ms/sec. Assuming default value of -<*>,3
+faabf01e,"VolumeScanner(/data/tmp/dfs/data, <*> finished scanning block pool BP-<*>-<*>-<*>",3
+563e8a23,"VolumeScanner(/data/tmp/dfs/data, <*> no suitable block pools found to scan. Waiting <*> ms.",3
+324603d1,Registered DN <*> (<*>).,3
+f5aa8851,Adding a new node: /default-rack<*>,3
+7ce81030,For namenode master<*> using BLOCKREPORT_INTERVAL of 21600000msecs CACHEREPORT_INTERVAL of 10000msecs Initial delay: 0msecs; heartBeatInterval=<*>,3
+82ede097,Adding new storage ID <*> for DN <*>,3
+c05e77b0,Got finalize command for block pool BP-<*>-<*>-<*>,3
+bf462c79,"Successfully sent block report <*> with lease ID <*> to namenode: master<*>, containing <*> storage report(s), of which we sent <*>. The reports had <*> total blocks and used <*> RPC(s). This took <*> msecs to generate and <*> msecs for RPC and NN processing. Got back one command: FinalizeCommand/<*>.",3
+1457dba4,Checkpoint Period   :<*> secs (<*> min),1
+2c43d762,Log Size Trigger    :<*> txns,1
+e1ac2741,Web server init done,1
+68ab0ec8,found resource <*> at <*>,3
+a3690ff1,<*> not found,10
+a2c109b2,Unable to find <*>,9
+7ab85e10,Registering <*>,5
+3a2b3aef,Registering class <*> for class <*>,47
+c08558ec,<*> 86400000ms and <*> 900000ms,2
+437e7c62,AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: <*> ms,1
+9089c52c,Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler,1
+c600f99b,org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instantiated.,1
+47fd1c87,Application lifelime monitor interval set to <*> ms.,1
+574541f6,<*> NodeSortingService=MultiNodeSortingManager,2
+dad085ae,"Failed to init hostsReader, disabling java.io.FileNotFoundException: /hadoop/etc/hadoop/ex_workers (No such file or directory) at java.io.FileInputStream.open0(Native Method) at java.io.FileInputStream.open(FileInputStream.java:<*>) at java.io.FileInputStream.<init>(FileInputStream.java:<*>) at java.io.FileInputStream.<init>(FileInputStream.java:<*>) at org.apache.hadoop.yarn.LocalConfigurationProvider.getConfigurationInputStream(LocalConfigurationProvider.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.createHostsFileReader(NodesListManager.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.NodesListManager.serviceInit(NodesListManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.service.CompositeService.serviceInit(CompositeService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceInit(ResourceManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.createAndInitActiveServices(ResourceManager.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceInit(ResourceManager.java:<*>) at org.apache.hadoop.service.AbstractService.init(AbstractService.java:<*>) at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:<*>)",1
+85226321,Refreshing hosts (include/exclude) list,1
+48f2ee7a,"<*> allocation = <memory:<*>, vCores:<*>>",2
+11e5de7e,"Initialized parent-queue root name=root, fullname=root",1
+e836edeb,Initialized queue: <*>,2
+24ae0268,"Initialized root queue root: numChildQueue= <*>, capacity=<*>.<*>, absoluteCapacity=<*>.<*>, usedResources=<memory:<*>, vCores:<*>>usedCapacity=<*>.<*>, numApps=<*>, numContainers=<*>",1
+98d267a8,"Initialized queue mappings, override: false",1
+90e186b8,"Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:<*>, vCores:<*>>>, maximumAllocation=<<memory:<*>, vCores:<*>>>, asynchronousScheduling=false, asyncScheduleInterval=5ms,multiNodePlacementEnabled=false, assignMultipleEnabled=true, maxAssignPerHeartbeat=<*>, offswitchPerHeartbeatLimit=<*>",1
+c14038d6,"Initialized workflow priority mappings, override: false",1
+436e4a57,"MultiNode scheduling is 'false', and configured policies are",1
+543b545d,Initializing AMS Processing chain. Root Processor=[org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor].,1
+02a9af50,"disabled placement handler will be used, all scheduling requests will be rejected.",1
+0a449051,TimelineServicePublisher is not configured,1
+5ba9445a,Registered webapp guice modules,4
+0bbc78f3,Updating the current master key for generating delegation tokens,4
+d8014ac7,"Starting expired delegation token remover thread, tokenRemoverScanInterval=<*> min(s)",2
+8850209a,Web app <*> started at <*>,4
+364066c3,"Started ServerConnector@4b2a01d4{HTTP/<*>.<*>, (http/<*>.<*>)}{master:<*>}",1
+0b0a461e,Adding protocol <*> to the server,10
+0d30c19b,<*> to active state,2
+10f75bed,Storing RMDTMasterKey.,2
+77996fef,Updating AMRMToken,1
+fbe32e9a,Rolling master-key for <*>,2
+dbaa5b5d,storing master key with keyID <*>,2
+417b4be5,Found Resource plugins from configuration: null,3
+646054b0,No Resource plugins found from configuration!,3
+c8b2e9d4,"The pluggable device framework is not enabled. If you want, please set true to yarn.nodemanager.pluggable-device-framework.enabled",3
+1c3eb069,Created store directory :file:/tmp/hadoop-yarn-root/node-attribute,1
+53cb4d92,Finished write mirror at:file:/tmp/hadoop-yarn-root/node-attribute/nodeattribute.mirror,1
+66eab927,Finished create editlog file at:file:/tmp/hadoop-yarn-root/node-attribute/nodeattribute.editlog,1
+f1c53ecd,the rolling interval seconds for the NodeManager Cached Log aggregation status is <*>,3
+8c940d79,"Missing location for the node health check script ""script"".",3
+e4c990bb,Disk Validator 'basic' is loaded.,6
+ca347fa9,Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.ResourceCalculatorPlugin@37e4d7bb,3
+b1270978,per directory file limit = <*>,3
+1fdaf6f8,Using traffic control bandwidth handler,3
+660b3f21,Using ResourceCalculatorPlugin: org.apache.hadoop.yarn.util.ResourceCalculatorPlugin@12359a<*>,3
+9e1bf524,Using ResourceCalculatorProcessTree: null,3
+d0030270,Container Log Monitor Enabled: false,3
+876fbb23,ContainersMonitor enabled: true,3
+4a0f9f87,<*> memory control enabled: <*>,6
+81a2bca1,<*> memory check enabled: true,6
+1adf4726,"Setting the resources allocated to containers to <memory:<*>, vCores:<*>>",3
+f869dc39,Not a recoverable state store. Nothing to recover.,3
+5897d22f,"Nodemanager resources is set to: <memory:<*>, vCores:<*>>",3
+7c799fec,Initialized nodemanager with : physical-memory=<*> virtual-memory=<*> virtual-cores=<*>,3
+a6713efd,Created <*> for <*>,4
+cd130dff,Storing CA Certificate and Private Key,1
+610c2076,Updating node address : <*>,3
+04d41005,Localizer started on port <*>,3
+9de0550e,ContainerManager started at <*>,3
+fa862d18,ContainerManager bound to <*><*>,3
+ee89da67,Log Aggregation is disabled.So is the LogAggregationStatusTracker.,3
+5e2985d1,Instantiating NMWebApp at <*>,3
+b4e263f7,Node ID assigned is : <*>,3
+c7e74086,Connecting to ResourceManager at master<*>,5
+81f1b22c,"NodeManager from node <*> <*> httpPort: <*>) registered with capability: <memory:<*>, vCores:<*>>, assigned nodeId <*>",3
+5b8159e6,<*> <*> Transitioned from <*> to <*>,11
+debdf012,"Added node <*> clusterResource: <memory:<*>, vCores:<*>>",3
+b802beb0,"Rolling master-key for container-tokens, got key with id <*>",3
+aa11c0db,"Registered with ResourceManager as <*> with total resource of <memory:<*>, vCores:<*>>",3
+ea6ee831,"Rolling master-key for container-tokens, got key with id -<*>",3
+39ed3a72,"src: <*>, dest: <*>, bytes: <*>, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_<*>_<*>, offset: <*>, srvID: <*> blockid: BP-<*>-<*><*>:<*>_<*>, duration(ns): <*>",1500
+e59d59c1,"PacketResponder: BP-<*>-<*><*>:<*>_<*>, type=LAST_IN_PIPELINE terminating",574
+ccf15c53,"Not enough replicas was chosen. Reason: {NODE_TOO_BUSY=<*>, NO_REQUIRED_STORAGE_TYPE=<*>}",130
+60828b78,"Failed to place enough replicas: expected size is <*> but only <*> storage types can be selected (replication=<*>, selected=[], unavailable=[DISK], removed=[DISK], policy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]})",222
+f3d90ac2,"Failed to place enough replicas, still in need of <*> to reach <*> (unavailableStorages=[DISK], storagePolicy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]}, newBlock=true) All required storage types are unavailable:  unavailableStorages=[DISK], storagePolicy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]}",222
+2d62bc92,"Failed to place enough replicas, still in need of <*> to reach <*> <*> storagePolicy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]}, <*> For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy and org.apache.hadoop.net.NetworkTopology",332
+6f7757b4,"Failed to place enough replicas: expected size is <*> but only <*> storage types can be selected (replication=<*>, selected=[], unavailable=[DISK, ARCHIVE], removed=[DISK], policy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]})",55
+a1d12724,"Failed to place enough replicas, still in need of <*> to reach <*> (unavailableStorages=[DISK, ARCHIVE], storagePolicy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]}, newBlock=false) All required storage types are unavailable:  unavailableStorages=[DISK, ARCHIVE], storagePolicy=BlockStoragePolicy{HOT:<*>, storageTypes=[DISK], creationFallbacks=[], replicationFallbacks=[ARCHIVE]}",55
+81804505,Number of transactions: <*> Total time for transactions(ms): <*> Number of transactions batched in Syncs: <*> Number of syncs: <*> SyncTimes(ms): <*>,3
+ecf4cc0b,Rolling edit logs,1
+3019fd08,Roll Edit Log from <*>,1
+15fd9ef1,Finalizing edits file /data/tmp/dfs/name/current/edits_inprogress_<*> -> /data/tmp/dfs/name/current/edits_<*>-<*>,1
+b75ebd48,"Sending fileName: /data/tmp/dfs/name/current/fsimage_<*>, fileSize: <*>. Sent total: <*> bytes. Size of last segment intended to send: <*> bytes.",1
+84942cf3,"Sending fileName: /data/tmp/dfs/name/current/edits_<*>-<*>, fileSize: <*>. Sent total: <*> bytes. Size of last segment intended to send: <*> bytes.",1
+109234d2,Saving image file /data/tmp/dfs/namesecondary/current/fsimage.ckpt_<*> using no compression,1
+9207f938,Image file /data/tmp/dfs/namesecondary/current/fsimage.ckpt_<*> of size <*> bytes saved in <*> seconds .,1
+d649be59,Rejecting a fsimage due to small time delta and txnid delta. Time since previous checkpoint is <*> expecting at least <*> txnid delta since previous checkpoint is <*> expecting at least <*>,1
+23d40e1f,Adding shutdown hook,10
+c83b4dd9,setsid exited with exit code <*>,5
+9c7918f6,"field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation <*> <*> valueName=Time, about=, interval=<*>, type=DEFAULT, value=[GetGroups])",5
+342f92a1,"field org.apache.hadoop.metrics2.lib.MutableRate <*> with annotation <*> <*> valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Rate of <*> kerberos logins and latency (milliseconds)])",10
+4193ace2,"field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation <*> <*> valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Renewal failures since last successful login])",5
+73e30aeb,"field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation <*> <*> valueName=Time, about=, interval=<*>, type=DEFAULT, value=[Renewal failures since startup])",5
+6725781b,"UgiMetrics, User and group related metrics",5
+79cd818b,Setting hadoop.security.token.service.use_ip to true,5
+9775effa,Creating new Groups object,5
+e1ca86ab,Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path,5
+320de34c,Trying to load the custom-built native-hadoop library...,5
+f73ceec6,java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_<*>-linux-gnu/jni:/lib/x86_<*>-linux-gnu:/usr/lib/x86_<*>-linux-gnu:/usr/lib/jni:/lib:/usr/lib,5
+2c32aff1,Falling back to shell based,5
+b8eb5419,Unable to load native-hadoop library for your platform... using builtin-java classes where applicable,5
+8f9be5ad,Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping,5
+72487e3e,Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=<*>; warningDeltaMs=<*>,5
+affa8022,Hadoop login,5
+1fdbd5e3,hadoop login commit,5
+91a4df99,Using local user: UnixPrincipal: root,5
+0d66070a,"Using user: ""UnixPrincipal: root"" with name: root",5
+a93d2266,"User entry: ""root""",5
+9ab11db1,Acquiring creator semaphore for <*> duration <*>,3
+4ae7495b,Starting: Acquiring creator semaphore for <*>,3
+0b018d29,Loading filesystems,2
+a755670d,Starting: Creating FS <*>,3
+0670f91f,<*> = class <*> from <*>,20
+5f8fd2d0,Looking for FS supporting <*>,3
+d1627e76,looking for configuration option <*>,3
+be5ec360,FS for <*> is class <*>,3
+0216c7fa,Looking in service filesystems for implementation class,3
+eb251f9a,Creating FS <*> duration <*>,3
+60b51427,"Created Globber for path=file:/spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar, symlinks=true",1
+66a9138d,Filesystem glob /spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar,1
+5aaa3ee7,Pattern: /spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar,1
+6981b502,Starting: glob file:/spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar,1
+a2552d2c,Component <*> patterned=false,4
+e503998f,glob file:/spark/examples/jars/spark-examples_<*>.<*>-<*>.<*>.<*>.jar: duration <*>:<*>.027s,1
+32efe6bc,Service: <*> entered state INITED,5
+5d8fbadf,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$<*>@78aea4b9] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:<*>) at org.apache.hadoop.service.AbstractService.start(AbstractService.java:<*>) at org.apache.spark.deploy.yarn.Client.submitApplication(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.run(Client.scala:<*>) at org.apache.spark.deploy.yarn.YarnClusterApplication.start(Client.scala:<*>) at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doRunMain$<*>(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$$anon$<*>.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala),1
+1426f85a,Creating a HadoopYarnProtoRpc proxy for protocol interface <*>,5
+ea9085d3,Creating <*> for <*>,10
+2419ae5f,"rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, <*>",2
+164d38c6,getting client out of cache: <*>,8
+59317a9f,Service <*> is started,5
+d8444d5a,The ping interval is <*> ms.,8
+18a51be7,Connecting to <*>,8
+a08f6984,Setup connection to <*>,8
+56a3f319,IPC Client (<*>) connection to <*> from <*> <*> <*> connections <*>,14
+a7a0ac63,Requesting a new application from cluster with <*> NodeManagers,1
+c5d176a7,Allocated new applicationId: <*>,1
+df9babac,dfs.domain.socket.path =,3
+773c2d6a,multipleLinearRandomRetry = null,3
+619188c4,Both short-circuit local reads and UNIX domain socket are disabled.,2
+5adbcab1,"DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection",3
+584e2610,Adding resource type - name = <*> units = <*> type = COUNTABLE,4
+9c15dbfb,Mandatory Resource <*> is not configured in resource-types config file. Setting allocation specified using <*>,8
+eae4710a,Verifying our application has not requested more than the maximum memory capability of the cluster (<*> MB per container),1
+658f34f0,"Will allocate AM container, with <*> MB memory including <*> MB overhead",1
+7ea8bdb8,Setting up container launch context for our AM,1
+50bd6062,Setting up the launch environment for our AM container,1
+c54be06e,Preparing resources for our AM container,1
+ea11c220,<*> masked={ masked: <*> unmasked: <*> },5
+7304d673,"Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.",1
+6b997ac8,Uploading resource <*> -> <*>,4
+6a4b64ec,"computePacketChunkSize: <*> chunkSize=<*>, chunksPerPacket=<*>, packetSize=<*>",4725
+28719155,"WriteChunk allocating new packet seqno=<*>, <*> packetSize=<*>, chunksPerPacket=<*>, bytesCurBlock=<*>, output <*>",4725
+222a9acc,"enqueue full packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: false lastByteOffsetInBlock: <*>, <*> bytesCurBlock=<*>, blockSize=<*>, appendChunk=false, <*>",4721
+68bac591,Allocating new block: <*>,6
+a1accf46,"Queued packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: <*> lastByteOffsetInBlock: <*>, <*>",4731
+427a48bb,"stage=PIPELINE_SETUP_CREATE, <*>",6
+87367afb,Connecting to datanode <*>,6
+ce9b0a02,pipeline = <*> <*> <*> <*>_<*>,6
+5e715784,Send buf size <*>,6
+6ae889f4,"SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false",6
+3de3691b,"SASL client skipping handshake in unsecured configuration for addr = <*>, datanodeId = <*>",6
+4fdf6759,<*>_<*> sending packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: false lastByteOffsetInBlock: <*>,4725
+9da518cd,"stage=DATA_STREAMING, <*>_<*>",4725
+4fa976db,DFSClient seqno: <*> reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: <*> flag: <*> flag: <*> flag: <*>,4731
+667e9ee7,IPC Client (<*>) connection to <*> from <*> closed,6
+e428be12,<*>_<*> sending packet seqno: <*> offsetInBlock: <*> lastPacketInBlock: true lastByteOffsetInBlock: <*>,6
+986217f4,Closing old block BP-<*>-<*><*>:<*>_<*>,6
+dfc3b4ff,<*> waiting for ack for: <*>,4
+457252da,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.hadoop.fs.FileContext$<*>@21f8e55f] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:<*>) at org.apache.hadoop.fs.FileContext.getFileContext(FileContext.java:<*>) at org.apache.spark.deploy.yarn.Client.$anonfun$copyFileToRemote$<*>(Client.scala:<*>) at scala.collection.mutable.HashMap.getOrElseUpdate(HashMap.scala:<*>) at org.apache.spark.deploy.yarn.Client.copyFileToRemote(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.distribute$<*>(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.prepareLocalResources(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.createContainerLaunchContext(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.submitApplication(Client.scala:<*>) at org.apache.spark.deploy.yarn.Client.run(Client.scala:<*>) at org.apache.spark.deploy.yarn.YarnClusterApplication.start(Client.scala:<*>) at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doRunMain$<*>(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$$anon$<*>.doSubmit(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:<*>) at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala),1
+aa8828b5,Creating an archive with the config files for distribution at /tmp/spark-a4f2d5f7-4c76-4d44-b227-ccce67405aa0/__spark_conf__<*>.zip.,1
+e7e46cf6,Handling deprecation for all properties in config...,1
+b47043cc,Handling deprecation for <*>,1453
+33aae7f5,===============================================================================,2
+abb92fdf,user class: org.apache.spark.examples.SparkTC,1
+e747e355,YARN AM launch context:,1
+071419e5,env:,1
+26b75219,PYTHONHASHSEED -> <*>,1
+64814ed2,SPARK_USER -> root,1
+989f4b41,SPARK_YARN_STAGING_DIR -> hdfs://master:<*>/user/root/.sparkStaging/application_<*>_<*>,1
+db447c26,resources:,1
+7c80b258,"<*> -> resource { scheme: ""hdfs"" host: ""master"" port: <*> file: <*> } size: <*> timestamp: <*> type: <*> visibility: PRIVATE",4
+351a34b7,command:,1
+abc48fce,{{JAVA_HOME}}/bin/java -server -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -Xmx4096m -Djava.io.tmpdir={{PWD}}/tmp -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.deploy.yarn.ApplicationMaster --class 'org.apache.spark.examples.SparkTC' --jar file:/spark/examples/jars/scopt_<*>.<*>-<*>.<*>.<*>.jar --properties-file {{PWD}}/__spark_conf__/__spark_conf__.properties --dist-cache-conf {{PWD}}/__spark_conf__/__spark_dist_cache__.properties <*>> <LOG_DIR>/stdout <*>> <LOG_DIR>/stderr,1
+0aaf128f,Changing <*> acls <*> <*>,27
+ee2bcd88,Changing modify acls groups to:,9
+b5af5e58,SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set(),9
+082ef1c0,"Using the following builtin delegation token providers: hive, hadoopfs, hbase.",1
+75403b33,AM resources: Map(),1
+b02e0ef2,spark.yarn.maxAppAttempts is not set. Cluster's default value will be used.,1
+8553ff4f,"Created resource capability for AM request: <memory:<*>, vCores:<*>>",1
+327ef6c7,Submitting application application_<*>_<*> to ResourceManager,1
+c0709efb,Application 'application_<*>_<*>' is submitted without priority hence considering default queue/cluster priority: <*>,1
+f9a28dbd,Priority '<*>' is acceptable in queue : default for application: application_<*>_<*>,1
+16ad8b1d,"The specific max attempts: <*> for application: <*> is invalid, because it is less than or equal to zero. Use the rm max attempts instead.",1
+516792b5,Application with id <*> submitted by user root,1
+dbf05b56,Storing application with id application_<*>_<*>,1
+23eff4c9,<*> info for app: application_<*>_<*>,2
+c8176c69,<*> State change from <*> to <*> on event = <*>,10
+6b3fbc82,"Accepted application application_<*>_<*> from user: root, in queue: default",1
+21ab8e57,Application added - appId: application_<*>_<*> user: root leaf-queue of parent: root #applications: <*>,1
+ec01ac67,Registering app attempt : appattempt_<*>_<*>_<*>,1
+86fef201,Submitted application application_<*>_<*>,1
+556e5970,"maximum-am-resource-percent is insufficient to start a single application in queue for user, it is likely set too low. skipping enforcement to allow at least one application to start",1
+e4c0f3ed,"maximum-am-resource-percent is insufficient to start a single application in queue, it is likely set too low. skipping enforcement to allow at least one application to start",1
+4987bc57,Added Application Attempt appattempt_<*>_<*>_<*> to scheduler from user root in queue root.default,1
+2276c44b,"Application added - appId: application_<*>_<*> user: root, leaf-queue: root.default #user-pending-applications: <*> #user-active-applications: <*> #queue-pending-applications: <*> #queue-active-applications: <*> #queue-nonrunnable-applications: <*>",1
+5f8344a3,Application application_<*>_<*> from user: root activated in queue: root.default,1
+947dc7a9,"assignedContainer application attempt=appattempt_<*>_<*>_<*> container=null queue=default clusterResource=<memory:<*>, vCores:<*>> type=OFF_SWITCH requestedPartition=",4
+b30c276d,"Assigned container container_<*>_<*>_<*>_<*> of capacity <memory:<*>, vCores:<*>> on host <*> which has <*> containers, <memory:<*>, vCores:<*>> used and <memory:<*>, vCores:<*>> available after allocation",4
+c71ea20e,Allocation proposal accepted,4
+af4a4717,"assignedContainer queue=root usedCapacity=<*>.<*> absoluteUsedCapacity=<*>.<*> used=<memory:<*>, vCores:<*>> cluster=<memory:<*>, vCores:<*>>",4
+a2ebce39,container_<*>_<*>_<*>_<*> Container Transitioned from ALLOCATED to ACQUIRED,4
+a0cf6422,Clear node set for appattempt_<*>_<*>_<*>,1
+a8ff99dc,"Storing attempt: AppId: application_<*>_<*> AttemptId: appattempt_<*>_<*>_<*> MasterContainer: Container: [ContainerId: container_<*>_<*>_<*>_<*>, AllocationRequestId: <*>, Version: <*>, NodeId: slave0:<*>, NodeHttpAddress: slave0:<*>, Resource: <memory:<*>, vCores:<*>>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ExecutionType: GUARANTEED, ]",1
+6cd277e9,Launching masterappattempt_<*>_<*>_<*>,1
+ad822610,Create AMRMToken for ApplicationAttempt: appattempt_<*>_<*>_<*>,1
+50d05106,Auth successful for appattempt_<*>_<*>_<*> (auth:SIMPLE) from <*>,5
+07108517,"Start request for container_<*>_<*>_<*>_<*> by user appattempt_<*>_<*>_<*> with resource <memory:<*>, vCores:<*>>",4
+3bf59cd2,Creating a new application reference for app application_<*>_<*>,3
+623c74a7,<*> <*> transitioned from <*> to <*>,10
+0480722c,Adding container_<*>_<*>_<*>_<*> to application application_<*>_<*>,4
+1928f917,Got event CONTAINER_INIT for appId application_<*>_<*>,4
+2cf9cd1a,"Container container_<*>_<*>_<*>_<*> is localizing: [hdfs://master:<*>/user/root/.sparkStaging/application_<*>_<*>/__spark_libs__<*>.zip, hdfs://master:<*>/user/root/.sparkStaging/application_<*>_<*>/__spark_conf__.zip, hdfs://master:<*>/user/root/.sparkStaging/application_<*>_<*>/scopt_<*>.<*>-<*>.<*>.<*>.jar, hdfs://master:<*>/user/root/.sparkStaging/application_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar]",4
+33be5553,"update the launch time for applicationId: application_<*>_<*>, attemptId: appattempt_<*>_<*>_000001launchTime: <*>",1
+cb04482a,"client token: N/A diagnostics: AM container is launched, waiting for AM container to Register with RM ApplicationMaster host: N/A ApplicationMaster RPC port: <*> queue: default start time: <*> final status: UNDEFINED tracking URL: http://master:<*>/proxy/application_<*>_<*>/ user: root",7
+499a3be1,Writing credentials to the nmPrivate file <*>,3
+b94d5407,Initializing user root,3
+ce284c63,Copying from <*> to /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>.tokens,3
+48d15326,Localizer CWD set to /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*> = file:/data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>,3
+012547de,Container container_<*>_<*>_<*>_<*> transitioned from <*> to <*>,8
+b5a6ed7f,Starting container [container_<*>_<*>_<*>_<*>],4
+8f79bc8a,Starting resource-monitoring for container_<*>_<*>_<*>_<*>,4
+1031363e,"launchContainer: [bash, /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/default_container_executor.sh]",4
+6977146d,"container_<*>_<*>_<*>_<*>'s ip = <*>, and hostname = slave<*>",4
+532b0346,Skipping monitoring container container_<*>_<*>_<*>_<*> since CPU usage is not yet available.,4
+3a144308,Registering signal handler for <*>,12
+a6d2c5af,creating UGI for user: root,4
+08449c90,Reading credentials from location /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/container_tokens,4
+bfb18aae,Loaded <*> tokens from /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/container_tokens,4
+928af20a,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>@312ab28e] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+ce927cf2,ApplicationAttemptId: appattempt_<*>_<*>_<*>,1
+9222359d,Starting the user application in a separate Thread,1
+f29e2798,Waiting for spark context initialization...,1
+8d1cf9fe,Running Spark version <*>.<*>.<*>,1
+2292bd3d,==============================================================,8
+aeaefcf1,Submitted application: SparkTC,1
+9d3727ea,No custom resources configured for <*>,4
+9546606c,"Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: <*>, script: , vendor: , memory -> name: memory, amount: <*>, script: , vendor: , offHeap -> name: offHeap, amount: <*>, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: <*>.<*>)",1
+d5a973f4,Limiting resource is cpus at <*> tasks per executor,1
+5e8a89a4,Added ResourceProfile id: <*>,1
+f0254949,Using SLF4J as the default logging framework,4
+8e829e30,<*> false,24
+00478c51,Java version: <*>,4
+8ea1115b,<*> available,24
+456a642a,direct buffer constructor: available,4
+784129f3,"java.nio.Bits.unaligned: available, true",4
+9428cffd,"java.nio.DirectByteBuffer.<init>(long, int): available",4
+417cfa2d,jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java<*>,4
+dee81e07,-Dio.netty.bitMode: <*> (sun.arch.data.model),4
+0023a3e0,-Dio.netty.maxDirectMemory: <*> bytes,4
+7323e708,-Dio.netty.tmpdir: /data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/tmp (java.io.tmpdir),4
+6b259876,-Dio.netty.uninitializedArrayAllocationThreshold: -<*>,4
+9721824f,-Dio.netty.leakDetection.level: simple,4
+1703b836,<*> true,12
+d3e525c6,-Dio.netty.processId: <*> (auto-detected),4
+15cd936d,"Loopback interface: lo (lo, <*>)",4
+da2b3aeb,-Dio.netty.machineId: <*> (auto-detected),4
+c4f4f3d9,-Dio.netty.allocator.type: pooled,4
+556aaf9b,Shuffle server started on port: <*>,5
+0c3391ac,Successfully started service <*> on port <*>.,6
+8fe7e61d,Using serializer: class org.apache.spark.serializer.JavaSerializer,4
+e37f0136,init,2
+add369a7,Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information,1
+f8f0a311,BlockManagerMasterEndpoint up,1
+dc6ee373,Created local directory at <*>,4
+e398e247,MemoryStore started with capacity <*>.<*> MiB,4
+ab6524eb,"Created SSL options for ui: SSLOptions{enabled=false, port=None, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}",1
+93edbcdf,Using requestHeaderSize: <*>,1
+3efa8cd9,Adding filter to <*> org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter,27
+21a54207,Created YarnClusterScheduler,1
+03459f52,Server created on <*>,4
+aafe1779,Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy,4
+aa00bf59,"<*> <*> <*> <*> <*>, None)",10
+4eff7057,Got a request for slave<*>,4
+615d99a9,"Registering block manager <*> with <*>.<*> MiB RAM, <*> <*> <*>, None)",4
+9093fb87,Base URL for logs: <*>,4
+3105489d,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$<*>@5b057c8c] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:<*>) at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.serviceStart(AMRMClientImpl.java:<*>) at org.apache.hadoop.service.AbstractService.start(AbstractService.java:<*>) at org.apache.spark.deploy.yarn.YarnRMClient.register(YarnRMClient.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.registerAM(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java:<*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+7c90a6bb,Registering the ApplicationMaster,1
+fd35bd88,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.hadoop.ipc.Client$Connection$<*>@5f3b9c57] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:<*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java:<*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at com.sun.proxy.$Proxy31.registerApplicationMaster(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.registerApplicationMaster(ApplicationMasterProtocolPBClientImpl.java:<*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:<*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:<*>) at java.lang.reflect.Method.invoke(Method.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:<*>) at com.sun.proxy.$Proxy32.registerApplicationMaster(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java:<*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java:<*>) at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.registerApplicationMaster(AMRMClientImpl.java:<*>) at org.apache.spark.deploy.yarn.YarnRMClient.register(YarnRMClient.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.registerAM(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java:<*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+626395f0,Sending sasl message state: NEGOTIATE,5
+43477a89,Get token info proto:interface <*> <*>,4
+43865e63,Looking for a token with service <*>,1
+6a788b60,Token kind is YARN_AM_RM_TOKEN and the token's service name is <*>,1
+6f671ea5,Creating SASL DIGEST-MD5(TOKEN)  client to authenticate to service at default,4
+1b8c8447,Use <*> authentication for protocol <*>,5
+69d571f0,SASL client callback: setting <*> <*>,8
+5148afaf,SASL client callback: setting userPassword,4
+4fecb00f,"Sending sasl message state: INITIATE token: <*> auths { method: ""TOKEN"" mechanism: ""DIGEST-MD5"" protocol: """" serverId: ""default"" }",4
+ea5af236,Negotiated QOP is :auth,4
+5db6f341,AM registration appattempt_<*>_<*>_<*>,1
+ed695772,Preparing Local resources,1
+fff8cd3b,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.hadoop.ipc.Client$Connection$<*>@7dd00705] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:<*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java:<*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at com.sun.proxy.$Proxy36.getFileInfo(Unknown Source) at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:<*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:<*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:<*>) at java.lang.reflect.Method.invoke(Method.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:<*>) at com.sun.proxy.$Proxy37.getFileInfo(Unknown Source) at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:<*>) at org.apache.hadoop.hdfs.DistributedFileSystem$<*>.doCall(DistributedFileSystem.java:<*>) at org.apache.hadoop.hdfs.DistributedFileSystem$<*>.doCall(DistributedFileSystem.java:<*>) at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:<*>) at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.$anonfun$prepareLocalResources$<*>(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.$anonfun$prepareLocalResources$<*>$adapted(ApplicationMaster.scala:<*>) at scala.Option.foreach(Option.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.prepareLocalResources(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$<*>.run(ApplicationMaster.scala:<*>) at java.security.AccessController.doPrivileged(Native Method) at javax.security.auth.Subject.doAs(Subject.java:<*>) at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:<*>) at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala),1
+b0af359c,Get token info proto:interface org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolPB info:@org.apache.hadoop.security.token.TokenInfo(value=class org.apache.hadoop.hdfs.security.token.delegation.DelegationTokenSelector),1
+3a6ac8df,"Sending sasl message state: INITIATE auths { method: ""SIMPLE"" mechanism: """" }",1
+6f2df90e,tokens aren't supported for this protocol or user doesn't have one,1
+308752a1,"Resource profile <*> doesn't exist, adding it",1
+828313d2,Custom resources requested: Map(),1
+bd1936d6,"Created resource capability: <memory:<*>, vCores:<*>>",1
+9bd70a88,ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@slave0:<*>),1
+a17dc18e,"Will request <*> executor container(s) for  ResourceProfile Id: <*>, each with <*> core(s) and <*> MB memory. with custom resources: <memory:<*>, vCores:<*>>",1
+18bdfb98,Added Execution Type=GUARANTEED,1
+e648889b,Added priority=<*>,1
+098aea82,Submitted <*> unlocalized container requests.,1
+8d226bf7,"Started progress reporter thread with (heartbeat : <*>, initial allocation : <*>) intervals",1
+65376e48,Received new token for : <*>,3
+ab27f611,"Allocated containers: <*>. Current executor count: <*>. Launching executor count: <*>. Cluster resources: <memory:<*>, vCores:<*>>.",1
+a51cdba8,"Calling amClient.getMatchingRequests with parameters: priority: <*>, location: <*> resource: <memory:<*>, vCores:<*>>",6
+c81fb629,"Removing container request via AM client: Capability[<memory:<*>, vCores:<*>>]Priority[<*>]AllocationRequestId[<*>]ExecutionTypeRequest[{Execution Type: GUARANTEED, Enforce Execution Type: false}]Resource Profile[null]",3
+0e30b693,Launching container container_<*>_<*>_<*>_<*> on host <*> for executor with ID <*> for ResourceProfile Id <*>,3
+e9a74514,Starting Executor Container,3
+a463b664,"Received <*> containers from YARN, launching executors on <*> of them.",1
+7fbe270e,yarn.client.max-cached-nodemanagers-proxies : <*>,3
+fc9ef42a,Opening proxy : <*>,3
+276365aa,"Acquired token Kind: NMToken, Service: <*>, Ident: (appAttemptId { application_id { id: <*> cluster_timestamp: <*> } attemptId: <*> } nodeId { host: <*> port: <*> } appSubmitter: ""root"" keyId: <*>)",3
+837f3354,PrivilegedAction [as: appattempt_<*>_<*>_<*> (auth:SIMPLE)][action: <*> java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.yarn.client.ServerProxy.createRetriableProxy(ServerProxy.java:<*>) at org.apache.hadoop.yarn.client.NMProxy.createNMProxy(NMProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.newProxy(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy$ContainerManagementProtocolProxyData.<init>(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy.getProxy(ContainerManagementProtocolProxy.java:<*>) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala:<*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:<*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:<*>) at java.lang.Thread.run(Thread.java:<*>),3
+87a4edd2,PrivilegedAction [as: appattempt_<*>_<*>_<*> (auth:SIMPLE)][action: <*> java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:<*>) at org.apache.hadoop.ipc.Client$Connection.access$<*>(Client.java:<*>) at org.apache.hadoop.ipc.Client.getConnection(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.Client.call(Client.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:<*>) at com.sun.proxy.$Proxy38.startContainers(Unknown Source) at org.apache.hadoop.yarn.api.impl.pb.client.ContainerManagementProtocolPBClientImpl.startContainers(ContainerManagementProtocolPBClientImpl.java:<*>) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:<*>) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:<*>) at java.lang.reflect.Method.invoke(Method.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:<*>) at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:<*>) at com.sun.proxy.$Proxy39.startContainers(Unknown Source) at org.apache.hadoop.yarn.client.api.impl.NMClientImpl.startContainer(NMClientImpl.java:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.startContainer(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.ExecutorRunnable.run(ExecutorRunnable.scala:<*>) at org.apache.spark.deploy.yarn.YarnAllocator.$anonfun$runAllocatedContainers$<*>(YarnAllocator.scala:<*>) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:<*>) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:<*>) at java.lang.Thread.run(Thread.java:<*>),3
+acb18adc,"Looking for service: <*>. Current token is Kind: NMToken, Service: <*>, Ident: (appAttemptId { application_id { id: <*> cluster_timestamp: <*> } attemptId: <*> } nodeId { host: <*> port: <*> } appSubmitter: ""root"" keyId: <*>)",3
+79c8b711,Started daemon with process name: <*>@slave<*>,3
+98b4190d,PrivilegedAction [as: root (auth:SIMPLE)][action: org.apache.spark.deploy.SparkHadoopUtil$$anon$<*>@75cd8043] java.lang.Exception at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:<*>) at org.apache.spark.deploy.SparkHadoopUtil.runAsSparkUser(SparkHadoopUtil.scala:<*>) at org.apache.spark.executor.CoarseGrainedExecutorBackend$.run(CoarseGrainedExecutorBackend.scala:<*>) at org.apache.spark.executor.YarnCoarseGrainedExecutorBackend$.main(YarnCoarseGrainedExecutorBackend.scala:<*>) at org.apache.spark.executor.YarnCoarseGrainedExecutorBackend.main(YarnCoarseGrainedExecutorBackend.scala),3
+d660124f,Creating new connection to <*>,15
+3a0f6ac3,Loaded default ResourceLeakDetector: <*>,4
+54e1b0e9,slave0<*>,11
+082ab7bf,"Connection to <*> successful, running bootstraps...",15
+20cdb315,Successfully created connection to <*> after <*> ms (<*> ms spent in bootstraps),15
+93b8733b,New connection accepted for remote address <*>.,15
+1a80fa2f,checking for deactivate of application :application_<*>_<*>,1
+e9ea4fce,Connecting to driver: spark://CoarseGrainedScheduler@slave0:<*>,3
+38f47f19,Resource profile id is: <*>,3
+36b9dcba,"Registered executor NettyRpcEndpointRef(spark-client://Executor) (<*>) with ID <*>,  ResourceProfileId <*>",3
+5a5c5838,Successfully registered with driver,3
+199b9ffb,Starting executor ID <*> on host slave<*>,3
+41c89af5,"Starting executor with user classpath (userClassPathFirst = false): 'file:/data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/__app__.jar,file:/data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar,file:/data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/__app__.jar,file:/data/tmp/nm-local-dir/usercache/root/appcache/application_<*>_<*>/container_<*>_<*>_<*>_<*>/spark-examples_<*>.<*>-<*>.<*>.<*>.jar'",3
+a88811be,"Initialized BlockManager: BlockManagerId(<*>, <*> <*>, None)",2
+b93f9c9f,SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: <*>.<*>,1
+6e331151,YarnClusterScheduler.postStartHook done,1
+2d3e0728,Parents of final stage: List(),1
+3652ea59,Missing parents: List(),1
+271fd3fc,"Valid locality levels for TaskSet <*>.<*>: NO_PREF, ANY",2
+c8195e7e,slave1<*>,2
+bd857e43,slave2<*>,2
+c68815dc,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",16
+431354e2,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",22
+898dd537,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",11
+ebb0116a,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",2
+b8826b9a,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",2
+beb7e51e,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",3
+8d08420c,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",3
+77b92c76,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",3
+82f6c8db,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",4
+5d22ad45,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",4
+037b73b1,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",2
+e9495654,"remainingBlocks: Set(shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>, shuffle_<*>_<*>_<*>)",1
+c499a423,"Start fetching local blocks: (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>), (shuffle_<*>_<*>_<*>,<*>)",2
