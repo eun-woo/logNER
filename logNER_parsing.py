@@ -54,6 +54,7 @@ from torch.cuda.amp import autocast
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--log_file', default='log_file/hadoop.log', type=str, required=True)
+parser.add_argument('--filtering_size', default=1000, type=int, required=True)
 parser.add_argument('-b', '--batch_size', default=8, type=int)
 parser.add_argument('--model_name', default=None, type=str)
 args = parser.parse_args()
@@ -560,7 +561,7 @@ def make_templates_csv(total_template_occurrence):
     "EventTemplate": total_template_occurrence.keys(),
     "Occurrences": total_template_occurrence.values()
     })
-    templates_log.to_csv('./parsing_result/result_templates.csv', index=False)
+    templates_log.to_csv(f'./parsing_result/{args.filtering_size}_result_templates.csv', index=False)
 
 
 def make_struct_csv(log_file, total_log_list, df_log, template_list):
@@ -613,7 +614,7 @@ regex_mode = True
 # df_log = df_log.iloc[:int(150000 * 0.1)]
 
 ## 몇개로 토막내서 resample할건지 
-filtering_parameter = 1000
+filtering_parameter = args.filtering_size
 
 ## unmatch log가 줄어드는 수가 filtering_threshold 미만일시 멈춤
 filtering_threshold = len(df_log)
