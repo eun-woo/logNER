@@ -1,15 +1,24 @@
 EventId,EventTemplate,Occurrences
-ade0e8cf,.* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
+db490abf,.* : start .* server,3
+cb4e87b7,.* : streamId = .* windowSizeIncrement = .*,2390
+815fc926,[ id : .* : .* : .* : .* : .* ] .* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
 5463b93f,".* : reply .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",94404
-f7485d16,.* : receive appendEntries .*,92817
+a5a533b1,".* @ .* : receive appendEntries ( .* , commits : .* , cId : .* , entries : .*",8
 6d96494e,"truncateIndex = .* , arrayIndex = .*",92814
 0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,68041
 586db89e,".* @ .* adds .* task WriteLog : .* : .* , StateMachineLogEntryProto : .* @ .*",119425
 3e9dfd13,.* bytes for SegmentedRaftLogOutputStream ( .* ),592
-1abdf807,.* : flush SegmentedRaftLogOutputStream .*,124485
+7a3981dc,.* @ .* : flush SegmentedRaftLogOutputStream ( .* ),124485
 037601b3,".* @ .* : succeeded to handle AppendEntries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",92814
 fb01c9bc,.* @ .* : applying nextIndex = .*,187461
 26b68c2f,.* @ .* : appliedIndex : incrementAndGet .* > .*,187461
+7150e5cf,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ .* ]",22968
+95a7be06,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ ( t : .* , i : .* ) , .* @ .* ]",32377
+c0651b7f,create folder .* failed. Is the folder existed : .*,82
+504f7ba1,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ ( t : .* , i : .* ) , .* ( .* : .* ) , ( t : .* , i : .* ) , .* @ .* ]",37464
+61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
+badcbc80,.* @ .* : Rolling segment .* to index : .*,98
+669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
 eb80468c,.* @ .* : Rolled log segment from .* to .*,98
 4dc3eeff,Start to read config file file : .*,4
 1f17ab36,start reading ConfigNode conf file : file : .*,1
@@ -57,7 +66,6 @@ f55d490b,.* : .*,317
 f9437a35,"Loopback interface : lo ( lo , .* )",2
 9966d60e,"Found multiple MetricRegistries implementations : class .* , class org.apache.ratis.metrics.impl.MetricRegistriesImpl. Using first found implementation : .* @ .*",2
 a2cde832,.* : .* > .*,16
-db490abf,.* : start .* server,3
 1b79f2fc,".* : GrpcService started , listening on .*",3
 1770359c,IoTDB configuration :,2
 9dae1598,.* has registered successfully. Waiting for the leader ' s scheduling to join the cluster : .*,1
@@ -75,7 +83,6 @@ a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,4
 c04287ff,Creating Metrics Registry : .* > .*,2
 4d69ba9c,Loaded default ResourceLeakDetector : .* @ .*,2
 c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,44
-ef31f21f,[ id : .* : .* : .* : .* : .* ] .* : streamId = .* windowSizeIncrement = .*,2390
 ac07e211,.* : streamId = .* headers = GrpcHttp2OutboundHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,4
 1530d54f,.* : streamId = .* headers = GrpcHttp2RequestHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,10
 d94396f5,Creating Metrics Registry : .*,2
@@ -142,7 +149,6 @@ b39a9692,Sending register request to .*,1
 9b622f95,"Successfully update ConfigNode : [ TEndPoint ( ip : .* , port : .* ) , TEndPoint ( ip : .* , port : .* ) , TEndPoint ( ip : .* , port : .* ) , TEndPoint ( ip : .* , port : .* ) , TEndPoint ( ip : .* , port : .* ) , TEndPoint ( ip : .* , port : .* ) ] .",1
 504e4b72,Successfully register to the cluster : .*,1
 c35cb310,"folder .* doesn ' t exist , create it",2
-c0651b7f,create folder .* failed. Is the folder existed : .*,82
 7e7f626a,Setting up IoTDB DataNode...,1
 2124c871,.* lib root : .*,1
 99e6d6af,Clean pipe receiver dir .* successfully.,1
@@ -214,9 +220,6 @@ f3c48ddf,.* : .* received .* response .* and .* exception .* :,1
 6278e278,.* is opened.,1
 72acbb8a,create .* new tsfile processor .*,1
 a09763cf,BufferedArraySizeThreshold is .*,1
-61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
-badcbc80,.* @ .* : Rolling segment .* to index : .*,98
-669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
 e7568686,".* : .* not set , ignore the check",26
 8307deda,".* @ .* : Failed appendEntries as previous log entry ( ( t : .* , i : .* ) ) is not found",2
 9390358e,".* @ .* : .* entries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",4

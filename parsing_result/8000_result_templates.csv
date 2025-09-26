@@ -1,4 +1,9 @@
 EventId,EventTemplate,Occurrences
+1d49f6ed,new single scheduled thread pool : .*,97
+825bd59b,set .* = .*,147
+1fb7b33f,maxDirectMemory : .* bytes,2
+d94396f5,Creating Metrics Registry : .*,12
+cb4e87b7,.* : streamId = .* windowSizeIncrement = .*,2390
 ade0e8cf,.* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
 5463b93f,".* : reply .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",94404
 f7485d16,.* : receive appendEntries .*,92817
@@ -6,11 +11,12 @@ f7485d16,.* : receive appendEntries .*,92817
 0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,68041
 586db89e,".* @ .* adds .* task WriteLog : .* : .* , StateMachineLogEntryProto : .* @ .*",119425
 3e9dfd13,.* bytes for SegmentedRaftLogOutputStream ( .* ),592
-1abdf807,.* : flush SegmentedRaftLogOutputStream .*,124485
+7a3981dc,.* @ .* : flush SegmentedRaftLogOutputStream ( .* ),124485
 037601b3,".* @ .* : succeeded to handle AppendEntries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",92814
 fb01c9bc,.* @ .* : applying nextIndex = .*,187461
 26b68c2f,.* @ .* : appliedIndex : incrementAndGet .* > .*,187461
-eb80468c,.* @ .* : Rolled log segment from .* to .*,98
+61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
+e7568686,".* : .* not set , ignore the check",26
 4dc3eeff,Start to read config file file : .*,4
 1f17ab36,start reading ConfigNode conf file : file : .*,1
 160253dc,.* environment variables :,2
@@ -30,7 +36,6 @@ f2f288d9,Admin initialized,2
 9d2b4cc7,role info dir .* is created,1
 3aa5a5c8,Initialization of Authorizer completes,1
 8ad0f740,new cached thread pool : .*,4
-1d49f6ed,new single scheduled thread pool : .*,97
 d54987e5,Make procedure wal dir : .*,1
 0d35df8f,new scheduled thread pool : .*,3
 cec080e3,new single thread pool : .*,4
@@ -42,7 +47,6 @@ df564a3d,IoTDB : start Config Node service...,1
 74711e1e,new SynchronousQueue thread pool : .*,4
 3c819d4a,The Config Node service service thread begin to run...,1
 5ef28d59,"IoTDB : start Config Node service successfully , listening on ip .* port .*",1
-825bd59b,set .* = .*,147
 8c9c8989,Using .* as the default logging framework,2
 f55d490b,.* : .*,317
 53182b18,Java version : .*,2
@@ -50,7 +54,6 @@ f55d490b,.* : .*,317
 6a728985,".* : available , .*",2
 43cec827,.* : unavailable : class .* $ .* cannot access class .* ( in module .* ) because module .* does not export .* to unnamed module @ .*,2
 31a3634c,.* < init > .* : .*,2
-1fb7b33f,maxDirectMemory : .* bytes,2
 17cad5af,.* : .* bytes,2
 791128ae,newRaftServer : .*,3
 70c32a11,Successfully loaded the library .*,2
@@ -72,18 +75,14 @@ dc52f914,createPeerForConsensusGroup .* ...,1
 ce469654,.* | rpc : .* | priority : .* | startupRole : .* : .*,4
 55491078,".* : send GroupManagementRequest : .* > .* @ .* , cid = .* , seq = .* : .* : .*",1
 a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,4
-c04287ff,Creating Metrics Registry : .* > .*,2
 4d69ba9c,Loaded default ResourceLeakDetector : .* @ .*,2
 c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,44
-ef31f21f,[ id : .* : .* : .* : .* : .* ] .* : streamId = .* windowSizeIncrement = .*,2390
 ac07e211,.* : streamId = .* headers = GrpcHttp2OutboundHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,4
 1530d54f,.* : streamId = .* headers = GrpcHttp2RequestHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,10
-d94396f5,Creating Metrics Registry : .*,2
 f8744a02,.* : addNew .* : .* returns .* : .* @ .*,1
 f9436366,.* : new RaftServerImpl for .* : .* with ApplicationStateMachineProxy : .*,1
 9ebd118d,".* @ .* : ConfigurationManager , init = .* : peers : .* | listeners : .* , old = .* , confs = .*",2
 849ecd1f,newRaftStorage : .*,2
-e6321e94,Creating Metrics Registry : .* @ .*,8
 8f6f55fa,".* : newImpl = .* @ .* : .* , leader = .* , voted = .* , raftlog = .* , conf = .* : peers : .* | listeners : .* , old = .*",2
 0cc02db7,The storage directory .* does not exist. Creating ...,2
 abc1d1ea,Lock on .* acquired by nodename .*,2
@@ -214,10 +213,9 @@ f3c48ddf,.* : .* received .* response .* and .* exception .* :,1
 6278e278,.* is opened.,1
 72acbb8a,create .* new tsfile processor .*,1
 a09763cf,BufferedArraySizeThreshold is .*,1
-61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 badcbc80,.* @ .* : Rolling segment .* to index : .*,98
 669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
-e7568686,".* : .* not set , ignore the check",26
+eb80468c,.* @ .* : Rolled log segment from .* to .*,98
 8307deda,".* @ .* : Failed appendEntries as previous log entry ( ( t : .* , i : .* ) ) is not found",2
 9390358e,".* @ .* : .* entries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",4
 16435cb7,".* @ .* : Failed appendEntries as the first entry ( index .* ) already exists ( snapshotIndex : .* , commitIndex : .* )",2
