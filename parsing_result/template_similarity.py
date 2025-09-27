@@ -123,7 +123,7 @@ def open_files_and_compile():
 
 if __name__ == '__main__':
     scores = []
-    for filtering_size in range(1000, 11000, 1000):
+    for filtering_size in range(1000, 51000, 1000):
         ground_truth_path = f'/raid1/eunwoo/logNER/Eval/multilog/ground_truth_multilog_evaluation.log_templates.csv'
         parser_path = f'/raid1/eunwoo/logNER/parsing_result/{filtering_size}_result_templates.csv'
         mode = '1'

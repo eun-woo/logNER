@@ -1,25 +1,41 @@
 EventId,EventTemplate,Occurrences
+c2231ac2,.* ServerService .* port is undefined,2
 1d49f6ed,new single scheduled thread pool : .*,97
+cec080e3,new single thread pool : .*,4
 825bd59b,set .* = .*,147
-1b79f2fc,".* : GrpcService started , listening on .*",3
-6cab9124,.* : ack = .* settings = .*,22
-cb4e87b7,.* : streamId = .* windowSizeIncrement = .*,2390
+b523d66b,"Detect more than one MetricManager , will use .*",2
+ef31f21f,[ id : .* : .* : .* : .* : .* ] .* : streamId = .* windowSizeIncrement = .*,2390
 ade0e8cf,.* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
+f9436366,.* : new RaftServerImpl for .* : .* with ApplicationStateMachineProxy : .*,2
+722bb077,"Current node [ nodeId : .* , ip : port : TEndPoint .* ] is not longer the leader , the new leader is [ nodeId : .* ]",1
 5463b93f,".* : reply .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",94404
 f7485d16,.* : receive appendEntries .*,92817
+db5f4f2a,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",3
+f0ec9016,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",8
 6d96494e,"truncateIndex = .* , arrayIndex = .*",92814
+2c8127ee,.* @ .* adds .* task StartLogSegment : .*,100
 0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,68041
 586db89e,".* @ .* adds .* task WriteLog : .* : .* , StateMachineLogEntryProto : .* @ .*",119425
 3e9dfd13,.* bytes for SegmentedRaftLogOutputStream ( .* ),592
-eadeed05,.* @ .* : created new log segment .*,100
+3752a431,.* : created new log segment .*,100
 7a3981dc,.* @ .* : flush SegmentedRaftLogOutputStream ( .* ),124485
 037601b3,".* @ .* : succeeded to handle AppendEntries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",92814
 fb01c9bc,.* @ .* : applying nextIndex = .*,187461
 26b68c2f,.* @ .* : appliedIndex : incrementAndGet .* > .*,187461
 c0651b7f,create folder .* failed. Is the folder existed : .*,82
-a4b8e90f,"Stop all timed service successfully , and now restart them.",40
+a5544bc2,Recover the schema...,1
+f4542622,start unsequence memtable timed flush check thread successfully.,41
+d26be574,The .* Data exchange manager service thread begin to run...,1
+ead4d0fb,Start to reload config file file : .*,80
+0b10414c,Start rebooting all timed service.,40
+0701491f,Reload metric service in level .*,40
+1173ab9a,There are nothing change in metric config.,40
+82de2687,.* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* : .* > .*,4
 61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 badcbc80,.* @ .* : Rolling segment .* to index : .*,98
+669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
+eb80468c,.* @ .* : Rolled log segment from .* to .*,98
+e7568686,".* : .* not set , ignore the check",26
 4dc3eeff,Start to read config file file : .*,4
 1f17ab36,start reading ConfigNode conf file : file : .*,1
 160253dc,.* environment variables :,2
@@ -31,7 +47,6 @@ c8be3ea6,Start .* locally.,2
 ee7e8156,.* version is .*,2
 9d44d259,Make dirs : .*,2
 91a56ce2,Activating .*,1
-c2231ac2,.* ServerService .* port is undefined,2
 bdd9a1e4,Successfully setup internal services.,1
 93974956,Authorizer provider class : .*,1
 25f1b224,user info dir .* is created,1
@@ -41,7 +56,6 @@ f2f288d9,Admin initialized,2
 8ad0f740,new cached thread pool : .*,4
 d54987e5,Make procedure wal dir : .*,1
 0d35df8f,new scheduled thread pool : .*,3
-cec080e3,new single thread pool : .*,4
 e0ed8d8c,"new fixed thread pool : .* , thread number : .*",7
 2769eb95,Successfully initialize ConfigManager.,1
 e9c4a0ed,Start latch is .* when getting status,4
@@ -65,12 +79,12 @@ f9437a35,"Loopback interface : lo ( lo , .* )",2
 9966d60e,"Found multiple MetricRegistries implementations : class .* , class org.apache.ratis.metrics.impl.MetricRegistriesImpl. Using first found implementation : .* @ .*",2
 a2cde832,.* : .* > .*,16
 db490abf,.* : start .* server,3
+1b79f2fc,".* : GrpcService started , listening on .*",3
 1770359c,IoTDB configuration :,2
 9dae1598,.* has registered successfully. Waiting for the leader ' s scheduling to join the cluster : .*,1
 f402849a,MetricService start to init.,2
 be6890f1,Start metric service at level : .*,2
 305f5285,"Load metricManager , type : .*",2
-b523d66b,"Detect more than one MetricManager , will use .*",2
 2af847e8,"Load metric reporters , type : .*",2
 093d5ca3,MetricService start successfully.,2
 a7586255,try loading .* from .*,2
@@ -80,12 +94,11 @@ ce469654,.* | rpc : .* | priority : .* | startupRole : .* : .*,4
 a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,4
 c04287ff,Creating Metrics Registry : .* > .*,2
 4d69ba9c,Loaded default ResourceLeakDetector : .* @ .*,2
-c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,22
+c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,44
 ac07e211,.* : streamId = .* headers = GrpcHttp2OutboundHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,4
 1530d54f,.* : streamId = .* headers = GrpcHttp2RequestHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,10
 d94396f5,Creating Metrics Registry : .*,2
 f8744a02,.* : addNew .* : .* returns .* : .* @ .*,1
-f9436366,.* : new RaftServerImpl for .* : .* with ApplicationStateMachineProxy : .*,1
 9ebd118d,".* @ .* : ConfigurationManager , init = .* : peers : .* | listeners : .* , old = .* , confs = .*",2
 849ecd1f,newRaftStorage : .*,2
 e6321e94,Creating Metrics Registry : .* @ .*,8
@@ -104,29 +117,18 @@ a93e4924,.* @ .* : safeCacheEvictIndex : setUnconditionally .* > .*,2
 59a4c753,.* : streamId = .* headers = GrpcHttp2ResponseHeaders .* padding = .* endStream = .*,8
 a7ec90fb,".* : receive RaftClientReply : .* > .* @ .* , cid = .* , logIndex = .* , commits [ .* ]",2
 2334c1d9,.* @ .* : set firstElectionSinceStartup to .* for appendEntries,1
-722bb077,"Current node [ nodeId : .* , ip : port : TEndPoint .* ] is not longer the leader , the new leader is [ nodeId : .* ]",1
 0f14e314,".* @ .* : change Leader from .* to .* at term .* for appendEntries , leader elected after .*",2
 cf561ee0,.* : start .* @ .*,4
-9854c257,.* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* : .*,10
-db5f4f2a,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
-7fe604d0,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .*",1
-1aad6b5a,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
-7bc4ec76,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .*",1
-a401c329,".* @ .* : set configuration .* : peers : [ .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",2
+9854c257,.* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* : .*,9
 d9288061,.* @ .* : Starting segment from index : .*,2
-2c8127ee,.* @ .* adds .* task StartLogSegment : .*,100
 f8af5dcb,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* }",1
-c6fe24d4,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .*",1
 b89b9531,Successfully update Node .* ' s version.,12
-03da97e9,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
 4b282f7c,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* = TConfigNodeLocation .* }",1
 d9635fb2,System properties file .* for ConfigNode is created.,1
 9737a278,.* store .* : .*,3
 06fc6f24,.* has successfully started and joined the cluster : .*,1
 4525374c,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* }",1
 c629266f,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* }",1
-d4e4e6fc,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .*",1
-7fd92b03,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
 101649c6,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* = TConfigNodeLocation .* }",1
 81bf97fd,initial allocateMemoryForRead = .*,1
 e4de089b,initial allocateMemoryForWrite = .*,1
@@ -139,7 +141,6 @@ c6c22899,initial allocateMemoryForSchema = .*,1
 ce92ab6a,DataNode port check successful.,1
 0ff52817,Successfully update ConfigNode : [ TEndPoint .* ] .,1
 d44c0ef7,Pulling system configurations from the .*,1
-7fbd4a9f,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
 73bfe98d,Successfully pull system configurations from .*,1
 b39a9692,Sending register request to .*,1
 42f3a1e2,Create .*,1
@@ -151,18 +152,15 @@ c35cb310,"folder .* doesn ' t exist , create it",2
 99e6d6af,Clean pipe receiver dir .* successfully.,1
 9cf84b0a,Create pipe receiver dir .* successfully.,1
 117c4dd6,Start SimpleConsensusProgressIndexAssigner ...,1
-a5544bc2,Recover the schema...,1
 aa68c300,used schema engine mode : .*,1
 41ff7a0b,Spent .* to recover schema.,1
 4663cda8,Flush sub task manager started.,1
 8c64a660,Flush task manager started.,1
 abfa36c9,start ttl check thread successfully.,1
 79f6e723,start sequence memtable timed flush check thread successfully.,41
-f4542622,start unsequence memtable timed flush check thread successfully.,41
 c1f84d11,new thread pool : .*,1
 b61bb48f,MPPDataExchangeManager init successfully,1
 f658fc75,IoTDB : start .* Data exchange manager...,1
-d26be574,The .* Data exchange manager service thread begin to run...,1
 183ba309,"IoTDB : start .* Data exchange manager successfully , listening on ip .* port .*",1
 b10b0c62,"IoTDB DataNode is setting up , some databases may not .* ready now , please wait several seconds...",1
 68f8e8c4,DataNode region migrate pool start,1
@@ -179,12 +177,9 @@ e740fc42,"IoTDB : start Internal Service successfully , listening on ip .* port 
 81fb1462,IoTDB : start .* ServerService...,1
 dfd54d67,The .* ServerService service thread begin to run...,1
 ec313cbe,"IoTDB : start .* ServerService successfully , listening on ip .* port .*",1
-ead4d0fb,Start to reload config file file : .*,80
 d9063f3c,"Congratulation , IoTDB DataNode is set up successfully. Now , enjoy yourself!",1
-0b10414c,Start rebooting all timed service.,40
+a4b8e90f,"Stop all timed service successfully , and now restart them.",40
 493c02a3,Reboot all timed service successfully,40
-0701491f,Reload metric service in level .*,40
-1173ab9a,There are nothing change in metric config.,40
 883546d4,"construct .* data region instance , the database is .* , Thread is .*",1
 f25d7240,"Database system Directory .* doesn ' t exist , create it",1
 f1ebb1e0,recovering inner compaction,2
@@ -205,7 +200,6 @@ e4382447,.* @ .* : .*,1
 8b5bc9c8,.* : accept .* from .* : our priority .* < = candidate ' s priority .*,3
 95528166,".* Peer ' s state : .* @ .* : t0 , leader = .* , voted = , raftlog = Memoized : .* @ .* : .* : .* , conf = .* : peers : .* | listeners : .* , old = .*",1
 b3b420ce,".* @ .* round .* : submit vote requests at term .* for .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
-82de2687,.* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* : .* > .*,4
 3a7776e7,Build channel for .*,2
 a7442c3c,.* @ .* : changes role from .* to .* at term .* for candidate : .*,1
 8b65d54a,.* @ .* : set firstElectionSinceStartup to .* for candidate : .*,1
@@ -216,9 +210,6 @@ f3c48ddf,.* : .* received .* response .* and .* exception .* :,1
 6278e278,.* is opened.,1
 72acbb8a,create .* new tsfile processor .*,1
 a09763cf,BufferedArraySizeThreshold is .*,1
-669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
-eb80468c,.* @ .* : Rolled log segment from .* to .*,98
-e7568686,".* : .* not set , ignore the check",26
 8307deda,".* @ .* : Failed appendEntries as previous log entry ( ( t : .* , i : .* ) ) is not found",2
 9390358e,".* @ .* : .* entries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",4
 16435cb7,".* @ .* : Failed appendEntries as the first entry ( index .* ) already exists ( snapshotIndex : .* , commitIndex : .* )",2

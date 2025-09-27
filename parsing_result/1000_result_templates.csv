@@ -1,16 +1,21 @@
 EventId,EventTemplate,Occurrences
+825bd59b,set .* = .*,147
+cb4e87b7,.* : streamId = .* windowSizeIncrement = .*,2390
 ade0e8cf,.* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
 5463b93f,".* : reply .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",94404
-f7485d16,.* : receive appendEntries .*,92817
+e43f91f7,".* @ .* : receive appendEntries ( .* , commits : .*",8
 6d96494e,"truncateIndex = .* , arrayIndex = .*",92814
-0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,68041
+0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,12
 586db89e,".* @ .* adds .* task WriteLog : .* : .* , StateMachineLogEntryProto : .* @ .*",119425
-3e9dfd13,.* bytes for SegmentedRaftLogOutputStream ( .* ),592
-1abdf807,.* : flush SegmentedRaftLogOutputStream .*,124485
+980f021e,".* @ .* adds .* task WriteLog : .* : ( t : .* , i : .* ) , .* ( .* : .* )",68029
+7a3981dc,.* @ .* : flush SegmentedRaftLogOutputStream ( .* ),124485
 037601b3,".* @ .* : succeeded to handle AppendEntries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",92814
 fb01c9bc,.* @ .* : applying nextIndex = .*,187461
 26b68c2f,.* @ .* : appliedIndex : incrementAndGet .* > .*,187461
-eb80468c,.* @ .* : Rolled log segment from .* to .*,98
+7150e5cf,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ .* ]",22968
+f29e441b,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ .* @ .* ]",33129
+789ef2ca,".* @ .* : receive appendEntries ( .* , ( t : .* , i : .* ) , .* , commits : [ .* : .* : .* : .* ] , cId : .* , entries : [ .* @ .* @ .* ]",36712
+61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 4dc3eeff,Start to read config file file : .*,4
 1f17ab36,start reading ConfigNode conf file : file : .*,1
 160253dc,.* environment variables :,2
@@ -42,7 +47,6 @@ df564a3d,IoTDB : start Config Node service...,1
 74711e1e,new SynchronousQueue thread pool : .*,4
 3c819d4a,The Config Node service service thread begin to run...,1
 5ef28d59,"IoTDB : start Config Node service successfully , listening on ip .* port .*",1
-825bd59b,set .* = .*,147
 8c9c8989,Using .* as the default logging framework,2
 f55d490b,.* : .*,317
 53182b18,Java version : .*,2
@@ -75,7 +79,6 @@ a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,4
 c04287ff,Creating Metrics Registry : .* > .*,2
 4d69ba9c,Loaded default ResourceLeakDetector : .* @ .*,2
 c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,44
-ef31f21f,[ id : .* : .* : .* : .* : .* ] .* : streamId = .* windowSizeIncrement = .*,2390
 ac07e211,.* : streamId = .* headers = GrpcHttp2OutboundHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,4
 1530d54f,.* : streamId = .* headers = GrpcHttp2RequestHeaders .* streamDependency = .* weight = .* exclusive = .* padding = .* endStream = .*,10
 d94396f5,Creating Metrics Registry : .*,2
@@ -110,6 +113,7 @@ db5f4f2a,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | c
 a401c329,".* @ .* : set configuration .* : peers : [ .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",2
 d9288061,.* @ .* : Starting segment from index : .*,2
 2c8127ee,.* @ .* adds .* task StartLogSegment : .*,100
+3e9dfd13,.* bytes for SegmentedRaftLogOutputStream ( .* ),592
 eadeed05,.* @ .* : created new log segment .*,100
 f8af5dcb,"Successfully apply ConfigNode : TConfigNodeLocation ( configNodeId : .* , internalEndPoint : TEndPoint .* , consensusEndPoint : TEndPoint .* ) . Current ConfigNodeGroup : { .* = TConfigNodeLocation .* }",1
 c6fe24d4,".* @ .* : set configuration .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .*",1
@@ -214,9 +218,9 @@ f3c48ddf,.* : .* received .* response .* and .* exception .* :,1
 6278e278,.* is opened.,1
 72acbb8a,create .* new tsfile processor .*,1
 a09763cf,BufferedArraySizeThreshold is .*,1
-61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 badcbc80,.* @ .* : Rolling segment .* to index : .*,98
 669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
+eb80468c,.* @ .* : Rolled log segment from .* to .*,98
 e7568686,".* : .* not set , ignore the check",26
 8307deda,".* @ .* : Failed appendEntries as previous log entry ( ( t : .* , i : .* ) ) is not found",2
 9390358e,".* @ .* : .* entries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",4

@@ -1,19 +1,18 @@
 EventId,EventTemplate,Occurrences
-825bd59b,set .* = .*,147
-a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,8
 cb4e87b7,.* : streamId = .* windowSizeIncrement = .*,2390
 ade0e8cf,.* : streamId = .* padding = .* endStream = .* length = .* bytes = .*,303615
+abc1d1ea,Lock on .* acquired by nodename .*,2
 5463b93f,".* : reply .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",94404
 f7485d16,.* : receive appendEntries .*,92817
 6d96494e,"truncateIndex = .* , arrayIndex = .*",92814
 0f8c15a1,.* @ .* adds .* task WriteLog : .* : .*,68041
 586db89e,".* @ .* adds .* task WriteLog : .* : .* , StateMachineLogEntryProto : .* @ .*",119425
-7a3981dc,.* @ .* : flush SegmentedRaftLogOutputStream ( .* ),124485
+1abdf807,.* : flush SegmentedRaftLogOutputStream .*,124485
 037601b3,".* @ .* : succeeded to handle AppendEntries. Reply : .* < .* : .* , nextIndex = .* , followerCommit = .* , matchIndex = .*",92814
 fb01c9bc,.* @ .* : applying nextIndex = .*,187461
 26b68c2f,.* @ .* : appliedIndex : incrementAndGet .* > .*,187461
-0b10414c,Start rebooting all timed service.,40
-669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
+0701491f,Reload metric service in level .*,40
+61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 4dc3eeff,Start to read config file file : .*,4
 1f17ab36,start reading ConfigNode conf file : file : .*,1
 160253dc,.* environment variables :,2
@@ -45,6 +44,7 @@ df564a3d,IoTDB : start Config Node service...,1
 74711e1e,new SynchronousQueue thread pool : .*,4
 3c819d4a,The Config Node service service thread begin to run...,1
 5ef28d59,"IoTDB : start Config Node service successfully , listening on ip .* port .*",1
+825bd59b,set .* = .*,147
 8c9c8989,Using .* as the default logging framework,2
 f55d490b,.* : .*,317
 53182b18,Java version : .*,2
@@ -73,6 +73,7 @@ a7586255,try loading .* from .*,2
 dc52f914,createPeerForConsensusGroup .* ...,1
 ce469654,.* | rpc : .* | priority : .* | startupRole : .* : .*,4
 55491078,".* : send GroupManagementRequest : .* > .* @ .* , cid = .* , seq = .* : .* : .*",1
+a4d4c07e,.* | rpc : .* | priority : .* | startupRole : .* : .* > .*,4
 c04287ff,Creating Metrics Registry : .* > .*,2
 4d69ba9c,Loaded default ResourceLeakDetector : .* @ .*,2
 c3bbba7d,[ id : .* : .* : .* : .* : .* ] .* : ack = .*,44
@@ -86,7 +87,6 @@ f9436366,.* : new RaftServerImpl for .* : .* with ApplicationStateMachineProxy :
 e6321e94,Creating Metrics Registry : .* @ .*,8
 8f6f55fa,".* : newImpl = .* @ .* : .* , leader = .* , voted = .* , raftlog = .* , conf = .* : peers : .* | listeners : .* , old = .*",2
 0cc02db7,The storage directory .* does not exist. Creating ...,2
-abc1d1ea,Lock on .* acquired by nodename .*,2
 28b39e2c,Storage directory .* has been successfully formatted.,2
 f675d445,ApplicationStateMachineProxy : .* > .*,4
 1098e7e4,new .* @ .* for RaftStorageImpl : Storage Directory .*,2
@@ -179,9 +179,9 @@ dfd54d67,The .* ServerService service thread begin to run...,1
 ec313cbe,"IoTDB : start .* ServerService successfully , listening on ip .* port .*",1
 ead4d0fb,Start to reload config file file : .*,80
 d9063f3c,"Congratulation , IoTDB DataNode is set up successfully. Now , enjoy yourself!",1
+0b10414c,Start rebooting all timed service.,40
 a4b8e90f,"Stop all timed service successfully , and now restart them.",40
 493c02a3,Reboot all timed service successfully,40
-0701491f,Reload metric service in level .*,40
 1173ab9a,There are nothing change in metric config.,40
 883546d4,"construct .* data region instance , the database is .* , Thread is .*",1
 f25d7240,"Database system Directory .* doesn ' t exist , create it",1
@@ -203,6 +203,7 @@ e4382447,.* @ .* : .*,1
 8b5bc9c8,.* : accept .* from .* : our priority .* < = candidate ' s priority .*,3
 95528166,".* Peer ' s state : .* @ .* : t0 , leader = .* , voted = , raftlog = Memoized : .* @ .* : .* : .* , conf = .* : peers : .* | listeners : .* , old = .*",1
 b3b420ce,".* @ .* round .* : submit vote requests at term .* for .* : peers : [ .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* ] | listeners : .* , old = .*",1
+82de2687,.* | rpc : .* | admin : | client : | dataStream : | priority : .* | startupRole : .* : .* > .*,4
 3a7776e7,Build channel for .*,2
 a7442c3c,.* @ .* : changes role from .* to .* at term .* for candidate : .*,1
 8b65d54a,.* @ .* : set firstElectionSinceStartup to .* for candidate : .*,1
@@ -213,8 +214,8 @@ f3c48ddf,.* : .* received .* response .* and .* exception .* :,1
 6278e278,.* is opened.,1
 72acbb8a,create .* new tsfile processor .*,1
 a09763cf,BufferedArraySizeThreshold is .*,1
-61cfa057,"Report database Status to the system. After adding .* , current sg mem cost is .*",276
 badcbc80,.* @ .* : Rolling segment .* to index : .*,98
+669d8690,.* @ .* adds .* task FinalizeLogSegment : .* : startIndex = .* endIndex = .*,98
 eb80468c,.* @ .* : Rolled log segment from .* to .*,98
 e7568686,".* : .* not set , ignore the check",26
 8307deda,".* @ .* : Failed appendEntries as previous log entry ( ( t : .* , i : .* ) ) is not found",2
