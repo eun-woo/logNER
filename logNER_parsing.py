@@ -54,7 +54,7 @@ from torch.cuda.amp import autocast
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--log_file', default='log_file/hadoop.log', type=str, required=True)
-parser.add_argument('--filtering_size', default=1000, type=int, required=True)
+parser.add_argument('--filtering_size', default=1000, type=int)
 parser.add_argument('-b', '--batch_size', default=8, type=int)
 parser.add_argument('--model_name', default=None, type=str)
 args = parser.parse_args()
@@ -561,7 +561,7 @@ def make_templates_csv(total_template_occurrence):
     "EventTemplate": total_template_occurrence.keys(),
     "Occurrences": total_template_occurrence.values()
     })
-    templates_log.to_csv(f'./parsing_result/{args.filtering_size}_result_templates.csv', index=False)
+    templates_log.to_csv(f'./parsing_result/result_templates.csv', index=False)
 
 
 def make_struct_csv(log_file, total_log_list, df_log, template_list):
@@ -617,8 +617,8 @@ regex_mode = True
 filtering_parameter = args.filtering_size
 
 ## unmatch log가 줄어드는 수가 filtering_threshold 미만일시 멈춤
-filtering_threshold = len(df_log)
-
+# filtering_threshold = len(df_log)
+filtering_threshold = 1000
 # 사용하는 플래그 및 상수들
 # THRESHOLD를 넘어서면 그룹의 성분 수가 너무 많다고 판단, 모든 경우의 수를 고려하지 않고 다른 방법을 사용
 GROUP_ELEMENT_THRESHOLD = 10
@@ -1112,7 +1112,7 @@ if __name__=="__main__":
     # print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
 
     make_templates_csv(total_template_occurrence)
-    make_struct_csv(log_file, total_log_list, df_log, template_list):
+    make_struct_csv(log_file, total_log_list, df_log, template_list)
 
 
 
