@@ -1112,6 +1112,7 @@ if __name__=="__main__":
     # print('\033[31m' + f'best mean drc: {best_mean_drc}' + '\033[0m')
 
     make_templates_csv(total_template_occurrence)
+    make_struct_csv(log_file, total_log_list, df_log, template_list):
 
 
 
