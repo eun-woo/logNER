@@ -204,8 +204,8 @@ if __name__ == '__main__':
 
         # total_similarity 평균내기
         print(f'new similarity: {total_similarity / (len(test) - not_matching_cnt)}')
-        scores.append((f"{filtering_size}크기 score: {total_similarity / (len(test) - not_matching_cnt)}"))
-    print("\n".join(list(scores)))
+        scores.append((total_similarity / (len(test) - not_matching_cnt)))
+    print(str(scores))
 
 
 
