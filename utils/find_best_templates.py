@@ -47,6 +47,56 @@ def find_best_template_sub_set_by_bruteforce(cur_idx, cur_templates, min_mdl, mi
         return min_mdl, min_mdl_templates
 
 
+# general한 템플릿을 필터링하며 MDL을 계산 및 비교
+# drc는 중복 계산이 많음, 시간 성능이 문제라면 이 부분을 어느 정도 개선 가능
+# 매개변수의 의미: 현재 인덱스, 현재 선택한 템플릿들, 최소 mdl, 현재 계산된 템플릿 집합들 중 최소 mdl을 가지는 템플릿 집합, 현재 그룹에 속하는 candidate_tuple 리스트 (first_group), 각 candidate_tuple이 특정 템플릿 인덱스를 선택했을 때의 drc, 템플릿 리스트(SRC 계산용)
+# selected는 선택된 템플릿들의 집합
+# not_selected는 선택되지 않은 템플릿들의 카운트를 기록해놓은 딕셔너리
+def find_best_template_sub_set_by_filtering(cur_idx, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count, selected, not_selected, verbose=False):
+    if cur_idx == len(candidate_tuple_list):
+        cur_template_set = set(cur_templates)
+        # 현재 선택된 템플릿들의 SRC, src는 템플릿 개수로 평균
+        cur_src = (sum(src(templates[idx]) for idx in cur_template_set)) / len(cur_template_set)
+        cur_drc = 0
+        # 각 candidate tuple이 각 템플릿을 선택했을 때의 DRC를 계산해서 더함
+        for i in range(len(candidate_tuple_list)):
+            cur_var_info = candidate_tuple_template_drc_info[candidate_tuple_list[i]][cur_templates[i]]
+            cur_drc += drc(cur_var_info)
+        # drc는 로그 개수로 평균
+        cur_drc /= group_log_count
+        # 새로운 min_mdl 과 min_mdl을 가진 템플릿 리스트를 리턴
+        if min_mdl > cur_src + cur_drc:
+            return (cur_src + cur_drc), cur_templates.copy()
+        # 아니면 기존 것을 리턴
+        else:
+            return min_mdl, min_mdl_templates
+
+    else:
+        # 현재 순서의 candidate tuple에 해당하는 template들
+        for template_idx in candidate_tuple_template_drc_info[candidate_tuple_list[cur_idx]]:
+            # selected에 있는 템플릿은 반드시 선택
+            # selected 에 없더라도 not_selected에 없으면 이 템플릿은 선택
+            if template_idx in selected or template_idx not in not_selected:
+                cur_templates[cur_idx] = template_idx
+                # 선택되지 않은 템플릿들에 대하여 not_selected 에 추가
+                for other_template_idx in candidate_tuple_template_drc_info[candidate_tuple_list[cur_idx]]:
+                    # 현재 템플릿은 추가하지 않음
+                    if other_template_idx != template_idx:
+                        if other_template_idx not in not_selected:
+                            not_selected[other_template_idx] = 1
+                        else:
+                            not_selected[other_template_idx] += 1
+                # 선택된 템플릿을 그냥 선택하는 경우 selected를 건드릴 필요 없음
+                # 그렇지 않은 경우 selected에 추가, 삭제하는 작업을 해야함
+                if template_idx not in selected:
+                    selected.add(template_idx)
+                    min_mdl, min_mdl_templates = find_best_template_sub_set_by_filtering(cur_idx + 1, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count, selected, not_selected, verbose)
+                    selected.remove(template_idx)
+                else:
+                    min_mdl, min_mdl_templates = find_best_template_sub_set_by_filtering(cur_idx + 1, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count, selected, not_selected, verbose)
+        return min_mdl, min_mdl_templates
+
+
 # 인풋은 candidate_tuple들의 리스트
 # 아웃풋은 어떤 템플릿에 어떤 candidate_tuple들이 매칭되는지 키와 벨류 셋으로 저장된 딕셔너리
 # 집합인 이유는 포함 관계를 판단하기 쉽게 하기 위해서
