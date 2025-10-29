@@ -94,6 +94,22 @@ def find_best_template_sub_set_by_filtering(cur_idx, cur_templates, min_mdl, min
                     selected.remove(template_idx)
                 else:
                     min_mdl, min_mdl_templates = find_best_template_sub_set_by_filtering(cur_idx + 1, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count, selected, not_selected, verbose)
+                # 모두 수행하고 나서 not_selected 에 대한 처리가 필요
+                for other_template_idx in candidate_tuple_template_drc_info[candidate_tuple_list[cur_idx]]:
+                    # 현재 템플릿은 처리 X
+                    if other_template_idx != template_idx:
+                        not_selected[other_template_idx] -= 1
+                        if not_selected[other_template_idx] == 0:
+                            del not_selected[other_template_idx]
+        # for 문 다 돌았는데 전부 not_selected 일 수도 있음
+        # 이 때는 drc가 가장 적은 템플릿을 고르도록 함
+        if all(template_idx in not_selected for template_idx in candidate_tuple_template_drc_info[candidate_tuple_list[cur_idx]]):
+            # drc가 가장 적은 템플릿 즉, 길이가 가장 긴 템플릿을 선택
+            most_specific_template_idx = max(candidate_tuple_template_drc_info[candidate_tuple_list[cur_idx]], key= lambda x: len(templates[x]))
+            cur_templates[cur_idx] = most_specific_template_idx
+            # 이미 모든 템플릿이 not_selected라 이 템플릿을 선택한 것이므로 다른 템플릿들이 이걸 선택할 필요는 없으므로, selected에 추가 X (이후에 수정해야 한다면 수정)
+            # not_selected는 활용할 필요 없음, 어차피 not_selected에 모두 추가되어 있기 때문
+            min_mdl, min_mdl_templates = find_best_template_sub_set_by_filtering(cur_idx + 1, cur_templates, min_mdl, min_mdl_templates, candidate_tuple_list, candidate_tuple_template_drc_info, templates, group_log_count, selected, not_selected, verbose)
         return min_mdl, min_mdl_templates
 
 
