@@ -24,7 +24,7 @@ The project consists of two main phases: 1) Hierarchical Log Parsing via Nested 
 
 - Research Design
 
-    <img src="https://github.com/sominsong/NIMOS/blob/main/fig/research_archi.png">
+    <img src="https://github.com/eun-woo/logNER/blob/main/figs/LogNER%20Overview.png">
     
     The figure above shows the methodology for extracting hierarchical log templates. It consists of two stages:
 
