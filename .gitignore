@@ -1,5 +1,5 @@
 logs/
-parsing_result/
 logNER_parsing_original.py
 logNER_parsing_original2.py
 inference_filtering.py
+*.pyc
