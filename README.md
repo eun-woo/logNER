@@ -40,28 +40,25 @@ The project consists of two main phases: 1) Hierarchical Log Parsing via Nested 
 
 ## Getting started
 
-```
-sudo su
-apt update && apt install -y make git-all
+**Tested with PyTorch 2.1.0 + CUDA 12.1 (cu121) + Python 3.8.13**
 
-git clone 
+```
+git clone https://github.com/eun-woo/logNER.git
+pip install -r requirements.txt
 ```
 
 ## How to run
 
-```
-
-```
-
 ### Step 1. 
+
+log_file should be located in 'log_file' folder
 
 ### Step 2.
 
+```
+python logNER_parsing.py --log_file log_file/{log_file_name}
+```
+
 ### Step 3. 
 
-### Step 4. 
-
-### Step 5.
-
-### Step 6. 
-
+parsing result will be in 'parsing_result' folder
